@@ -3,7 +3,7 @@ import Cors from 'cors';
 export const cors = Cors({
   methods: ['GET', 'POST', 'PUT'],
   origin: function (origin, callback) {
-    const allowedDomains = ['https://getdoa.com', 'https://sedekahje.com'];
+    const allowedDomains = ['https://getdoa.com', 'https://sedekahje.com', 'http://localhost:3000'];
 
     if (allowedDomains.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
