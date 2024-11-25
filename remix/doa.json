@@ -1,0 +1,232 @@
+[
+    {
+        "name_my": "[PAGI] Ditetapkan Islam",
+        "name_en": "[MORNING] Firmly Islam",
+        "content": "أصْبَحْنَا عَلَى فِطْرَةِ الإِسْلاَمِ وَعَلَى كَلِمَةِ الإِخْلاَصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ",
+        "reference_my": "Riwayat Ahmad (15360)",
+        "reference_en": "Narrated by Ahmad (15360)",
+        "meaning_my": "Kami hayati pagi ini di atas landasan fitrah dan perwatakan Islam, berpegang kepada kalimah ikhlas (kalimah syahadah), dan berpegang kepada agama Nabi kami Muhammad SAW yang juga agama ayah kami Ibrahim, yang berada di atas jalan yang lurus, muslim dan tidak tergolong dalam golongan orang-orang yang musyrik", 
+        "meaning_en": "We rise upon the fitrah of al-Islam, and the word of pure faith, and upon the religion of our Prophet Muhammad SAW and the religion of our forefather Ibrahim who was a Muslim and of true faith and was not of those who associate others with Allah",
+        "category_names": ["Bacaan Pagi", "Morning Supplication"]
+    },
+    {
+        "name_my": "[PETANG] Ditetapkan Islam",
+        "name_en": "[EVENING] Firmly Islam",
+        "content": "أمْسَيْنَا عَلَى فِطْرَةِ الإِسْلاَمِ وَعَلَى كَلِمَةِ الإِخْلاَصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ",
+        "reference_my": "Riwayat Ahmad (15360)",
+        "reference_en": "Narrated by Ahmad (15360)",
+        "meaning_my": "Kami hayati petang ini di atas landasan fitrah dan perwatakan Islam, berpegang kepada kalimah ikhlas (kalimah syahadah), dan berpegang kepada agama Nabi kami Muhammad SAW yang juga agama ayah kami Ibrahim, yang berada di atas jalan yang lurus, muslim dan tidak tergolong dalam golongan orang-orang yang musyrik", 
+        "meaning_en":  "We live this evening grounded in the natural disposition of Islam, and the word of pure faith, and upon the religion of our Prophet Muhammad SAW and the religion of our forefather Ibrahim who was a Muslim and of true faith and was not of those who associate others with Allah",
+        "category_names": ["Bacaan Petang", "Evening Supplication"]
+    },
+    {
+        "name_my": "Penghulu Bagi Doa Keampunan",
+        "name_en": "The Master of Forgiveness Prayer",
+        "content": "اَللَّهُمَّ أَنْتَ رَبِّيْ لاَإِلَهَ إِلاَّأَنْتَ خَلَقْتَنِيْ وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوْءُ بِذَنْبِيْ فَاغْفِرْ لِيْ فإِنَّهُ لاَ يَغْفِرُ الذُّنُوْبَ إِلاَّأَنْتَ",
+        "reference_my": "Riwayat al-Bukhari (6306)",
+        "reference_en": "Narrated by Bukhari (6306)",
+        "meaning_my": "Ya Allah, Engkau adalah Tuhanku, tidak ada Tuhan yang berhak disembah kecuali Engkau, Engkaulah yang menciptakanku dan aku adalah hamba-Mu. Aku akan setia pada perjanjianku pada-Mu (iaitu aku akan mentauhidkan-Mu) dan aku yakin akan jaji-Mu (berupa syurga untukku) dengan sedaya upayaku. Aku berlindung kepada-Mu dari kejahatan yang aku lakukan. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, maka, ampunilah aku. Sesungguhnya tiada yang mengampuni dosa kecuali Engkau",
+        "meaning_en": "O Allah, You are my Lord, there is no deity worthy of worship except You, You created me and I am Your servant. I am committed to my covenant with You (to worship You alone) and believe in Your promise (of Paradise for me) to the best of my ability. I seek refuge in You from the evil of what I have done. I acknowledge Your blessings upon me and I confess my sins, so forgive me. Indeed, none can forgive sins except You.",
+        "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance"]
+    },
+    {
+        "name_my": "[JEMAAH] Penghulu Bagi Doa Keampunan",
+        "name_en": "[JAMA'AH] The Master of Forgiveness Prayer",
+        "content": "اَللَّهُمَّ أَنْتَ رَبُّنَا لاَإِلَهَ إِلاَّأَنْتَ خَلَقْتَنَا وَنَحْنُ عِبَادُكَ وَنَحْنُ عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْنَا نَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْنَا نَبُوْءُ لَكَ بِنِعْمَتِكَ عَلَيْنَا وَنَبُوْءُ بِذُنُبِنَا فَاغْفِرْ لَنَا فإِنَّهُ لاَ يَغْفِرُ الذُّنُوْبَ إِلاَّأَنْتَ",
+        "reference_my": "Riwayat al-Bukhari (6306)",
+        "reference_en": "Narrated by Bukhari (6306)",
+        "meaning_my": "Ya Allah, Engkau adalah Tuhan kami, tidak ada Tuhan yang berhak disembah kecuali Engkau, Engkaulah yang menciptakan kami dan kami adalah hamba-Mu. Kami akan setia pada perjanjian kami pada-Mu dan jaji-Mu dengan sedaya upaya kami. Kami berlindung kepada-Mu dari kejahatan yang kami lakukan. Kami mengakui nikmat-Mu kepada kami dan kami mengakui dosa kami, maka, ampunilah kami. Sesungguhnya tiada yang mengampuni dosa kecuali Engkau",
+        "meaning_en": "O Allah, You are our Lord, there is no deity worthy of worship except You, You created us and we are Your servants. We are committed to our covenant with You and to Your promise with all our might. We seek refuge in You from the evil of what we have done. We acknowledge Your blessings upon us and confess our sins, so forgive us. Indeed, none can forgive sins except You.",
+        "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance", "Jamaah"]
+    },
+    {
+        "name_my": "Mohon Keampunan",
+        "name_en": "Seeking Forgiveness",
+        "content": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِرًا وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+        "reference_my": "Riwayat al-Bukhari (7387) dan Muslim (2705)",
+        "reference_en": "Narrated by Bukhari (7387) and Muslim (2705)",
+        "meaning_my": "Ya Allah! Sungguh aku telah menzalimi diriku sendiri dengan kezaliman yang banyak, sedangkan tidak ada yang dapat mengampuni dosa-dosa kecuali Engkau. Maka ampunilah aku dengan suatu pengampunan dari sisi-Mu, dan rahmatilah aku. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang",
+        "meaning_en": "O Allah! Indeed, I have wronged myself greatly, and none can forgive sins except You. So grant me forgiveness from Yourself, and have mercy on me. Indeed, You are the Forgiving, the Merciful.",
+        "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance"]
+    },
+    {
+        "name_my": "[JEMAAH] Mohon Keampunan",
+        "name_en": "[JAMA'AH] Seeking Forgiveness",
+        "content": "اللَّهُمَّ إِنَّا ظَلَمْنَا أَنْفُسَنَا ظُلْمًا كَثِيرًا وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ فَاغْفِرْ لَنَا مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنَا إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+        "reference_my": "Riwayat al-Bukhari (7387) dan Muslim (2705)",
+        "reference_en": "Narrated by Bukhari (7387) and Muslim (2705)",
+        "meaning_my": "Ya Allah! Sungguh kami telah menzalimi diri kami dengan kezaliman yang banyak, sedangkan tidak ada yang dapat mengampuni dosa-dosa kecuali Engkau. Maka ampunilah kami dengan suatu pengampunan dari sisi-Mu, dan rahmatilah kami. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang",
+        "meaning_en": "O Allah! Indeed, we have wronged ourselves greatly, and none can forgive sins except You. So grant us forgiveness from Yourself, and have mercy on us. Indeed, You are the Forgiving, the Merciful.",
+        "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance", "Jamaah"]
+    },
+    {
+        "name_my": "Mohon Taqwa",
+        "name_en": "Seeking Piety",
+        "content": "اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلَاهَا",
+        "reference_my": "Riwayat Muslim (2722)",
+        "reference_en": "Narrated by Muslim (2722)",
+        "meaning_my": "Ya Allah, berikanlah ketakwaan pada jiwaku, dan bersihkanlah ia kerana Engkaulah  sebaik-baik yang dapat membersihkannya. Engkaulah pelindung dan Tuan kepadanya",
+        "meaning_en": "O Allah, grant piety to my soul, and cleanse it for You are the best to cleanse it. You are its Protector and Lord",
+        "category_names": ["Piety", "Taqwa"]
+    },
+    {
+        "name_my": "[JEMAAH] Mohon Taqwa",
+        "name_en": "[JAMA'AH]Seeking Piety",
+        "content": "اللَّهُمَّ آتِ نُفُوْسَنَا تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلَاهَا",
+        "reference_my": "Riwayat Muslim (2722)",
+        "reference_en": "Narrated by Muslim (2722)",
+        "meaning_my": "Ya Allah, berikanlah ketakwaan pada jiwa kami, dan bersihkanlah ia kerana Engkaulah  sebaik-baik yang dapat membersihkannya. Engkaulah pelindung dan Tuan kepadanya",
+        "meaning_en": "O Allah, grant piety to our soul, and cleanse it for You are the best to cleanse it. You are its Protector and Lord",
+        "category_names": ["Piety", "Taqwa", "Jamaah"]
+    },
+    {
+        "name_my": "Pengiktirafan",
+        "name_en": "Recognition",
+        "content": "لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+        "reference_my": "Surah Al-Anbiya' (21:87)",
+        "reference_en": "Surah Al-Anbiya' (21:87)",
+        "meaning_my": "Sesungguhnya tiada Tuhan (yang dapat menolong) melainkan Engkau, Maha Suci Engkau (daripada melakukan aniaya, tolongkanlah daku)! Sesungguhnya aku adalah daripada orang-orang yang menganiaya diri sendiri",
+        "meaning_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers",
+        "category_names": ["Pengiktirafan", "Recognition"]
+    },
+    {
+        "name_my": "Kelapangan Hati dan Jiwa",
+        "name_en": "Tranquility of Heart and Soul",
+        "content": "اللَّهُمَّ إِنِّي عَبْدُكَ ، وَابْنُ عَبْدِكَ ، وَابْنُ أَمَتِكَ ، نَاصِيَتِي بِيَدِكَ ، مَاضٍ فِيَّ حُكْمُكَ ، عَدْلٌ فِيَّ قَضَاؤُكَ ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي ، وَنُورَ صَدْرِي ، وَجِلَاءَ حُزْنِي ، وَذَهَابَ هَمِّي",
+        "reference_my": "Riwayat Ahmad (3712)",
+        "reference_en": "Narrated by Ahmad (3712)",
+        "meaning_my": "Ya Allah, sesungguhnya aku adalah hamba-Mu, anak kepada hamba-Mu, anak kepada hamba perempuan-Mu, ubun-ubunku di tangan-Mu, telah berlalunya keputusan-Mu, Engkau telah berlaku adil ke atas aku dalam keputusan-Mu. Aku memohon kepada-Mu dengan setiap nama yang Engkau berikan pada diri-Mu, atau yang telah Engkau ajarkan kepada salah satu makhluk ciptaan-Mu, atau yang telah Engkau turunkan dalam kitab-Mu, atau yang telah Engkau rahsiakan dalam ilmu ghaib-Mu, untuk menjadikan al-Quran sebagai penyejuk hatiku, cahaya di dadaku, penghilang kesedihanku, penghapus kesusahanku.",
+        "meaning_en": "O Allah, indeed I am Your servant, son of Your male servant, son of Your female servant, my forelock is in Your hand, Your command over me is forever executed and Your decree over me is just. I ask You by every name belonging to You which You named Yourself with, or revealed in Your Book, or You taught to any of Your creation, or You have preserved in the knowledge of the unseen with You, to make the Quran the spring of my heart, the light of my chest, the banisher of my sadness, and the reliever of my distress.",
+        "category_names": ["Tenang", "Hati", "Jiwa", "Calm", "Heart", "Soul"]
+    },
+    {
+        "name_my": "[JEMAAH] Kelapangan Hati dan Jiwa",
+        "name_en": "[JAMA'AH] Tranquility of Heart and Soul",
+        "content": "اللَّهُمَّ إِنَّا عَبِيْدُكَ ، وَبَنُوْ عَبِيْدِكَ ، وَبَنُوْ أَمَايِـكَ ، نَوَاصِيْنَا بِيَدِكَ ، مَاضٍ فِيْنَا حُكْمُكَ ، عَدْلٌ فِيْنَ قَضَاؤُكَ ، نَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قُلُوْبِنَا ، وَنُورَ صُدُوْرِنَا ، وَجِلَاءَ أَحْزَانِنَا ، وَذَهَابَ هُمُوْمِنَا",
+        "reference_my": "Riwayat Ahmad (3712)",
+        "reference_en": "Narrated by Ahmad (3712)",
+        "meaning_my": "Ya Allah, sesungguhnya kami adalah hamba-Mu, anak kepada hamba-Mu, anak kepada hamba perempuan-Mu, ubun-ubun kami di tangan-Mu, telah berlalunya keputusan-Mu, Engkau telah berlaku adil ke atas kami dalam keputusan-Mu. Kami memohon kepada-Mu dengan setiap nama yang Engkau berikan pada diri-Mu, atau yang telah Engkau ajarkan kepada salah satu makhluk ciptaan-Mu, atau yang telah Engkau turunkan dalam kitab-Mu, atau yang telah Engkau rahsiakan dalam ilmu ghaib-Mu, untuk menjadikan al-Quran sebagai penyejuk hati kami, cahaya di dada kami, penghilang kesedihan kami, penghapus kesusahan kami.",
+        "meaning_en": "O Allah, indeed we are Your servants, sons of Your male servants, sons of Your female servants, our forelocks are in Your hand, Your command over us is forever executed and Your decree over us is just. We ask You by every name belonging to You which You named Yourself with, or revealed in Your Book, or You taught to any of Your creation, or You have preserved in the knowledge of the unseen with You, to make the Quran the spring of our hearts, the light of our chests, the banisher of our sadness, and the reliever of our distress.",
+        "category_names": ["Tenang", "Hati", "Jiwa", "Calm", "Heart", "Soul", "Jamaah"]
+    },
+    {
+        "name_my": "Keluar dari Rumah",
+        "name_en": "Leaving the House",
+        "content": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+        "reference_my": "Riwayat Abu Daud (5096)",
+        "reference_en": "Narrated by Abu Daud (5096)",
+        "meaning_my": "Dengan nama Allah, aku bertawakkal kepada Allah. Tiada upaya dan tiada kekuatan kecuali dengan Allah",
+        "meaning_en": "In the name of Allah, I place my trust in Allah. There is no might nor power except with Allah",
+        "category_names": ["Selamat", "Safety", "Protection", "Perlindungan"]
+    },
+    {
+        "name_my":"[JEMAAH] Keluar dari Rumah",
+        "name_en":"[JAMA'AH] Leaving the House",
+        "content": "بِسْمِ اللَّهِ تَوَكَّلْنَا عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+        "reference_my": "Riwayat Abu Daud (5096)",
+        "reference_en": "Narrated by Abu Daud (5096)",
+        "meaning_my": "Dengan nama Allah, kami bertawakkal kepada Allah. Tiada upaya dan tiada kekuatan kecuali dengan Allah",
+        "meaning_en": "In the name of Allah, we place our trust in Allah. There is no might nor power except with Allah",
+        "category_names": ["Selamat", "Safety", "Protection", "Perlindungan", "Jamaah"]
+    },
+    {
+        "name_my": "Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
+        "name_en": "Guidance, Piety, Chastity and Wealth",
+        "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+        "reference_my": "Riwayat Muslim (2721)",
+        "reference_en": "Narrated by Muslim (2721)",
+        "meaning_my": "Ya Allah, sesungguhnya aku memohon kepada-Mu petunjuk, ketaqwaan, kesucian dan kekayaan",
+        "meaning_en": "O Allah, indeed I ask You for guidance, piety, chastity and wealth",
+        "category_names": ["Petunjuk", "Guidance", "Taqwa", "Piety", "Iffah", "Chastity", "Kekayaan", "Wealth"]
+    },
+    {
+        "name_my": "[JEMAAH] Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
+        "name_en": "[JAMA'AH] Guidance, Piety, Chastity and Wealth",
+        "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+        "reference_my": "Riwayat Muslim (2721)",
+        "reference_en": "Narrated by Muslim (2721)",
+        "meaning_my": "Ya Allah, sesungguhnya kami memohon kepada-Mu petunjuk, ketaqwaan, kesucian dan kekayaan",
+        "meaning_en": "O Allah, indeed we ask You for guidance, piety, chastity and wealth",
+        "category_names": ["Petunjuk", "Guidance", "Taqwa", "Piety", "Iffah", "Chastity", "Kekayaan", "Wealth", "Jamaah"]
+    },
+    {
+        "name_my": "Ilmu, Rezeki dan Amalan yang Diterima",
+        "name_en": "Knowledge, Sustenance and Accepted Deeds",
+        "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
+        "reference_my": "Riwayat Ibn Majah (925)",
+        "reference_en": "Narrated by Ibn Majah (925)",
+        "meaning_my": "Ya Allah, sesungguhnya aku memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik dan amalan yang diterima",
+        "meaning_en": "O Allah, indeed I ask You for beneficial knowledge, good sustenance and deeds that are accepted",
+        "category_names": ["Ilmu", "Knowledge", "Rezeki", "Sustenance", "Amalan", "Deeds"]
+    },
+    {
+        "name_my": "[JEMAAH] Ilmu, Rezeki dan Amalan yang Diterima",
+        "name_en": "[JAMA'AH] Knowledge, Sustenance and Accepted Deeds",
+        "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
+        "reference_my": "Riwayat Ibn Majah (925)",
+        "reference_en": "Narrated by Ibn Majah (925)",
+        "meaning_my": "Ya Allah, sesungguhnya kami memohon kepada-Mu ilmu yang bermanfaat, rezeki yang baik dan amalan yang diterima",
+        "meaning_en": "O Allah, indeed we ask You for beneficial knowledge, good sustenance and deeds that are accepted",
+        "category_names": ["Ilmu", "Knowledge", "Rezeki", "Sustenance", "Amalan", "Deeds", "Jamaah"]
+    },
+    {
+        "name_my": "Pertolongan Untuk Zikir",
+        "name_en": "Help for Remembrance",
+        "content": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+        "reference_my": "Riwayat Abu Daud (1522)",
+        "reference_en": "Narrated by Abu Daud (1522)",
+        "meaning_my": "Ya Allah, tolonglah aku untuk berzikir kepada-Mu, bersyukur kepada-Mu dan beribadah kepada-Mu dengan sebaik-baiknya",
+        "meaning_en": "O Allah, help me to remember You, to be grateful to You and to worship You in the best manner",
+        "category_names": ["Zikir", "Remembrance", "Syukur", "Gratitude", "Ibadah", "Worship"]
+    },
+    {
+        "name_my": "[JEMAAH] Pertolongan Untuk Zikir",
+        "name_en": "[JAMA'AH] Help for Remembrance",
+        "content": "اللَّهُمَّ أَعِنَّا عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+        "reference_my": "Riwayat Abu Daud (1522)",
+        "reference_en": "Narrated by Abu Daud (1522)",
+        "meaning_my": "Ya Allah, tolonglah kami untuk berzikir kepada-Mu, bersyukur kepada-Mu dan beribadah kepada-Mu dengan sebaik-baiknya",
+        "meaning_en": "O Allah, help us to remember You, to be grateful to You and to worship You in the best manner",
+        "category_names": ["Zikir", "Remembrance", "Syukur", "Gratitude", "Ibadah", "Worship", "Jamaah"]
+    },
+    {
+        "name_my": "Keampunan",
+        "name_en": "Forgiveness",
+        "content": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+        "reference_my": "Riwayat Tirmidzi (3513)",
+        "reference_en": "Narrated by Tirmidzi (3513)",
+        "meaning_my": "Ya Allah, sesungguhnya Engkau Maha Pengampun dan suka memberi keampunan, maka ampunilah aku",
+        "meaning_en": "O Allah, indeed You are the Most Forgiving and You love forgiveness, so forgive me",
+        "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar"]
+    },
+    {
+        "name_my": "[JEMAAH] Keampunan",
+        "name_en": "[JAMA'AH] Forgiveness",
+        "content": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنَّا",
+        "reference_my": "Riwayat Tirmidzi (3513)",
+        "reference_en": "Narrated by Tirmidzi (3513)",
+        "meaning_my": "Ya Allah, sesungguhnya Engkau Maha Pengampun dan suka memberi keampunan, maka ampunilah kami",
+        "meaning_en": "O Allah, indeed You are the Most Forgiving and You love forgiveness, so forgive us",
+        "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar", "Jamaah"]
+    },
+    {
+        "name_my": "Ditetapkan Hati",
+        "name_en": "Firmness of Heart",
+        "content": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِيْنِكَ",
+        "reference_my": "Riwayat Tirmidzi (3522)",
+        "reference_en": "Narrated by Tirmidzi (3522)",
+        "meaning_my": "Wahai Tuhan yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu",
+        "meaning_en": "O Turner of the hearts, make my heart firm upon Your religion",
+        "category_names": ["Hati", "Heart", "Firmness"]
+    },
+    {
+        "name_my": "[JEMAAH] Ditetapkan Hati",
+        "name_en": "[JAMA'AH] Firmness of Heart",
+        "content": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قُلُوْبَنَا عَلَى دِيْنِكَ",
+        "reference_my": "Riwayat Tirmidzi (3522)",
+        "reference_en": "Narrated by Tirmidzi (3522)",
+        "meaning_my": "Wahai Tuhan yang membolak-balikkan hati, tetapkanlah hati kami di atas agama-Mu",
+        "meaning_en": "O Turner of the hearts, make our hearts firm upon Your religion",
+        "category_names": ["Hati", "Heart", "Firmness", "Jamaah"]
+    }
+]
