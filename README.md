@@ -8,7 +8,7 @@ Current [Figma](https://www.figma.com/design/S01ARywZf83zlFaAb1Sg2g/Get-Doa?node
 
 ### First Phase (Doa Database)
 
-1. Gather data until we have 50 doa
+1. Gather data until we have 50 doa :white_check_mark:
 
 ### Second Phase (Main Functions)
 
