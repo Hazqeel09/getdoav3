@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy Application
+    name: Deploy Application to EC2
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -21,75 +21,59 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Upload Deployment Script to EC2
+      - name: Copy Docker Compose File to EC2
         run: |
-          aws ssm send-command \
-            --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
-            --document-name "AWS-RunShellScript" \
-            --parameters commands='[
-              "cat <<EOF > /home/ubuntu/deploy_script.sh
-              #!/bin/bash
-              set -e
-
-              # Install Docker and Docker Compose
-              sudo apt update && sudo apt install -y docker.io curl
-              sudo systemctl start docker
-              sudo systemctl enable docker
-              sudo curl -L https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-              sudo chmod +x /usr/local/bin/docker-compose
-
-              # Create Docker Compose file
-              cat <<EOC > /home/ubuntu/docker-compose.yaml
-              version: \"3.8\"
-              services:
-                remix:
-                  image: \"${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest\"
-                  ports:
-                    - \"3000:3000\"
-                  depends_on:
-                    db:
-                      condition: service_healthy
-                  environment:
-                    DATABASE_URL: \"postgresql://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@db:5432/${{ secrets.POSTGRES_DB }}\"
-                    NODE_ENV: \"production\"
-                    SESSION_SECRET: \"${{ secrets.SESSION_SECRET }}\"
-                  networks:
-                    - app-network
-
+          echo 'version: "3.8"
+          services:
+            remix:
+              image: "${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest"
+              ports:
+                - "3000:3000"
+              depends_on:
                 db:
-                  image: \"postgres:latest\"
-                  environment:
-                    POSTGRES_USER: \"${{ secrets.POSTGRES_USER }}\"
-                    POSTGRES_PASSWORD: \"${{ secrets.POSTGRES_PASSWORD }}\"
-                    POSTGRES_DB: \"${{ secrets.POSTGRES_DB }}\"
-                  expose:
-                    - \"5432\"
-                  volumes:
-                    - db_data:/var/lib/postgresql/data
-                  healthcheck:
-                    test: [\"CMD-SHELL\", \"pg_isready -U ${{ secrets.POSTGRES_USER }}\"]
-                    interval: 10s
-                    retries: 5
-                    start_period: 30s
-                  networks:
-                    - app-network
-
-              volumes:
-                db_data:
-
+                  condition: service_healthy
+              environment:
+                DATABASE_URL: "postgresql://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@db:5432/${{ secrets.POSTGRES_DB }}"
+                NODE_ENV: "production"
+                SESSION_SECRET: "${{ secrets.SESSION_SECRET }}"
               networks:
-                app-network:
-              EOC
+                - app-network
 
-              # Deploy using Docker Compose
-              sudo docker-compose -f /home/ubuntu/docker-compose.yaml down || true
-              sudo docker-compose -f /home/ubuntu/docker-compose.yaml up -d
+            db:
+              image: "postgres:latest"
+              environment:
+                POSTGRES_USER: "${{ secrets.POSTGRES_USER }}"
+                POSTGRES_PASSWORD: "${{ secrets.POSTGRES_PASSWORD }}"
+                POSTGRES_DB: "${{ secrets.POSTGRES_DB }}"
+              expose:
+                - "5432"
+              volumes:
+                - db_data:/var/lib/postgresql/data
+              healthcheck:
+                test: ["CMD-SHELL", "pg_isready -U ${{ secrets.POSTGRES_USER }}"]
+                interval: 10s
+                retries: 5
+                start_period: 30s
+              networks:
+                - app-network
 
-              EOF
+          volumes:
+            db_data:
 
-              # Make the script executable
-              chmod +x /home/ubuntu/deploy_script.sh
-              ./deploy_script.sh
-              "]' \
-            --query 'Command.CommandId' \
-            --output text
+          networks:
+            app-network:
+          ' > docker-compose.yaml
+
+          # Copy docker-compose.yaml to EC2 instance
+          scp -o StrictHostKeyChecking=no -i ${{ secrets.EC2_SSH_KEY }} \
+            docker-compose.yaml ubuntu@${{ secrets.EC2_PUBLIC_IP }}:/home/ubuntu/docker-compose.yaml
+
+      - name: Restart Application using Docker Compose
+        run: |
+          # SSH into EC2 and restart containers
+          ssh -o StrictHostKeyChecking=no -i ${{ secrets.EC2_SSH_KEY }} \
+            ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
+              cd /home/ubuntu
+              sudo docker-compose down || true
+              sudo docker-compose up -d --build
+          EOF
