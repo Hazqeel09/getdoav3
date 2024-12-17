@@ -1,5 +1,5 @@
 # Use ARM64-compatible Node.js image
-FROM node:22-alpine3.19
+FROM arm64v8/node:22-alpine
 
 # Set the working directory
 WORKDIR /myremix
