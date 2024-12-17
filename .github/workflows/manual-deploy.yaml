@@ -34,41 +34,41 @@ jobs:
               "sudo chmod +x /usr/local/bin/docker-compose"
             ]'
 
-      - name: Deploy Application
+      - name: Deploy Application with Docker Compose
         run: |
           aws ssm send-command \
             --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
             --document-name "AWS-RunShellScript" \
             --parameters commands='[
               "cat <<EOF > /home/ubuntu/docker-compose.yaml
-              version: \\"3.8\\"
+              version: "3.8"
               services:
                 remix:
-                  image: ${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest
+                  image: \"${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest\"
                   ports:
-                    - \\"3000:3000\\"
+                    - "3000:3000"
                   depends_on:
                     db:
                       condition: service_healthy
                   environment:
-                    DATABASE_URL: postgresql://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@db:5432/${{ secrets.POSTGRES_DB }}
-                    NODE_ENV: production
-                    SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
+                    DATABASE_URL: \"postgresql://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@db:5432/${{ secrets.POSTGRES_DB }}\"
+                    NODE_ENV: \"production\"
+                    SESSION_SECRET: \"${{ secrets.SESSION_SECRET }}\"
                   networks:
                     - app-network
 
                 db:
-                  image: postgres:latest
+                  image: \"postgres:latest\"
                   environment:
-                    POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
-                    POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
-                    POSTGRES_DB: ${{ secrets.POSTGRES_DB }}
+                    POSTGRES_USER: \"${{ secrets.POSTGRES_USER }}\"
+                    POSTGRES_PASSWORD: \"${{ secrets.POSTGRES_PASSWORD }}\"
+                    POSTGRES_DB: \"${{ secrets.POSTGRES_DB }}\"
                   expose:
-                    - \\"5432\\"
+                    - "5432"
                   volumes:
                     - db_data:/var/lib/postgresql/data
                   healthcheck:
-                    test: [\\"CMD-SHELL\\", \\"pg_isready -U ${{ secrets.POSTGRES_USER }}\\"]
+                    test: [\"CMD-SHELL\", \"pg_isready -U ${{ secrets.POSTGRES_USER }}\"]
                     interval: 10s
                     retries: 5
                     start_period: 30s
@@ -81,5 +81,6 @@ jobs:
               networks:
                 app-network:
               EOF",
+              "sudo docker-compose -f /home/ubuntu/docker-compose.yaml down",
               "sudo docker-compose -f /home/ubuntu/docker-compose.yaml up -d"
             ]'
