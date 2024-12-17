@@ -27,9 +27,9 @@ jobs:
             --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
             --document-name "AWS-RunShellScript" \
             --comment "Deploy application with docker-compose" \
-            --parameters commands="[
-              \\\"curl -o /home/ubuntu/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml\\\",
-              \\\"cd /home/ubuntu\\\",
-              \\\"sudo docker-compose down || true\\\",
-              \\\"sudo docker-compose up -d\\\"
-            ]" \
+            --parameters '{"commands": [
+              "curl -o /home/ubuntu/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml",
+              "cd /home/ubuntu",
+              "sudo docker-compose down || true",
+              "sudo docker-compose up -d"
+            ]}'
