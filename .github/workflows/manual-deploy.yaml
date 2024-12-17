@@ -21,26 +21,25 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Install Docker and Docker Compose via SSM
+      - name: Upload Deployment Script to EC2
         run: |
           aws ssm send-command \
             --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
             --document-name "AWS-RunShellScript" \
             --parameters commands='[
-              "sudo apt update && sudo apt install -y docker.io curl",
-              "sudo systemctl start docker",
-              "sudo systemctl enable docker",
-              "sudo curl -L https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose",
-              "sudo chmod +x /usr/local/bin/docker-compose"
-            ]'
+              "cat <<EOF > /home/ubuntu/deploy_script.sh
+              #!/bin/bash
+              set -e
 
-      - name: Deploy Application with Docker Compose
-        run: |
-          aws ssm send-command \
-            --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
-            --document-name "AWS-RunShellScript" \
-            --parameters commands='[
-              "cat <<EOF > /home/ubuntu/docker-compose.yaml
+              # Install Docker and Docker Compose
+              sudo apt update && sudo apt install -y docker.io curl
+              sudo systemctl start docker
+              sudo systemctl enable docker
+              sudo curl -L https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+              sudo chmod +x /usr/local/bin/docker-compose
+
+              # Create Docker Compose file
+              cat <<EOC > /home/ubuntu/docker-compose.yaml
               version: \"3.8\"
               services:
                 remix:
@@ -80,7 +79,17 @@ jobs:
 
               networks:
                 app-network:
-              EOF",
-              "sudo docker-compose -f /home/ubuntu/docker-compose.yaml down",
-              "sudo docker-compose -f /home/ubuntu/docker-compose.yaml up -d"
-            ]'
+              EOC
+
+              # Deploy using Docker Compose
+              sudo docker-compose -f /home/ubuntu/docker-compose.yaml down || true
+              sudo docker-compose -f /home/ubuntu/docker-compose.yaml up -d
+
+              EOF
+
+              # Make the script executable
+              chmod +x /home/ubuntu/deploy_script.sh
+              ./deploy_script.sh
+              "]' \
+            --query 'Command.CommandId' \
+            --output text
