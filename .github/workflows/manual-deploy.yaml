@@ -1,7 +1,7 @@
 name: Deploy to EC2 via SSM
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -21,59 +21,15 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Copy Docker Compose File to EC2
+      - name: Deploy Application via SSM
         run: |
-          echo 'version: "3.8"
-          services:
-            remix:
-              image: "${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest"
-              ports:
-                - "3000:3000"
-              depends_on:
-                db:
-                  condition: service_healthy
-              environment:
-                DATABASE_URL: "postgresql://${{ secrets.POSTGRES_USER }}:${{ secrets.POSTGRES_PASSWORD }}@db:5432/${{ secrets.POSTGRES_DB }}"
-                NODE_ENV: "production"
-                SESSION_SECRET: "${{ secrets.SESSION_SECRET }}"
-              networks:
-                - app-network
-
-            db:
-              image: "postgres:latest"
-              environment:
-                POSTGRES_USER: "${{ secrets.POSTGRES_USER }}"
-                POSTGRES_PASSWORD: "${{ secrets.POSTGRES_PASSWORD }}"
-                POSTGRES_DB: "${{ secrets.POSTGRES_DB }}"
-              expose:
-                - "5432"
-              volumes:
-                - db_data:/var/lib/postgresql/data
-              healthcheck:
-                test: ["CMD-SHELL", "pg_isready -U ${{ secrets.POSTGRES_USER }}"]
-                interval: 10s
-                retries: 5
-                start_period: 30s
-              networks:
-                - app-network
-
-          volumes:
-            db_data:
-
-          networks:
-            app-network:
-          ' > docker-compose.yaml
-
-          # Copy docker-compose.yaml to EC2 instance
-          scp -o StrictHostKeyChecking=no -i ${{ secrets.EC2_SSH_KEY }} \
-            docker-compose.yaml ubuntu@${{ secrets.EC2_PUBLIC_IP }}:/home/ubuntu/docker-compose.yaml
-
-      - name: Restart Application using Docker Compose
-        run: |
-          # SSH into EC2 and restart containers
-          ssh -o StrictHostKeyChecking=no -i ${{ secrets.EC2_SSH_KEY }} \
-            ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
-              cd /home/ubuntu
-              sudo docker-compose down || true
-              sudo docker-compose up -d --build
-          EOF
+          aws ssm send-command \
+            --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
+            --document-name "AWS-RunShellScript" \
+            --comment "Deploy application with docker-compose" \
+            --parameters commands="[
+              \\\"curl -o /home/ubuntu/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml\\\",
+              \\\"cd /home/ubuntu\\\",
+              \\\"sudo docker-compose down || true\\\",
+              \\\"sudo docker-compose up -d\\\"
+            ]" \
