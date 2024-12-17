@@ -34,6 +34,8 @@ jobs:
               "echo \"POSTGRES_DB=${{ secrets.POSTGRES_DB }}\" >> /home/ubuntu/.env",
               "echo \"SESSION_SECRET=${{ secrets.SESSION_SECRET }}\" >> /home/ubuntu/.env",
 
+              "curl -o /home/ubuntu/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml",
+
               "cd /home/ubuntu",
 
               "sudo docker-compose --env-file /home/ubuntu/.env pull",
