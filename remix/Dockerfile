@@ -1,10 +1,9 @@
-# Use ARM64-compatible Node.js image
-FROM arm64v8/node:22-alpine
+# syntax=docker/dockerfile:1.4
+FROM --platform=linux/arm64 node:22-alpine
 
-# Set the working directory
 WORKDIR /myremix
 
-# Install pnpm using corepack (comes with Node.js 16+)
+# Install pnpm using corepack
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
 # Copy lock file and package.json first to leverage Docker caching
