@@ -48,10 +48,10 @@ jobs:
 
                 "if [ \"$CURRENT_DIR\" = \"blue\" ]; then",
                 "  NEXT_DIR=\"green\"",
-                "  NEXT_PORT=3001",
+                "  NEXT_PORT=3000",
                 "else",
                 "  NEXT_DIR=\"blue\"",
-                "  NEXT_PORT=3000",
+                "  NEXT_PORT=3001",
                 "fi",
 
                 "echo \"[INFO] Current deployment: $CURRENT_DIR\"",
