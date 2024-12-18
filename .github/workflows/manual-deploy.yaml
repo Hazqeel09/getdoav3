@@ -74,8 +74,9 @@ jobs:
                 "chmod 600 /home/ubuntu/.env",
 
                 "echo \"[INFO] Updating docker-compose.yaml with port: $NEXT_PORT\"",
-                "sudo sed -i 's/${PORT:-3000}/$NEXT_PORT:3000/' $WORKDIR/$NEXT_DIR/docker-compose.yaml",
-                "sudo sed -i 's/${PORT:-:3000}/$NEXT_PORT:3000/' $WORKDIR/$NEXT_DIR/docker-compose.yaml",
+                "sudo sed -i \"s/\\${PORT:-3000}/$NEXT_PORT:3000/\" $WORKDIR/$NEXT_DIR/docker-compose.yaml",
+                "sudo sed -i \"s/\\${PORT:-:3000}/$NEXT_PORT:3000/\" $WORKDIR/$NEXT_DIR/docker-compose.yaml",
+
 
                 "echo \"[INFO] Pulling Docker images...\"",
                 "if ! sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml --env-file /home/ubuntu/.env pull; then",
