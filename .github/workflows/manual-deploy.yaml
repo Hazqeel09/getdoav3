@@ -49,16 +49,16 @@ jobs:
                 "chmod 600 /home/ubuntu/.env",
 
                 "echo \"[INFO] Determining current and next deployment directories...\"",
-                "if [ -f $WORKDIR/current ]; then",
-                "  CURRENT_DIR=$(cat $WORKDIR/current)",
+                "if [ -f \"$WORKDIR/current\" ]; then",
+                "  CURRENT_DIR=$(cat \"$WORKDIR/current\")",
                 "else",
-                "  CURRENT_DIR=blue",
+                "  CURRENT_DIR=\"blue\"",
                 "fi",
 
-                "if [ $CURRENT_DIR == blue ]; then",
-                "  NEXT_DIR=green",
+                "if [ \"$CURRENT_DIR\" = \"blue\" ]; then",
+                "  NEXT_DIR=\"green\"",
                 "else",
-                "  NEXT_DIR=blue",
+                "  NEXT_DIR=\"blue\"",
                 "fi",
 
                 "echo \"[INFO] Current directory is: $CURRENT_DIR\"",
