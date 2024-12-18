@@ -30,7 +30,7 @@ jobs:
           COMMAND_ID=$(aws ssm send-command \
             --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
             --document-name "AWS-RunShellScript" \
-            --comment "Deploy application with docker-compose and .env file" \
+            --comment "Deploy application with blue-green strategy" \
             --parameters '{"commands": [
                 "set -e",
 
@@ -38,6 +38,31 @@ jobs:
                 "WORKDIR=/home/ubuntu/deployment",
                 "BLUE_DIR=$WORKDIR/blue",
                 "GREEN_DIR=$WORKDIR/green",
+
+                "echo \"[INFO] Checking active deployment...\"",
+                "if [ -f \"$WORKDIR/current\" ]; then",
+                "  CURRENT_DIR=$(cat \"$WORKDIR/current\")",
+                "else",
+                "  CURRENT_DIR=\"blue\"",
+                "fi",
+
+                "if [ \"$CURRENT_DIR\" = \"blue\" ]; then",
+                "  NEXT_DIR=\"green\"",
+                "  NEXT_PORT=3001",
+                "else",
+                "  NEXT_DIR=\"blue\"",
+                "  NEXT_PORT=3000",
+                "fi",
+
+                "echo \"[INFO] Current deployment: $CURRENT_DIR\"",
+                "echo \"[INFO] Next deployment: $NEXT_DIR on port $NEXT_PORT\"",
+
+                "echo \"[INFO] Preparing deployment directory: $NEXT_DIR\"",
+                "mkdir -p $WORKDIR/$NEXT_DIR",
+                "if ! curl -o $WORKDIR/$NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml; then",
+                "  echo \"[ERROR] Failed to fetch docker-compose.yaml\" >&2",
+                "  exit 1",
+                "fi",
 
                 "echo \"[INFO] Writing secrets to .env file...\"",
                 "rm -f /home/ubuntu/.env",
@@ -48,28 +73,8 @@ jobs:
                 "echo \"SESSION_SECRET=${{ secrets.SESSION_SECRET }}\" >> /home/ubuntu/.env",
                 "chmod 600 /home/ubuntu/.env",
 
-                "echo \"[INFO] Determining current and next deployment directories...\"",
-                "if [ -f \"$WORKDIR/current\" ]; then",
-                "  CURRENT_DIR=$(cat \"$WORKDIR/current\")",
-                "else",
-                "  CURRENT_DIR=\"blue\"",
-                "fi",
-
-                "if [ \"$CURRENT_DIR\" = \"blue\" ]; then",
-                "  NEXT_DIR=\"green\"",
-                "else",
-                "  NEXT_DIR=\"blue\"",
-                "fi",
-
-                "echo \"[INFO] Current directory is: $CURRENT_DIR\"",
-                "echo \"[INFO] Next directory will be: $NEXT_DIR\"",
-
-                "echo \"[INFO] Preparing deployment directory: $NEXT_DIR\"",
-                "mkdir -p $WORKDIR/$NEXT_DIR",
-                "if ! curl -o $WORKDIR/$NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml; then",
-                "  echo \"[ERROR] Failed to fetch docker-compose.yaml\" >&2",
-                "  exit 1",
-                "fi",
+                "echo \"[INFO] Updating docker-compose.yaml with port: $NEXT_PORT\"",
+                "sed -i 's/${PORT:-3000}/$NEXT_PORT:3000/' $WORKDIR/$NEXT_DIR/docker-compose.yaml",
 
                 "echo \"[INFO] Pulling Docker images...\"",
                 "if ! sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml --env-file /home/ubuntu/.env pull; then",
@@ -83,23 +88,29 @@ jobs:
                 "  exit 1",
                 "fi",
 
-                "echo \"[INFO] Stopping old containers in ...\"",
-                "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
-                "  echo \"Stopping old containers in $CURRENT_DIR\"",
-                "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down || echo \"[WARNING] Failed to stop old containers\"",
-                "else",
-                "  echo \"[INFO] No existing deployment found in $CURRENT_DIR to stop\"",
+                "echo \"[INFO] Waiting for new containers to become healthy...\"",
+                "MAX_RETRIES=30",
+                "RETRY_COUNT=0",
+                "until [ $RETRY_COUNT -ge $MAX_RETRIES ] || curl -s http://localhost:$NEXT_PORT/health; do",
+                "  RETRY_COUNT=$((RETRY_COUNT + 1))",
+                "  echo \"[INFO] Waiting for new deployment at port $NEXT_PORT... ($RETRY_COUNT/$MAX_RETRIES)\"",
+                "  sleep 5",
+                "done",
+
+                "if [ $RETRY_COUNT -ge $MAX_RETRIES ]; then",
+                "  echo \"[ERROR] New deployment failed health check.\" >&2",
+                "  exit 1",
                 "fi",
 
-                "echo \"[INFO] Cleaning up unused Docker resources...\"",
-                "sudo docker system prune -f -a --volumes || echo \"[WARNING] Failed to clean up unused Docker resources\"",
+                "echo \"[INFO] Stopping old containers in $CURRENT_DIR ...\"",
+                "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
+                "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down",
+                "else",
+                "  echo \"[INFO] No existing deployment found to stop\"",
+                "fi",
 
-                "echo \"[INFO] Updating active deployment marker...\"",
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
-                "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\"",
-
-                "echo \"[DEBUG] Current directory: $(sudo cat $WORKDIR/current)\"",
-                "sudo docker ps -a"
+                "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\""
             ]}' \
             --query "Command.CommandId" \
             --output text)
@@ -107,13 +118,3 @@ jobs:
           echo "::endgroup::"
           echo "Command ID: $COMMAND_ID"
           echo "::set-output name=command_id::$COMMAND_ID"
-
-      - name: Fetch Command Output
-        run: |
-          echo "::group::Fetching Command Output"
-          aws ssm list-command-invocations \
-            --command-id ${{ steps.deploy_ssm.outputs.command_id }} \
-            --details \
-            --output text \
-            || echo "[ERROR] Failed to fetch command output. Check the SSM console for details."
-          echo "::endgroup::"
