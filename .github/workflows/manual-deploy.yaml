@@ -35,14 +35,11 @@ jobs:
                 "set -e",
 
                 "echo \"[INFO] Setting up directories and environment...\"",
-
-                "# Define working directories",
                 "WORKDIR=/home/ubuntu/deployment",
                 "BLUE_DIR=$WORKDIR/blue",
                 "GREEN_DIR=$WORKDIR/green",
 
                 "echo \"[INFO] Writing secrets to .env file...\"",
-                "# Write secrets to .env file securely",
                 "rm -f /home/ubuntu/.env",
                 "echo \"DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}\" > /home/ubuntu/.env",
                 "echo \"POSTGRES_USER=${{ secrets.POSTGRES_USER }}\" >> /home/ubuntu/.env",
@@ -52,12 +49,10 @@ jobs:
                 "chmod 600 /home/ubuntu/.env",
 
                 "echo \"[INFO] Determining current and next deployment directories...\"",
-                "# Determine current active directory and compute the next",
                 "CURRENT_DIR=$(sudo cat $WORKDIR/current 2>/dev/null || echo \"blue\")",
                 "NEXT_DIR=$([ \"$CURRENT_DIR\" == \"blue\" ] && echo \"green\" || echo \"blue\")",
 
                 "echo \"[INFO] Preparing deployment directory: $NEXT_DIR\"",
-                "# Prepare the new directory",
                 "mkdir -p $WORKDIR/$NEXT_DIR",
                 "if ! curl -o $WORKDIR/$NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml; then",
                 "  echo \"[ERROR] Failed to fetch docker-compose.yaml\" >&2",
@@ -65,21 +60,18 @@ jobs:
                 "fi",
 
                 "echo \"[INFO] Pulling Docker images...\"",
-                "# Pull the latest Docker images",
                 "if ! sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml --env-file /home/ubuntu/.env pull; then",
-                "  echo \"[ERROR] Failed to pull Docker images\" >&2",
+                "  echo \"[ERROR] Docker Compose pull failed.\" >&2",
                 "  exit 1",
                 "fi",
 
-                "echo \"[INFO] Starting new containers...\"",
-                "# Start the new deployment",
+                "echo \"[INFO] Starting new containers in $NEXT_DIR ...\"",
                 "if ! sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml --env-file /home/ubuntu/.env up -d; then",
-                "  echo \"[ERROR] Failed to start new containers\" >&2",
+                "  echo \"[ERROR] Docker Compose up failed.\" >&2",
                 "  exit 1",
                 "fi",
 
                 "echo \"[INFO] Stopping old containers...\"",
-                "# Stop old containers if the configuration exists in the current directory",
                 "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
                 "  echo \"Stopping old containers in $CURRENT_DIR\"",
                 "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down || echo \"[WARNING] Failed to stop old containers\"",
@@ -88,14 +80,14 @@ jobs:
                 "fi",
 
                 "echo \"[INFO] Cleaning up unused Docker resources...\"",
-                "# Clean up unused Docker resources",
                 "sudo docker system prune -f -a --volumes || echo \"[WARNING] Failed to clean up unused Docker resources\"",
 
                 "echo \"[INFO] Updating active deployment marker...\"",
-                "# Update the current active directory marker",
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
+                "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\"",
 
-                "echo \"[SUCCESS] Deployment complete. Active directory: $NEXT_DIR\""
+                "echo \"[DEBUG] Current directory: $(sudo cat $WORKDIR/current)\"",
+                "sudo docker ps -a"
             ]}' \
             --query "Command.CommandId" \
             --output text)
