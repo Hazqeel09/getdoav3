@@ -29,16 +29,15 @@ jobs:
             --comment "Deploy application with docker-compose and injected environment variables" \
             --parameters '{"commands": [
                 "set -e",
-
                 "WORKDIR=/home/ubuntu/deployment",
                 "BLUE_DIR=$WORKDIR/blue",
                 "GREEN_DIR=$WORKDIR/green",
-                "CURRENT_DIR=$(docker ps --filter name=my-app --format \"{{.Names}}\")",
-                "NEXT_DIR=$([ \"$CURRENT_DIR\" == \"$BLUE_DIR\" ] && echo \"$GREEN_DIR\" || echo \"$BLUE_DIR\")",
+                "CURRENT_DIR=$(docker ps --filter name=my-app --format \\\"{{.Names}}\\\")",
+                "NEXT_DIR=$([ \\\"$CURRENT_DIR\\\" == \\\"$BLUE_DIR\\\" ] && echo \\\"$GREEN_DIR\\\" || echo \\\"$BLUE_DIR\\\")",
 
                 "mkdir -p $NEXT_DIR",
                 
-                "curl -o $NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml",
+                "curl -o $NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/main/docker-compose.yaml",
 
                 "docker-compose -f $NEXT_DIR/docker-compose.yaml pull",
 
@@ -52,6 +51,6 @@ jobs:
                 "docker ps --filter name=my-app --quiet | xargs -r docker stop",
                 "docker system prune -f",
 
-                "echo \"$NEXT_DIR\" > $WORKDIR/current",
-                "echo \"Switched to $NEXT_DIR\""
+                "echo \\\"$NEXT_DIR\\\" > $WORKDIR/current",
+                "echo \\\"Switched to $NEXT_DIR\\\""
             ]}'
