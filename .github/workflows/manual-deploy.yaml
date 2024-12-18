@@ -52,13 +52,13 @@ jobs:
                 "if [ -f $WORKDIR/current ]; then",
                 "  CURRENT_DIR=$(cat $WORKDIR/current)",
                 "else",
-                "  CURRENT_DIR=\"blue\"",
+                "  CURRENT_DIR=blue",
                 "fi",
 
-                "if [ \"$CURRENT_DIR\" == \"blue\" ]; then",
-                "  NEXT_DIR=\"green\"",
+                "if [ $CURRENT_DIR == blue ]; then",
+                "  NEXT_DIR=green",
                 "else",
-                "  NEXT_DIR=\"blue\"",
+                "  NEXT_DIR=blue",
                 "fi",
 
                 "echo \"[INFO] Current directory is: $CURRENT_DIR\"",
