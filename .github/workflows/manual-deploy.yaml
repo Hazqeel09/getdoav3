@@ -22,8 +22,9 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy Application via SSM
+        id: deploy_ssm
         run: |
-          aws ssm send-command \
+          COMMAND_ID=$(aws ssm send-command \
             --instance-ids "${{ secrets.EC2_INSTANCE_ID }}" \
             --document-name "AWS-RunShellScript" \
             --comment "Deploy application with docker-compose and injected environment variables" \
@@ -65,4 +66,15 @@ jobs:
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
 
                 "echo \"Deployment complete. Active directory: $NEXT_DIR\""
-            ]}'
+            ]}' \
+            --query "Command.CommandId" \
+            --output text)
+
+          echo "Command ID: $COMMAND_ID"
+          echo "::set-output name=command_id::$COMMAND_ID"
+
+      - name: Fetch Command Output
+        run: |
+          aws ssm list-command-invocations \
+            --command-id ${{ steps.deploy_ssm.outputs.command_id }} \
+            --details
