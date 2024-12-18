@@ -54,7 +54,7 @@ jobs:
                 "curl -o $WORKDIR/$NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml",
 
                 "# Pull new images",
-                "sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml pull",
+                "sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml  --env-file /home/ubuntu/.env pull",
 
                 "# Start the new deployment",
                 "sudo docker-compose -f $WORKDIR/$NEXT_DIR/docker-compose.yaml --env-file /home/ubuntu/.env up -d",
