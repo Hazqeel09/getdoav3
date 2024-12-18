@@ -4,7 +4,7 @@ services:
   remix:
     image: ${DOCKER_USERNAME}/getdoa-remix:latest
     ports:
-      - "${PORT:-3000}:3000"
+      - "${PORT:-3000}"
     depends_on:
       db:
         condition: service_healthy
