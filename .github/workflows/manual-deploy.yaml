@@ -48,10 +48,15 @@ jobs:
                 "sudo docker-compose -f $NEXT_DIR/docker-compose.yaml pull",
 
                 "# Start the new deployment",
-                "sudo docker-compose -f $NEXT_DIR/docker-compose.yaml up -d",
+                "sudo docker-compose -f $NEXT_DIR/docker-compose.yaml up -d -e DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }} -e POSTGRES_USER=${{ secrets.POSTGRES_USER }} -e POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} -e POSTGRES_DB=${{ secrets.POSTGRES_DB }} -e SESSION_SECRET=${{ secrets.SESSION_SECRET }}",
 
-                "# Stop old containers",
-                "sudo docker-compose -f $CURRENT_DIR/docker-compose.yaml down",
+                "# Stop old containers if docker-compose.yaml exists in CURRENT_DIR",
+                "if [ -f $CURRENT_DIR/docker-compose.yaml ]; then",
+                "  echo \"Stopping old containers in $CURRENT_DIR\"",
+                "  sudo docker-compose -f $CURRENT_DIR/docker-compose.yaml down",
+                "else",
+                "  echo \"No existing deployment to stop in $CURRENT_DIR\"",
+                "fi",
 
                 "# Clean up unused Docker resources",
                 "sudo docker system prune -f",
