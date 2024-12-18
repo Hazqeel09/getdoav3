@@ -35,29 +35,29 @@ jobs:
                 "GREEN_DIR=$WORKDIR/green",
 
                 "# Determine current active directory",
-                "CURRENT_DIR=$(cat $WORKDIR/current 2>/dev/null || echo \"blue\")",
+                "CURRENT_DIR=$(sudo cat $WORKDIR/current 2>/dev/null || echo \"blue\")",
                 "NEXT_DIR=$([ \"$CURRENT_DIR\" == \"$BLUE_DIR\" ] && echo \"$GREEN_DIR\" || echo \"$BLUE_DIR\")",
 
-                "echo \"Switching to $NEXT_DIR\"",
+                "echo \"Switching to $NEXT_DIR\"", 
 
                 "# Prepare the new directory",
                 "mkdir -p $NEXT_DIR",
                 "curl -o $NEXT_DIR/docker-compose.yaml https://raw.githubusercontent.com/Hazqeel09/getdoav3/refs/heads/main/docker-compose.yaml",
 
                 "# Pull new images",
-                "docker-compose -f $NEXT_DIR/docker-compose.yaml pull",
+                "sudo docker-compose -f $NEXT_DIR/docker-compose.yaml pull",
 
                 "# Start the new deployment",
-                "docker-compose -f $NEXT_DIR/docker-compose.yaml up -d",
+                "sudo docker-compose -f $NEXT_DIR/docker-compose.yaml up -d",
 
                 "# Stop old containers",
-                "docker-compose -f $CURRENT_DIR/docker-compose.yaml down",
+                "sudo docker-compose -f $CURRENT_DIR/docker-compose.yaml down",
 
                 "# Clean up unused Docker resources",
-                "docker system prune -f",
+                "sudo docker system prune -f",
 
                 "# Mark the new directory as active",
-                "echo \"$NEXT_DIR\" > $WORKDIR/current",
+                "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
 
                 "echo \"Deployment complete. Active directory: $NEXT_DIR\""
             ]}'
