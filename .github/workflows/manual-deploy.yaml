@@ -49,8 +49,20 @@ jobs:
                 "chmod 600 /home/ubuntu/.env",
 
                 "echo \"[INFO] Determining current and next deployment directories...\"",
-                "CURRENT_DIR=$(sudo cat $WORKDIR/current 2>/dev/null || echo \"blue\")",
-                "NEXT_DIR=$([ \"$CURRENT_DIR\" == \"blue\" ] && echo \"green\" || echo \"blue\")",
+                "if [ -f $WORKDIR/current ]; then",
+                "  CURRENT_DIR=$(cat $WORKDIR/current)",
+                "else",
+                "  CURRENT_DIR=\"blue\"",
+                "fi",
+
+                "if [ \"$CURRENT_DIR\" == \"blue\" ]; then",
+                "  NEXT_DIR=\"green\"",
+                "else",
+                "  NEXT_DIR=\"blue\"",
+                "fi",
+
+                "echo \"[INFO] Current directory is: $CURRENT_DIR\"",
+                "echo \"[INFO] Next directory will be: $NEXT_DIR\"",
 
                 "echo \"[INFO] Preparing deployment directory: $NEXT_DIR\"",
                 "mkdir -p $WORKDIR/$NEXT_DIR",
@@ -71,7 +83,7 @@ jobs:
                 "  exit 1",
                 "fi",
 
-                "echo \"[INFO] Stopping old containers...\"",
+                "echo \"[INFO] Stopping old containers in ...\"",
                 "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
                 "  echo \"Stopping old containers in $CURRENT_DIR\"",
                 "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down || echo \"[WARNING] Failed to stop old containers\"",
