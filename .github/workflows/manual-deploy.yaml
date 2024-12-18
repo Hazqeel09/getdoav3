@@ -32,7 +32,7 @@ jobs:
             --document-name "AWS-RunShellScript" \
             --comment "Deploy application with docker-compose and .env file" \
             --parameters '{"commands": [
-                "set -e", # Exit immediately if any command fails
+                "set -e",
 
                 "echo \"[INFO] Setting up directories and environment...\"",
 
