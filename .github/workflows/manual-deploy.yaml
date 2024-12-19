@@ -115,7 +115,3 @@ jobs:
             ]}' \
             --query "Command.CommandId" \
             --output text)
-
-          echo "::endgroup::"
-          echo "Command ID: $COMMAND_ID"
-          echo "::set-output name=command_id::$COMMAND_ID"
