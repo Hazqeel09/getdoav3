@@ -16,7 +16,7 @@ services:
       - app-network
 
   db:
-    image: arm64v8/postgres:latest
+    image: postgres:latest
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
