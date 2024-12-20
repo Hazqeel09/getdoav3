@@ -27,4 +27,5 @@ jobs:
         with:
           context: ./remix
           push: true
+          platforms: linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest
