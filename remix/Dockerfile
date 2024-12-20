@@ -2,7 +2,7 @@
 
 # Use slim Node.js image for smaller base
 ARG NODE_VERSION=22.12.0
-FROM node:${NODE_VERSION}-slim as base
+FROM --platform=linux/amd64 node:${NODE_VERSION}-slim as base
 
 # Set working directory and production environment
 WORKDIR /app
