@@ -42,9 +42,12 @@ export default function Index() {
               Occasionally, we fail to pray in a comprehensive manner.
             </span>
           </p>
-          <button className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200">
+          <Link
+            to="/all-doa"
+            className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"
+          >
             Start now →
-          </button>
+          </Link>
         </div>
 
         {/* Right Illustration */}
