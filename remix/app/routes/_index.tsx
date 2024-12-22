@@ -8,6 +8,11 @@ export const meta: MetaFunction = () => {
       name: "description",
       content: "Create your custom arrangements of Doa / prayers",
     },
+    {
+      name: "keywords",
+      content:
+        "doa, prayer, solat, muslim, doa selepas solat, doa majlis, doa kenduri, doa kesyukuran, doa mohon rezeki, doa minta kesihatan, doa minta kebahagiaan, doa minta keberkatan, doa minta kejayaan, doa minta perlindungan, doa minta pertolongan, doa minta petunjuk, doa minta kejayaan, after solat prayer, event prayer, thanksgiving prayer, prayer for sustenance, prayer for health, prayer for happiness, prayer for blessings, prayer for success, prayer for protection, prayer for help, prayer for guidance, prayer for success",
+    },
   ];
 };
 
