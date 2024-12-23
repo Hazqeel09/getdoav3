@@ -5,6 +5,9 @@ export default {
   content: ["./app/**/{**,.client,.server}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'objective-left': "url('/assets/bg-1.png')"
+      },
       fontFamily: {
         sans: [
           "Inter",
