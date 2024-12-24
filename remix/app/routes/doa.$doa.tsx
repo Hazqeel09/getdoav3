@@ -46,44 +46,46 @@ export default function DoaDetail() {
             </SelectContent>
           </Select>
         </div>
-        <Card className="mb-4 overflow-hidden">
-          <CardHeader>
-            <CardTitle>{language === "en" ? doa.name_en : doa.name_my}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="mt-2 text-right font-arabic text-xl leading-relaxed">
-              {doa.content}
-            </div>
-            <div className="space-y-2 mt-4">
-              <div>
-                <div className="text-sm font-medium text-gray-500">Reference</div>
-                <div className="text-sm">
-                  {language === "en" ? doa.reference_en : doa.reference_my}
+        <div className="flex flex-col  items-start gap-4">
+          <Card className="mb-4 overflow-hidden flex-1">
+            <CardHeader>
+              <CardTitle>{language === "en" ? doa.name_en : doa.name_my}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="mt-2 text-right font-arabic text-xl leading-relaxed">
+                {doa.content}
+              </div>
+              <div className="space-y-2 mt-4">
+                <div>
+                  <div className="text-sm font-medium text-gray-500">Reference</div>
+                  <div className="text-sm">
+                    {language === "en" ? doa.reference_en : doa.reference_my}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-sm font-medium text-gray-500">Meaning</div>
+                  <div className="text-sm">
+                    {language === "en" ? doa.meaning_en : doa.meaning_my}
+                  </div>
+                </div>
+                <div>
+                  <div className="text-sm font-medium text-gray-500 mb-1">Categories</div>
+                  <div className="flex flex-wrap gap-1">
+                    {doa.category_names.map((category, idx) => (
+                      <Badge key={idx} variant="secondary" className="text-xs">
+                        {category}
+                      </Badge>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <div>
-                <div className="text-sm font-medium text-gray-500">Meaning</div>
-                <div className="text-sm">
-                  {language === "en" ? doa.meaning_en : doa.meaning_my}
-                </div>
-              </div>
-              <div>
-                <div className="text-sm font-medium text-gray-500 mb-1">Categories</div>
-                <div className="flex flex-wrap gap-1">
-                  {doa.category_names.map((category, idx) => (
-                    <Badge key={idx} variant="secondary" className="text-xs">
-                      {category}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        <div className="fixed right-8 ">
-          <Link to="/all-doa" className="font-small text-black hover:bg-gray-200 px-4 py-2 rounded-xl ">
-            &larr; Back to All Doa List
-          </Link>
+            </CardContent>
+          </Card>
+          <div className="self-end">
+            <Link to="/all-doa" className="font-small text-black hover:bg-gray-200 px-4 py-2 rounded-xl">
+              &larr; Back to All Doa List
+            </Link>
+          </div>
         </div>
       </div>
     </div>
