@@ -112,6 +112,9 @@ jobs:
 
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
                 "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\""
+
+                "echo \"[INFO] Pruning unused Docker objects...\"",
+                "sudo docker system prune -a"
             ]}' \
             --query "Command.CommandId" \
             --output text)
