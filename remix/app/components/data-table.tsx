@@ -25,6 +25,7 @@ import {
 } from "../components/ui/select";
 import { Badge } from "../components/ui/badge";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "@remix-run/react";
 
 type Language = "en" | "my";
 
@@ -140,6 +141,7 @@ interface DataTableProps {
   data: Doa[];
 }
 
+// Inside the DataTable component
 export function DataTable({ data }: DataTableProps) {
   const [language, setLanguage] = useState<Language>("en");
   const columns = getColumns(language);
@@ -176,7 +178,9 @@ export function DataTable({ data }: DataTableProps) {
       {/* Mobile View */}
       <div className="block md:hidden">
         {table.getRowModel().rows.map((row) => (
-          <MobileDoaCard key={row.id} data={row.original} language={language} />
+          <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents" key={row.id}>
+            <MobileDoaCard data={row.original} language={language} />
+          </Link>
         ))}
       </div>
 
@@ -207,16 +211,18 @@ export function DataTable({ data }: DataTableProps) {
                   table.getRowModel().rows.map((row) => (
                     <TableRow
                       key={row.id}
-                      className="hover:bg-gray-50 transition-colors"
+                      className="hover:bg-gray-50 transition-colors cursor-pointer"
                     >
-                      {row.getVisibleCells().map((cell) => (
-                        <TableCell key={cell.id} className="py-4">
-                          {flexRender(
-                            cell.column.columnDef.cell,
-                            cell.getContext()
-                          )}
-                        </TableCell>
-                      ))}
+                      <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents">
+                        {row.getVisibleCells().map((cell) => (
+                          <TableCell key={cell.id} className="py-4">
+                            {flexRender(
+                              cell.column.columnDef.cell,
+                              cell.getContext()
+                            )}
+                          </TableCell>
+                        ))}
+                      </Link>
                     </TableRow>
                   ))
                 ) : (
