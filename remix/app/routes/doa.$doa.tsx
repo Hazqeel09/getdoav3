@@ -186,7 +186,7 @@ export default function DoaDetail() {
             </div>
           </div>
 
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-centre gap-4">
             <Card className="mb-4 overflow-hidden flex-1">
               <CardHeader>
                 <CardTitle>
@@ -195,7 +195,7 @@ export default function DoaDetail() {
               </CardHeader>
               <CardContent>
                 <div
-                  className="mt-2 text-right font-arabic text-xl leading-relaxed"
+                  className="mt-2 text-right font-simpo text-3xl md:text-4xl leading-relaxed md:leading-[2]"
                   lang="ar"
                   dir="rtl"
                 >

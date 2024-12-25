@@ -16,7 +16,7 @@ Current [Figma](https://www.figma.com/design/S01ARywZf83zlFaAb1Sg2g/Get-Doa?node
 2. Create custom order of Doa for Doa after prayer
 3. Download Doa image
 4. Share Doa with link or QR
-5. Endpoint to collab with SedekahJe
+5. Endpoint to collab with SedekahJe :white_check_mark:
 
 ### Third Phase (Sub Functions #1)
 

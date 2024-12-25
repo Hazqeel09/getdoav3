@@ -60,7 +60,7 @@ const MobileDoaCard = ({
         <h3 className="font-medium text-lg text-gray-900">
           {language === "en" ? data.name_en : data.name_my}
         </h3>
-        <div className="mt-2 text-right font-arabic text-xl leading-relaxed">
+        <div className="mt-2 text-right font-simpo text-2xl leading-relaxed">
           {data.content}
         </div>
       </div>
@@ -109,7 +109,7 @@ const getColumns = (language: Language): ColumnDef<Doa>[] => [
     accessorKey: "content",
     header: "Content",
     cell: ({ getValue }) => (
-      <div className="text-right font-arabic text-xl leading-relaxed px-4">
+      <div className="text-right font-simpo text-3xl leading-relaxed px-4">
         {getValue() as string}
       </div>
     ),
@@ -184,7 +184,11 @@ export function DataTable({ data }: DataTableProps) {
       {/* Mobile View */}
       <div className="block md:hidden">
         {table.getRowModel().rows.map((row) => (
-          <Link to={`/doa/${row.original.slug}`} className="contents" key={row.id}>
+          <Link
+            to={`/doa/${row.original.slug}`}
+            className="contents"
+            key={row.id}
+          >
             <MobileDoaCard data={row.original} language={language} />
           </Link>
         ))}
@@ -219,7 +223,10 @@ export function DataTable({ data }: DataTableProps) {
                       key={row.id}
                       className="hover:bg-gray-50 transition-colors cursor-pointer"
                     >
-                      <Link to={`/doa/${row.original.slug}`} className="contents">
+                      <Link
+                        to={`/doa/${row.original.slug}`}
+                        className="contents"
+                      >
                         {row.getVisibleCells().map((cell) => (
                           <TableCell key={cell.id} className="py-4">
                             {flexRender(

@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'objective-left': "url('/assets/bg-1.png')"
+        "objective-left": "url('/assets/bg-1.png')",
       },
       fontFamily: {
         sans: [
@@ -19,6 +19,7 @@ export default {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
+        simpo: ["Simpo", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
