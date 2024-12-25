@@ -39,6 +39,7 @@ export default {
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          outline: "#006D77",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {

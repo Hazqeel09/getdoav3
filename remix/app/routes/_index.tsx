@@ -35,7 +35,6 @@ export default function Index() {
           </button>
         </div>
       </header>
-
       <main id="hero" className="bg-blue-50 flex justify-center py-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 px-10 md:px-20 w-full max-w-screen-lg">
           {/* Left Text Section */}
