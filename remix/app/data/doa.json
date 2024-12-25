@@ -7,7 +7,11 @@
     "reference_en": "Narrated by Ahmad (15360)",
     "meaning_my": "Kami hayati pagi ini di atas landasan fitrah dan perwatakan Islam, berpegang kepada kalimah ikhlas (kalimah syahadah), dan berpegang kepada agama Nabi kami Muhammad SAW yang juga agama ayah kami Ibrahim, yang berada di atas jalan yang lurus, muslim dan tidak tergolong dalam golongan orang-orang yang musyrik",
     "meaning_en": "We rise upon the fitrah of al-Islam, and the word of pure faith, and upon the religion of our Prophet Muhammad SAW and the religion of our forefather Ibrahim who was a Muslim and of true faith and was not of those who associate others with Allah",
-    "category_names": ["Bacaan Pagi", "Morning Supplication"]
+    "category_names": [
+      "Bacaan Pagi",
+      "Morning Supplication"
+    ],
+    "slug": "pagi-doa-ditetapkan-islam"
   },
   {
     "name_my": "[PETANG] Doa Ditetapkan Islam",
@@ -17,7 +21,11 @@
     "reference_en": "Narrated by Ahmad (15360)",
     "meaning_my": "Kami hayati petang ini di atas landasan fitrah dan perwatakan Islam, berpegang kepada kalimah ikhlas (kalimah syahadah), dan berpegang kepada agama Nabi kami Muhammad SAW yang juga agama ayah kami Ibrahim, yang berada di atas jalan yang lurus, muslim dan tidak tergolong dalam golongan orang-orang yang musyrik",
     "meaning_en": "We live this evening grounded in the natural disposition of Islam, and the word of pure faith, and upon the religion of our Prophet Muhammad SAW and the religion of our forefather Ibrahim who was a Muslim and of true faith and was not of those who associate others with Allah",
-    "category_names": ["Bacaan Petang", "Evening Supplication"]
+    "category_names": [
+      "Bacaan Petang",
+      "Evening Supplication"
+    ],
+    "slug": "petang-doa-ditetapkan-islam"
   },
   {
     "name_my": "Penghulu Bagi Doa Keampunan",
@@ -27,7 +35,13 @@
     "reference_en": "Narrated by Bukhari (6306)",
     "meaning_my": "Ya Allah, Engkau adalah Tuhanku, tidak ada Tuhan yang berhak disembah kecuali Engkau, Engkaulah yang menciptakanku dan aku adalah hamba-Mu. Aku akan setia pada perjanjianku pada-Mu (iaitu aku akan mentauhidkan-Mu) dan aku yakin akan jaji-Mu (berupa syurga untukku) dengan sedaya upayaku. Aku berlindung kepada-Mu dari kejahatan yang aku lakukan. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, maka, ampunilah aku. Sesungguhnya tiada yang mengampuni dosa kecuali Engkau",
     "meaning_en": "O Allah, You are my Lord, there is no deity worthy of worship except You, You created me and I am Your servant. I am committed to my covenant with You (to worship You alone) and believe in Your promise (of Paradise for me) to the best of my ability. I seek refuge in You from the evil of what I have done. I acknowledge Your blessings upon me and I confess my sins, so forgive me. Indeed, none can forgive sins except You.",
-    "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance"]
+    "category_names": [
+      "Keampunan",
+      "Forgiveness",
+      "Taubat",
+      "Repentance"
+    ],
+    "slug": "penghulu-bagi-doa-keampunan"
   },
   {
     "name_my": "[JEMAAH] Penghulu Bagi Doa Keampunan",
@@ -43,7 +57,8 @@
       "Taubat",
       "Repentance",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-penghulu-bagi-doa-keampunan"
   },
   {
     "name_my": "Doa Mohon Keampunan",
@@ -53,7 +68,13 @@
     "reference_en": "Narrated by Bukhari (7387) and Muslim (2705)",
     "meaning_my": "Ya Allah! Sungguh aku telah menzalimi diriku sendiri dengan kezaliman yang banyak, sedangkan tidak ada yang dapat mengampuni dosa-dosa kecuali Engkau. Maka ampunilah aku dengan suatu pengampunan dari sisi-Mu, dan rahmatilah aku. Sesungguhnya Engkau Maha Pengampun lagi Maha Penyayang",
     "meaning_en": "O Allah! Indeed, I have wronged myself greatly, and none can forgive sins except You. So grant me forgiveness from Yourself, and have mercy on me. Indeed, You are the Forgiving, the Merciful.",
-    "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance"]
+    "category_names": [
+      "Keampunan",
+      "Forgiveness",
+      "Taubat",
+      "Repentance"
+    ],
+    "slug": "doa-mohon-keampunan"
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Keampunan",
@@ -69,7 +90,8 @@
       "Taubat",
       "Repentance",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-mohon-keampunan"
   },
   {
     "name_my": "Doa Mohon Taqwa",
@@ -79,7 +101,11 @@
     "reference_en": "Narrated by Muslim (2722)",
     "meaning_my": "Ya Allah, berikanlah ketakwaan pada jiwaku, dan bersihkanlah ia kerana Engkaulah  sebaik-baik yang dapat membersihkannya. Engkaulah pelindung dan Tuan kepadanya",
     "meaning_en": "O Allah, grant piety to my soul, and cleanse it for You are the best to cleanse it. You are its Protector and Lord",
-    "category_names": ["Piety", "Taqwa"]
+    "category_names": [
+      "Piety",
+      "Taqwa"
+    ],
+    "slug": "doa-mohon-taqwa"
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Taqwa",
@@ -89,7 +115,12 @@
     "reference_en": "Narrated by Muslim (2722)",
     "meaning_my": "Ya Allah, berikanlah ketakwaan pada jiwa kami, dan bersihkanlah ia kerana Engkaulah  sebaik-baik yang dapat membersihkannya. Engkaulah pelindung dan Tuan kepadanya",
     "meaning_en": "O Allah, grant piety to our soul, and cleanse it for You are the best to cleanse it. You are its Protector and Lord",
-    "category_names": ["Piety", "Taqwa", "Jamaah"]
+    "category_names": [
+      "Piety",
+      "Taqwa",
+      "Jamaah"
+    ],
+    "slug": "jemaah-doa-mohon-taqwa"
   },
   {
     "name_my": "Doa Pengiktirafan",
@@ -99,7 +130,11 @@
     "reference_en": "Surah Al-Anbiya' (21:87)",
     "meaning_my": "Sesungguhnya tiada Tuhan (yang dapat menolong) melainkan Engkau, Maha Suci Engkau (daripada melakukan aniaya, tolongkanlah daku)! Sesungguhnya aku adalah daripada orang-orang yang menganiaya diri sendiri",
     "meaning_en": "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers",
-    "category_names": ["Pengiktirafan", "Recognition"]
+    "category_names": [
+      "Pengiktirafan",
+      "Recognition"
+    ],
+    "slug": "doa-pengiktirafan"
   },
   {
     "name_my": "Doa Kelapangan Hati dan Jiwa",
@@ -109,7 +144,15 @@
     "reference_en": "Narrated by Ahmad (3712)",
     "meaning_my": "Ya Allah, sesungguhnya aku adalah hamba-Mu, anak kepada hamba-Mu, anak kepada hamba perempuan-Mu, ubun-ubunku di tangan-Mu, telah berlalunya keputusan-Mu, Engkau telah berlaku adil ke atas aku dalam keputusan-Mu. Aku memohon kepada-Mu dengan setiap nama yang Engkau berikan pada diri-Mu, atau yang telah Engkau ajarkan kepada salah satu makhluk ciptaan-Mu, atau yang telah Engkau turunkan dalam kitab-Mu, atau yang telah Engkau rahsiakan dalam ilmu ghaib-Mu, untuk menjadikan al-Quran sebagai penyejuk hatiku, cahaya di dadaku, penghilang kesedihanku, penghapus kesusahanku.",
     "meaning_en": "O Allah, indeed I am Your servant, son of Your male servant, son of Your female servant, my forelock is in Your hand, Your command over me is forever executed and Your decree over me is just. I ask You by every name belonging to You which You named Yourself with, or revealed in Your Book, or You taught to any of Your creation, or You have preserved in the knowledge of the unseen with You, to make the Quran the spring of my heart, the light of my chest, the banisher of my sadness, and the reliever of my distress.",
-    "category_names": ["Tenang", "Hati", "Jiwa", "Calm", "Heart", "Soul"]
+    "category_names": [
+      "Tenang",
+      "Hati",
+      "Jiwa",
+      "Calm",
+      "Heart",
+      "Soul"
+    ],
+    "slug": "doa-kelapangan-hati-dan-jiwa"
   },
   {
     "name_my": "[JEMAAH] Doa Kelapangan Hati dan Jiwa",
@@ -127,7 +170,8 @@
       "Heart",
       "Soul",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-kelapangan-hati-dan-jiwa"
   },
   {
     "name_my": "Doa Keluar dari Rumah",
@@ -137,7 +181,13 @@
     "reference_en": "Narrated by Abu Daud (5096)",
     "meaning_my": "Dengan nama Allah, aku bertawakkal kepada Allah. Tiada upaya dan tiada kekuatan kecuali dengan Allah",
     "meaning_en": "In the name of Allah, I place my trust in Allah. There is no might nor power except with Allah",
-    "category_names": ["Selamat", "Safety", "Protection", "Perlindungan"]
+    "category_names": [
+      "Selamat",
+      "Safety",
+      "Protection",
+      "Perlindungan"
+    ],
+    "slug": "doa-keluar-dari-rumah"
   },
   {
     "name_my": "[JEMAAH] Doa Keluar dari Rumah",
@@ -153,7 +203,8 @@
       "Protection",
       "Perlindungan",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-keluar-dari-rumah"
   },
   {
     "name_my": "Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
@@ -172,7 +223,8 @@
       "Chastity",
       "Kekayaan",
       "Wealth"
-    ]
+    ],
+    "slug": "doa-petunjuk-ketaqwaan-iffah-dan-kekayaan"
   },
   {
     "name_my": "[JEMAAH] Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
@@ -192,7 +244,8 @@
       "Kekayaan",
       "Wealth",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-petunjuk-ketaqwaan-iffah-dan-kekayaan"
   },
   {
     "name_my": "Doa Ilmu, Rezeki dan Amalan yang Diterima",
@@ -209,7 +262,8 @@
       "Sustenance",
       "Amalan",
       "Deeds"
-    ]
+    ],
+    "slug": "doa-ilmu-rezeki-dan-amalan-yang-diterima"
   },
   {
     "name_my": "[JEMAAH] Doa Ilmu, Rezeki dan Amalan yang Diterima",
@@ -227,7 +281,8 @@
       "Amalan",
       "Deeds",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-ilmu-rezeki-dan-amalan-yang-diterima"
   },
   {
     "name_my": "Doa Pertolongan Untuk Zikir",
@@ -244,7 +299,8 @@
       "Gratitude",
       "Ibadah",
       "Worship"
-    ]
+    ],
+    "slug": "doa-pertolongan-untuk-zikir"
   },
   {
     "name_my": "[JEMAAH] Doa Pertolongan Untuk Zikir",
@@ -262,7 +318,8 @@
       "Ibadah",
       "Worship",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-pertolongan-untuk-zikir"
   },
   {
     "name_my": "Doa Keampunan",
@@ -272,7 +329,12 @@
     "reference_en": "Narrated by Tirmidzi (3513)",
     "meaning_my": "Ya Allah, sesungguhnya Engkau Maha Pengampun dan suka memberi keampunan, maka ampunilah aku",
     "meaning_en": "O Allah, indeed You are the Most Forgiving and You love forgiveness, so forgive me",
-    "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar"]
+    "category_names": [
+      "Keampunan",
+      "Forgiveness",
+      "Lailatul Qadar"
+    ],
+    "slug": "doa-keampunan"
   },
   {
     "name_my": "[JEMAAH] Doa Keampunan",
@@ -282,7 +344,13 @@
     "reference_en": "Narrated by Tirmidzi (3513)",
     "meaning_my": "Ya Allah, sesungguhnya Engkau Maha Pengampun dan suka memberi keampunan, maka ampunilah kami",
     "meaning_en": "O Allah, indeed You are the Most Forgiving and You love forgiveness, so forgive us",
-    "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar", "Jamaah"]
+    "category_names": [
+      "Keampunan",
+      "Forgiveness",
+      "Lailatul Qadar",
+      "Jamaah"
+    ],
+    "slug": "jemaah-doa-keampunan"
   },
   {
     "name_my": "Doa Ditetapkan Hati",
@@ -292,7 +360,12 @@
     "reference_en": "Narrated by Tirmidzi (3522)",
     "meaning_my": "Wahai Tuhan yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu",
     "meaning_en": "O Turner of the hearts, make my heart firm upon Your religion",
-    "category_names": ["Hati", "Heart", "Firmness"]
+    "category_names": [
+      "Hati",
+      "Heart",
+      "Firmness"
+    ],
+    "slug": "doa-ditetapkan-hati"
   },
   {
     "name_my": "[JEMAAH] Doa Ditetapkan Hati",
@@ -302,7 +375,13 @@
     "reference_en": "Narrated by Tirmidzi (3522)",
     "meaning_my": "Wahai Tuhan yang membolak-balikkan hati, tetapkanlah hati kami di atas agama-Mu",
     "meaning_en": "O Turner of the hearts, make our hearts firm upon Your religion",
-    "category_names": ["Hati", "Heart", "Firmness", "Jamaah"]
+    "category_names": [
+      "Hati",
+      "Heart",
+      "Firmness",
+      "Jamaah"
+    ],
+    "slug": "jemaah-doa-ditetapkan-hati"
   },
   {
     "name_my": "Doa Minta Kebaikan dan Menolak Kejahatan",
@@ -317,7 +396,8 @@
       "Menolak Kejahatan",
       "Seeking Goodness",
       "Rejecting Evil"
-    ]
+    ],
+    "slug": "doa-minta-kebaikan-dan-menolak-kejahatan"
   },
   {
     "name_my": "[JEMAAH] Doa Minta Kebaikan dan Menolak Kejahatan",
@@ -333,7 +413,8 @@
       "Seeking Goodness",
       "Rejecting Evil",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-minta-kebaikan-dan-menolak-kejahatan"
   },
   {
     "name_my": "Doa Ditambahkan Kebaikan",
@@ -343,7 +424,11 @@
     "reference_en": "Narrated by al-Tirmizi (3173), al-Nasa'ie in al-Sunan al-Kubra (1443) and Ahmad (223)",
     "meaning_my": "Wahai Allah! Tambahkanlah buat kami dan jangan Engkau kurangkan. Muliakanlah kami, jangan hinakan kami. Berilah buat kami, jangan dicegahnya. Pilihlah kami, jangan Engkau biarkan dan redhailah kami dan redhailah pula semua usaha kami.",
     "meaning_en": "O Allah! Add to our lives and do not take away. Honour us and do not disgrace us. Give to us and do not deprive us. Choose us and do not abandon us. Be pleased with us and be pleased with all our efforts.",
-    "category_names": ["Kebaikan", "Goodness"]
+    "category_names": [
+      "Kebaikan",
+      "Goodness"
+    ],
+    "slug": "doa-ditambahkan-kebaikan"
   },
   {
     "name_my": "Doa Diilhamkan Kecerdasan",
@@ -353,7 +438,13 @@
     "reference_en": "Narrated by al-Tirmizi (3483), al-Tabarani in al-Du'a (1393), al-Bazzar (3580) and al-Baihaqi in al-Asma' wa al-Sifat (894)",
     "meaning_my": "Wahai Allah! Ilhamkanlah kepadaku kecerdasan dan petunjuk serta lindungilah aku daripada kejahatan nafsuku",
     "meaning_en": "O Allah! Inspire me with intelligence and guidance and protect me from the evil of my soul",
-    "category_names": ["Kecerdasan", "Intelligence", "Ilham", "Inspiration"]
+    "category_names": [
+      "Kecerdasan",
+      "Intelligence",
+      "Ilham",
+      "Inspiration"
+    ],
+    "slug": "doa-diilhamkan-kecerdasan"
   },
   {
     "name_my": "[JEAMAAH] Doa Diilhamkan Kecerdasan",
@@ -369,7 +460,8 @@
       "Ilham",
       "Inspiration",
       "Jamaah"
-    ]
+    ],
+    "slug": "jeamaah-doa-diilhamkan-kecerdasan"
   },
   {
     "name_my": "Doa Penghujung Umur Yang Baik",
@@ -379,7 +471,13 @@
     "reference_en": "Narrated by Ibn al-Sunni in 'Amal al-Yaum wa al-Lailah (121) and al-Tabarani in al-Ausat (9411)",
     "meaning_my": "Ya Allah! Jadikanlah sebaik-baik umurku adalah pada penghujungnya, dan sebaik-baik amalanku sebagai penutupnya. Dan jadikanlah sebaik-baik hariku, adalah hari dimana daku berjumpa dengan-Mu kelak.",
     "meaning_en": "O Allah! Make the best of my life its ending, and the best of my deeds its final action, and make the best of my days the day that I meet You",
-    "category_names": ["Mati", "Death", "Penghujung Umur", "End of Life"]
+    "category_names": [
+      "Mati",
+      "Death",
+      "Penghujung Umur",
+      "End of Life"
+    ],
+    "slug": "doa-penghujung-umur-yang-baik"
   },
   {
     "name_my": "[JEMAAH] Doa Penghujung Umur Yang Baik",
@@ -395,7 +493,8 @@
       "Penghujung Umur",
       "End of Life",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-penghujung-umur-yang-baik"
   },
   {
     "name_my": "Doa Elok Dalam Kesudahan Urusan",
@@ -410,7 +509,8 @@
       "End of Affairs",
       "Perelokkan",
       "Beautify"
-    ]
+    ],
+    "slug": "doa-elok-dalam-kesudahan-urusan"
   },
   {
     "name_my": "Doa Mohon Keselamatan",
@@ -420,7 +520,13 @@
     "reference_en": "Narrated by Abu Daud (5088), al-Tirmizi (3388), Ibn Majah (3869), al-Nasa'ie in al-Sunan al-Kubra (10178) and Ahmad (446)",
     "meaning_my": "Dengan nama Allah yang dengan nama-Nya, tidak ada satu pun yang dapat memberi kemudaratan di bumi mahupun di langit. Dia-lah Yang Maha Mendengar lagi Maha Mengetahui.",
     "meaning_en": "In the name of Allah with Whose name nothing on earth or in the heavens can cause harm, and He is the All-Hearing, the All-Knowing",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-mohon-keselamatan"
   },
   {
     "name_my": "Doa Diselamatkan dari Azab",
@@ -430,7 +536,13 @@
     "reference_en": "Narrated by al-Bukhari (1377) and Muslim (1352)",
     "meaning_my": "Ya Allah, sesungguhnya aku berlindung kepada-Mu daripada seksa kubur, daripada azab api neraka, daripada fitnah kehidupan dan kematian, dan daripada fitnah al-Masih al-Dajjal.",
     "meaning_en": "O Allah, I seek refuge in You from the punishment of the grave, the torment of Hell, the trials of life and death, and the trial of the False Messiah",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-diselamatkan-dari-azab"
   },
   {
     "name_my": "[JEMAAH] Doa Diselamatkan dari Azab",
@@ -446,7 +558,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-diselamatkan-dari-azab"
   },
   {
     "name_my": "Doa Berlindung dari Kejahatan",
@@ -456,7 +569,13 @@
     "reference_en": "Narrated by Muslim (2709), Abu Daud (3899), al-Tirmizi (3604), al-Nasa'ie in al-Sunan al-Kubra (10421), Ibn Majah (3518) and Ahmad (7898)",
     "meaning_my": "Aku berlindung dengan kalimah-kalimah Allah yang sempurna dari kejahatan makhluk yang diciptakan-Nya",
     "meaning_en": "I seek refuge in the perfect words of Allah from the evil of what He has created",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-berlindung-dari-kejahatan"
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Kejahatan",
@@ -472,7 +591,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-berlindung-dari-kejahatan"
   },
   {
     "name_my": "Doa Berlindung dari Empat Perkara",
@@ -482,7 +602,13 @@
     "reference_en": "Narrated by Muslim (7081), Abu Daud (1458), al-Tirmizi (3482), al-Nasa'ie (5536), Ibn Majah (3837) Ahmad (19402) and Ibn Hibban (1015)",
     "meaning_my": "Ya Allah! Aku berlindung dengan-Mu daripada ilmu yang tidak bermanfaat, daripada hati yang tidak khusyuk, daripada nafsu yang tidak puas, dan daripada doa yang tidak diterima.",
     "meaning_en": "O Allah! I seek refuge in You from knowledge that is of no benefit, from a heart that does not fear (You), from a soul that is never satisfied, and from a supplication that is not answered",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-berlindung-dari-empat-perkara"
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Empat Perkara",
@@ -498,7 +624,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-berlindung-dari-empat-perkara"
   },
   {
     "name_my": "Doa Berlindung dari Penyakit Kronik",
@@ -508,7 +635,13 @@
     "reference_en": "Narrated by Abu Daud (1554), Ahmad (13027), al-Nasa'ie (5493) and Abu Ya'la (2897)",
     "meaning_my": "Ya Allah, aku berlindung dengan-Mu daripada penyakit sopak, gila, kusta dan penyakit-penyakit yang buruk.",
     "meaning_en": "O Allah, I seek refuge in You from leprosy, madness, elephantiasis, and evil diseases",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-berlindung-dari-penyakit-kronik"
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Penyakit Kronik",
@@ -524,7 +657,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-berlindung-dari-penyakit-kronik"
   },
   {
     "name_my": "Doa Diselamatkan dari Kemungkaran",
@@ -541,7 +675,8 @@
       "Safety",
       "Protection",
       "Disease"
-    ]
+    ],
+    "slug": "doa-diselamatkan-dari-kemungkaran"
   },
   {
     "name_my": "[JEMAAH] Doa Diselamatkan dari Kemungkaran",
@@ -559,7 +694,8 @@
       "Protection",
       "Disease",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-diselamatkan-dari-kemungkaran"
   },
   {
     "name_my": "Doa Menolak Bala",
@@ -569,7 +705,13 @@
     "reference_en": "Narrated by al-Bukhari (6347) and Muslim (2707)",
     "meaning_my": "Wahai Allah! Aku berlindung kepada-Mu daripada ujian yang berat, hinanya kecelakaan, buruknya takdir dan celaan para musuh (atas bala, ujian dan kecelakaan yang menimpa).",
     "meaning_en": "O Allah! I seek refuge in You from severe calamity, disgraceful calamity, evil calamity, and the scorn of enemies",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-menolak-bala"
   },
   {
     "name_my": "[JEMAAH] Doa Menolak Bala",
@@ -585,7 +727,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-menolak-bala"
   },
   {
     "name_my": "Doa Agar Tidak Dihilangkan Nikmat",
@@ -595,7 +738,13 @@
     "reference_en": "Narrated by Muslim (2739) and Abu Daud (1545)",
     "meaning_my": "Ya Allah, sesungguhnya aku berlindung kepada-Mu daripada hilangnya kenikmatan yang telah Engkau berikan, daripada berubahnya kesihatan yang telah Engkau anugerahkan, daripada seksa-Mu (bencana) yang datang secara tiba-tiba, dan daripada segala bentuk kemurkaan-Mu.",
     "meaning_en": "O Allah, I seek refuge in You from the removal of Your blessings, from the change of health You have bestowed, from the sudden punishment, and from all forms of Your wrath",
-    "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
+    "category_names": [
+      "Keselamatan",
+      "Perlindungan",
+      "Safety",
+      "Protection"
+    ],
+    "slug": "doa-agar-tidak-dihilangkan-nikmat"
   },
   {
     "name_my": "[JEMAAH] Doa Agar Tidak Dihilangkan Nikmat",
@@ -611,7 +760,8 @@
       "Safety",
       "Protection",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-agar-tidak-dihilangkan-nikmat"
   },
   {
     "name_my": "Doa Mohon Kurniaan dan Rahmat-Nya",
@@ -621,7 +771,13 @@
     "reference_en": "Narrated by al-Tabarani in al-Mu'jam al-Kabir (10379) and Abu Nu'aim in Hilyah al-Auliya' (7/280). This hadith is classified as authentic by the author of al-Silsilah al-Sahihah.",
     "meaning_my": "Ya Allah, sesungguhnya aku memohon kepada-Mu agar diberi kurniaan dan rahmat-Mu. Sesungguhnya tiada yang memilikinya kecuali-Mu.",
     "meaning_en": "O Allah, I ask You for Your blessings and mercy. Indeed, no one possesses them except You",
-    "category_names": ["Kurniaan", "Blessings", "Rahmat", "Mercy"]
+    "category_names": [
+      "Kurniaan",
+      "Blessings",
+      "Rahmat",
+      "Mercy"
+    ],
+    "slug": "doa-mohon-kurniaan-dan-rahmatnya"
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Kurniaan dan Rahmat-Nya",
@@ -631,7 +787,14 @@
     "reference_en": "Narrated by al-Tabarani in al-Mu'jam al-Kabir (10379) and Abu Nu'aim in Hilyah al-Auliya' (7/280). This hadith is classified as authentic by the author of al-Silsilah al-Sahihah.",
     "meaning_my": "Ya Allah, sesungguhnya kami memohon kepada-Mu agar diberi kurniaan dan rahmat-Mu. Sesungguhnya tiada yang memilikinya kecuali-Mu.",
     "meaning_en": "O Allah, we ask You for Your blessings and mercy. Indeed, no one possesses them except You",
-    "category_names": ["Kurniaan", "Blessings", "Rahmat", "Mercy", "Jamaah"]
+    "category_names": [
+      "Kurniaan",
+      "Blessings",
+      "Rahmat",
+      "Mercy",
+      "Jamaah"
+    ],
+    "slug": "jemaah-doa-mohon-kurniaan-dan-rahmatnya"
   },
   {
     "name_my": "Doa Berlindung dari Dukacita",
@@ -648,7 +811,8 @@
       "Safety",
       "Protection",
       "Grief"
-    ]
+    ],
+    "slug": "doa-berlindung-dari-dukacita"
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Dukacita",
@@ -666,7 +830,8 @@
       "Protection",
       "Grief",
       "Jamaah"
-    ]
+    ],
+    "slug": "jemaah-doa-berlindung-dari-dukacita"
   },
   {
     "name_my": "Doa Kesabaran dan Keteguhan",
@@ -676,7 +841,13 @@
     "reference_en": "Al-Baqarah (2:250)",
     "meaning_my": "Wahai Tuhan kami! Limpahkanlah sabar kepada kami, dan teguhkanlah tapak pendirian kami serta menangkanlah kami terhadap kaum yang kafir.",
     "meaning_en": "Our Lord, pour upon us patience, and make our foothold firm, and grant us victory over the disbelieving people.",
-    "category_names": ["Sabar", "Teguh", "Patience", "Steadfastness"]
+    "category_names": [
+      "Sabar",
+      "Teguh",
+      "Patience",
+      "Steadfastness"
+    ],
+    "slug": "doa-kesabaran-dan-keteguhan"
   },
   {
     "name_my": "Doa Mohon Bersyukur",
@@ -686,7 +857,11 @@
     "reference_en": "Al-Naml (27:19)",
     "meaning_my": "Wahai Tuhanku, ilhamkanlah daku supaya tetap bersyukur akan nikmat-Mu yang Engkau kurniakan kepadaku dan kepada ibu bapaku, dan supaya aku tetap mengerjakan amal soleh yang Engkau redai; dan masukkanlah daku - dengan limpah rahmat-Mu - dalam kumpulan hamba-hamba-Mu yang soleh.",
     "meaning_en": "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve and admit me by Your mercy into [the ranks of] Your righteous servants.",
-    "category_names": ["Syukur", "Gratitude"]
+    "category_names": [
+      "Syukur",
+      "Gratitude"
+    ],
+    "slug": "doa-mohon-bersyukur"
   },
   {
     "name_my": "Doa Mohon Hidayah",
@@ -696,7 +871,11 @@
     "reference_en": "Ali Imran (3:8)",
     "meaning_my": "Wahai Tuhan kami! Janganlah Engkau memesongkan hati kami sesudah Engkau beri petunjuk kepada kami, dan kurniakanlah kepada kami limpah rahmat daripada sisi-Mu; sesungguhnya Engkau jualah Tuhan Yang melimpahlimpah pemberian-Nya.",
     "meaning_en": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower.",
-    "category_names": ["Hidayah", "Guidance"]
+    "category_names": [
+      "Hidayah",
+      "Guidance"
+    ],
+    "slug": "doa-mohon-hidayah"
   },
   {
     "name_my": "Doa Mohon Rahmat",
@@ -706,7 +885,11 @@
     "reference_en": "Al-Kahfi (18:10)",
     "meaning_my": "Wahai Tuhan kami! Kurniakanlah kami rahmat dari sisi-Mu, dan berilah kemudahan serta pimpinan kepada kami untuk keselamatan agama kami.",
     "meaning_en": "Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
-    "category_names": ["Rahmat", "Mercy"]
+    "category_names": [
+      "Rahmat",
+      "Mercy"
+    ],
+    "slug": "doa-mohon-rahmat"
   },
   {
     "name_my": "Doa Keampunan dan Doa Saudara",
@@ -716,7 +899,13 @@
     "reference_en": "Al-Hashr (59:10)",
     "meaning_my": "Wahai Tuhan Kami! Ampunkanlah dosa kami dan dosa saudara-saudara kami yang mendahului kami dalam iman, dan janganlah Engkau jadikan dalam hati kami perasaan hasad dengki dan dendam terhadap orang-orang yang beriman. Wahai Tuhan kami! Sesungguhnya Engkau Amat Melimpah Belas kasihan dan RahmatMu.",
     "meaning_en": "Our Lord, forgive us and our brothers who preceded us in faith and put not in our hearts [any] resentment toward those who have believed. Our Lord, indeed You are Kind and Merciful.",
-    "category_names": ["Ampun", "Forgiveness", "Doa", "Prayer"]
+    "category_names": [
+      "Ampun",
+      "Forgiveness",
+      "Doa",
+      "Prayer"
+    ],
+    "slug": "doa-keampunan-dan-doa-saudara"
   },
   {
     "name_my": "Doa Menyerah Kepada-Nya",
@@ -726,7 +915,11 @@
     "reference_en": "Al-Qasas (28:24)",
     "meaning_my": "Wahai Tuhanku, sesungguhnya aku sangat berhajat kepada sebarang rezeki pemberian yang Engkau berikan.",
     "meaning_en": "My Lord, indeed I am, for whatever good You would send down to me, in need.",
-    "category_names": ["Menyerah", "Surrender"]
+    "category_names": [
+      "Menyerah",
+      "Surrender"
+    ],
+    "slug": "doa-menyerah-kepadanya"
   },
   {
     "name_my": "Doa untuk Pengantin",
@@ -736,7 +929,11 @@
     "reference_en": "Narrated by Abu Daud (2130), al-Tirmizi (1091), Ahmad (8957), al-Nasa'i in al-Sunan al-Kubra (10089), al-Baihaqi in al-Sunan al- Kubra (14214); al-Da'awat al-Kabir (495), and al-Hakim in al-Mustadrak (2745).",
     "meaning_my": "Semoga Allah memberkatimu ketika bahagia dan ketika susah, serta menghimpunkan kamu berdua dalam kebaikan.",
     "meaning_en": "May Allah bless you in happiness and in sorrow, and may He unite you in goodness.",
-    "category_names": ["Pengantin", "Newlyweds"]
+    "category_names": [
+      "Pengantin",
+      "Newlyweds"
+    ],
+    "slug": "doa-untuk-pengantin"
   },
   {
     "name_my": "Doa Mendapat Keluarga yang Baik",
@@ -755,7 +952,8 @@
       "Coolness",
       "Mata",
       "Eyes"
-    ]
+    ],
+    "slug": "doa-mendapat-keluarga-yang-baik"
   },
   {
     "name_my": "Doa Memohon Zuriat Soleh/Solehah",
@@ -765,7 +963,13 @@
     "reference_en": "Al-Saffat (37:100)",
     "meaning_my": "Wahai Tuhanku! Kurniakanlah kepadaku anak yang terhitung dari orang-orang yang soleh.",
     "meaning_en": "My Lord, grant me [a child] from among the righteous.",
-    "category_names": ["Zuriat", "Soleh", "Solehah", "Offspring"]
+    "category_names": [
+      "Zuriat",
+      "Soleh",
+      "Solehah",
+      "Offspring"
+    ],
+    "slug": "doa-memohon-zuriat-solehsolehah"
   },
   {
     "name_my": "Doa Diberkati Harta dan Keturunan",
@@ -782,7 +986,8 @@
       "Offspring",
       "Berkat",
       "Blessing"
-    ]
+    ],
+    "slug": "doa-diberkati-harta-dan-keturunan"
   },
   {
     "name_my": "Doa Kebaikan Dunia dan Akhirat",
@@ -799,6 +1004,7 @@
       "Hereafter",
       "Kebaikan",
       "Goodness"
-    ]
+    ],
+    "slug": "doa-kebaikan-dunia-dan-akhirat"
   }
 ]
