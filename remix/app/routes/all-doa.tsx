@@ -20,8 +20,12 @@ export default function DoaTable() {
   return (
     <div className="bg-blue-50 min-h-screen p-4">
       <header className="flex justify-center pb-4">
-        <Link to="/">
-          <img src="/logo.svg" alt="GetDoa Logo" className="h-auto w-full " />
+        <Link to="/" prefetch="intent">
+          <img
+            src="/logo.svg"
+            alt="GetDoa - Islamic Prayers and Supplications"
+            className="h-auto w-full"
+          />
         </Link>
       </header>
       <h1 className="text-2xl font-bold mb-4 text-center">Doa List</h1>
