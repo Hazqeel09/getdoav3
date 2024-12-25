@@ -38,6 +38,10 @@ export type Doa = {
   meaning_my: string;
   meaning_en: string;
   category_names: string[];
+  description_my: string;
+  description_en: string;
+  context_my: string;
+  context_en: string;
   /** Slug can be anything, but should be unique for each doa, and url-safe */
   slug: string;
 };

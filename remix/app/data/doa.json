@@ -11,7 +11,11 @@
       "Bacaan Pagi",
       "Morning Supplication"
     ],
-    "slug": "pagi-doa-ditetapkan-islam"
+    "slug": "pagi-doa-ditetapkan-islam",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[PETANG] Doa Ditetapkan Islam",
@@ -25,7 +29,11 @@
       "Bacaan Petang",
       "Evening Supplication"
     ],
-    "slug": "petang-doa-ditetapkan-islam"
+    "slug": "petang-doa-ditetapkan-islam",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Penghulu Bagi Doa Keampunan",
@@ -41,7 +49,11 @@
       "Taubat",
       "Repentance"
     ],
-    "slug": "penghulu-bagi-doa-keampunan"
+    "slug": "penghulu-bagi-doa-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Penghulu Bagi Doa Keampunan",
@@ -58,7 +70,11 @@
       "Repentance",
       "Jamaah"
     ],
-    "slug": "jemaah-penghulu-bagi-doa-keampunan"
+    "slug": "jemaah-penghulu-bagi-doa-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Keampunan",
@@ -74,7 +90,11 @@
       "Taubat",
       "Repentance"
     ],
-    "slug": "doa-mohon-keampunan"
+    "slug": "doa-mohon-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Keampunan",
@@ -91,7 +111,11 @@
       "Repentance",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-mohon-keampunan"
+    "slug": "jemaah-doa-mohon-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Taqwa",
@@ -105,7 +129,11 @@
       "Piety",
       "Taqwa"
     ],
-    "slug": "doa-mohon-taqwa"
+    "slug": "doa-mohon-taqwa",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Taqwa",
@@ -120,7 +148,11 @@
       "Taqwa",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-mohon-taqwa"
+    "slug": "jemaah-doa-mohon-taqwa",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Pengiktirafan",
@@ -134,7 +166,11 @@
       "Pengiktirafan",
       "Recognition"
     ],
-    "slug": "doa-pengiktirafan"
+    "slug": "doa-pengiktirafan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Kelapangan Hati dan Jiwa",
@@ -152,7 +188,11 @@
       "Heart",
       "Soul"
     ],
-    "slug": "doa-kelapangan-hati-dan-jiwa"
+    "slug": "doa-kelapangan-hati-dan-jiwa",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Kelapangan Hati dan Jiwa",
@@ -171,7 +211,11 @@
       "Soul",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-kelapangan-hati-dan-jiwa"
+    "slug": "jemaah-doa-kelapangan-hati-dan-jiwa",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Keluar dari Rumah",
@@ -187,7 +231,11 @@
       "Protection",
       "Perlindungan"
     ],
-    "slug": "doa-keluar-dari-rumah"
+    "slug": "doa-keluar-dari-rumah",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Keluar dari Rumah",
@@ -204,7 +252,11 @@
       "Perlindungan",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-keluar-dari-rumah"
+    "slug": "jemaah-doa-keluar-dari-rumah",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
@@ -224,7 +276,11 @@
       "Kekayaan",
       "Wealth"
     ],
-    "slug": "doa-petunjuk-ketaqwaan-iffah-dan-kekayaan"
+    "slug": "doa-petunjuk-ketaqwaan-iffah-dan-kekayaan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
@@ -245,7 +301,11 @@
       "Wealth",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-petunjuk-ketaqwaan-iffah-dan-kekayaan"
+    "slug": "jemaah-doa-petunjuk-ketaqwaan-iffah-dan-kekayaan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Ilmu, Rezeki dan Amalan yang Diterima",
@@ -263,7 +323,11 @@
       "Amalan",
       "Deeds"
     ],
-    "slug": "doa-ilmu-rezeki-dan-amalan-yang-diterima"
+    "slug": "doa-ilmu-rezeki-dan-amalan-yang-diterima",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Ilmu, Rezeki dan Amalan yang Diterima",
@@ -282,7 +346,11 @@
       "Deeds",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-ilmu-rezeki-dan-amalan-yang-diterima"
+    "slug": "jemaah-doa-ilmu-rezeki-dan-amalan-yang-diterima",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Pertolongan Untuk Zikir",
@@ -300,7 +368,11 @@
       "Ibadah",
       "Worship"
     ],
-    "slug": "doa-pertolongan-untuk-zikir"
+    "slug": "doa-pertolongan-untuk-zikir",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Pertolongan Untuk Zikir",
@@ -319,7 +391,11 @@
       "Worship",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-pertolongan-untuk-zikir"
+    "slug": "jemaah-doa-pertolongan-untuk-zikir",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Keampunan",
@@ -334,7 +410,11 @@
       "Forgiveness",
       "Lailatul Qadar"
     ],
-    "slug": "doa-keampunan"
+    "slug": "doa-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Keampunan",
@@ -350,7 +430,11 @@
       "Lailatul Qadar",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-keampunan"
+    "slug": "jemaah-doa-keampunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Ditetapkan Hati",
@@ -365,7 +449,11 @@
       "Heart",
       "Firmness"
     ],
-    "slug": "doa-ditetapkan-hati"
+    "slug": "doa-ditetapkan-hati",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Ditetapkan Hati",
@@ -381,7 +469,11 @@
       "Firmness",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-ditetapkan-hati"
+    "slug": "jemaah-doa-ditetapkan-hati",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Minta Kebaikan dan Menolak Kejahatan",
@@ -397,7 +489,11 @@
       "Seeking Goodness",
       "Rejecting Evil"
     ],
-    "slug": "doa-minta-kebaikan-dan-menolak-kejahatan"
+    "slug": "doa-minta-kebaikan-dan-menolak-kejahatan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Minta Kebaikan dan Menolak Kejahatan",
@@ -414,7 +510,11 @@
       "Rejecting Evil",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-minta-kebaikan-dan-menolak-kejahatan"
+    "slug": "jemaah-doa-minta-kebaikan-dan-menolak-kejahatan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Ditambahkan Kebaikan",
@@ -428,7 +528,11 @@
       "Kebaikan",
       "Goodness"
     ],
-    "slug": "doa-ditambahkan-kebaikan"
+    "slug": "doa-ditambahkan-kebaikan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Diilhamkan Kecerdasan",
@@ -444,7 +548,11 @@
       "Ilham",
       "Inspiration"
     ],
-    "slug": "doa-diilhamkan-kecerdasan"
+    "slug": "doa-diilhamkan-kecerdasan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEAMAAH] Doa Diilhamkan Kecerdasan",
@@ -461,7 +569,11 @@
       "Inspiration",
       "Jamaah"
     ],
-    "slug": "jeamaah-doa-diilhamkan-kecerdasan"
+    "slug": "jeamaah-doa-diilhamkan-kecerdasan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Penghujung Umur Yang Baik",
@@ -477,7 +589,11 @@
       "Penghujung Umur",
       "End of Life"
     ],
-    "slug": "doa-penghujung-umur-yang-baik"
+    "slug": "doa-penghujung-umur-yang-baik",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Penghujung Umur Yang Baik",
@@ -494,7 +610,11 @@
       "End of Life",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-penghujung-umur-yang-baik"
+    "slug": "jemaah-doa-penghujung-umur-yang-baik",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Elok Dalam Kesudahan Urusan",
@@ -510,7 +630,11 @@
       "Perelokkan",
       "Beautify"
     ],
-    "slug": "doa-elok-dalam-kesudahan-urusan"
+    "slug": "doa-elok-dalam-kesudahan-urusan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Keselamatan",
@@ -526,7 +650,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-mohon-keselamatan"
+    "slug": "doa-mohon-keselamatan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Diselamatkan dari Azab",
@@ -542,7 +670,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-diselamatkan-dari-azab"
+    "slug": "doa-diselamatkan-dari-azab",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Diselamatkan dari Azab",
@@ -559,7 +691,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-diselamatkan-dari-azab"
+    "slug": "jemaah-doa-diselamatkan-dari-azab",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Berlindung dari Kejahatan",
@@ -575,7 +711,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-berlindung-dari-kejahatan"
+    "slug": "doa-berlindung-dari-kejahatan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Kejahatan",
@@ -592,7 +732,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-berlindung-dari-kejahatan"
+    "slug": "jemaah-doa-berlindung-dari-kejahatan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Berlindung dari Empat Perkara",
@@ -608,7 +752,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-berlindung-dari-empat-perkara"
+    "slug": "doa-berlindung-dari-empat-perkara",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Empat Perkara",
@@ -625,7 +773,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-berlindung-dari-empat-perkara"
+    "slug": "jemaah-doa-berlindung-dari-empat-perkara",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Berlindung dari Penyakit Kronik",
@@ -641,7 +793,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-berlindung-dari-penyakit-kronik"
+    "slug": "doa-berlindung-dari-penyakit-kronik",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Penyakit Kronik",
@@ -658,7 +814,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-berlindung-dari-penyakit-kronik"
+    "slug": "jemaah-doa-berlindung-dari-penyakit-kronik",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Diselamatkan dari Kemungkaran",
@@ -676,7 +836,11 @@
       "Protection",
       "Disease"
     ],
-    "slug": "doa-diselamatkan-dari-kemungkaran"
+    "slug": "doa-diselamatkan-dari-kemungkaran",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Diselamatkan dari Kemungkaran",
@@ -695,7 +859,11 @@
       "Disease",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-diselamatkan-dari-kemungkaran"
+    "slug": "jemaah-doa-diselamatkan-dari-kemungkaran",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Menolak Bala",
@@ -711,7 +879,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-menolak-bala"
+    "slug": "doa-menolak-bala",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Menolak Bala",
@@ -728,7 +900,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-menolak-bala"
+    "slug": "jemaah-doa-menolak-bala",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Agar Tidak Dihilangkan Nikmat",
@@ -744,7 +920,11 @@
       "Safety",
       "Protection"
     ],
-    "slug": "doa-agar-tidak-dihilangkan-nikmat"
+    "slug": "doa-agar-tidak-dihilangkan-nikmat",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Agar Tidak Dihilangkan Nikmat",
@@ -761,7 +941,11 @@
       "Protection",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-agar-tidak-dihilangkan-nikmat"
+    "slug": "jemaah-doa-agar-tidak-dihilangkan-nikmat",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Kurniaan dan Rahmat-Nya",
@@ -777,7 +961,11 @@
       "Rahmat",
       "Mercy"
     ],
-    "slug": "doa-mohon-kurniaan-dan-rahmatnya"
+    "slug": "doa-mohon-kurniaan-dan-rahmatnya",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Mohon Kurniaan dan Rahmat-Nya",
@@ -794,7 +982,11 @@
       "Mercy",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-mohon-kurniaan-dan-rahmatnya"
+    "slug": "jemaah-doa-mohon-kurniaan-dan-rahmatnya",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Berlindung dari Dukacita",
@@ -812,7 +1004,11 @@
       "Protection",
       "Grief"
     ],
-    "slug": "doa-berlindung-dari-dukacita"
+    "slug": "doa-berlindung-dari-dukacita",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "[JEMAAH] Doa Berlindung dari Dukacita",
@@ -831,7 +1027,11 @@
       "Grief",
       "Jamaah"
     ],
-    "slug": "jemaah-doa-berlindung-dari-dukacita"
+    "slug": "jemaah-doa-berlindung-dari-dukacita",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Kesabaran dan Keteguhan",
@@ -847,7 +1047,11 @@
       "Patience",
       "Steadfastness"
     ],
-    "slug": "doa-kesabaran-dan-keteguhan"
+    "slug": "doa-kesabaran-dan-keteguhan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Bersyukur",
@@ -861,7 +1065,11 @@
       "Syukur",
       "Gratitude"
     ],
-    "slug": "doa-mohon-bersyukur"
+    "slug": "doa-mohon-bersyukur",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Hidayah",
@@ -875,7 +1083,11 @@
       "Hidayah",
       "Guidance"
     ],
-    "slug": "doa-mohon-hidayah"
+    "slug": "doa-mohon-hidayah",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mohon Rahmat",
@@ -889,7 +1101,11 @@
       "Rahmat",
       "Mercy"
     ],
-    "slug": "doa-mohon-rahmat"
+    "slug": "doa-mohon-rahmat",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Keampunan dan Doa Saudara",
@@ -905,7 +1121,11 @@
       "Doa",
       "Prayer"
     ],
-    "slug": "doa-keampunan-dan-doa-saudara"
+    "slug": "doa-keampunan-dan-doa-saudara",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Menyerah Kepada-Nya",
@@ -919,7 +1139,11 @@
       "Menyerah",
       "Surrender"
     ],
-    "slug": "doa-menyerah-kepadanya"
+    "slug": "doa-menyerah-kepadanya",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa untuk Pengantin",
@@ -933,7 +1157,11 @@
       "Pengantin",
       "Newlyweds"
     ],
-    "slug": "doa-untuk-pengantin"
+    "slug": "doa-untuk-pengantin",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Mendapat Keluarga yang Baik",
@@ -953,7 +1181,11 @@
       "Mata",
       "Eyes"
     ],
-    "slug": "doa-mendapat-keluarga-yang-baik"
+    "slug": "doa-mendapat-keluarga-yang-baik",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Memohon Zuriat Soleh/Solehah",
@@ -969,7 +1201,11 @@
       "Solehah",
       "Offspring"
     ],
-    "slug": "doa-memohon-zuriat-solehsolehah"
+    "slug": "doa-memohon-zuriat-solehsolehah",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Diberkati Harta dan Keturunan",
@@ -987,7 +1223,11 @@
       "Berkat",
       "Blessing"
     ],
-    "slug": "doa-diberkati-harta-dan-keturunan"
+    "slug": "doa-diberkati-harta-dan-keturunan",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   },
   {
     "name_my": "Doa Kebaikan Dunia dan Akhirat",
@@ -1005,6 +1245,10 @@
       "Kebaikan",
       "Goodness"
     ],
-    "slug": "doa-kebaikan-dunia-dan-akhirat"
+    "slug": "doa-kebaikan-dunia-dan-akhirat",
+    "description_my": "",
+    "description_en": "",
+    "context_my": "",
+    "context_en": ""
   }
 ]
