@@ -39,10 +39,13 @@ export default function Index() {
       <main id="hero" className="bg-blue-50 flex justify-center py-10">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-20 px-10 md:px-20 w-full max-w-screen-lg">
           {/* Left Text Section */}
-          <div id="hero-left" className="max-w-lg flex flex-col gap-4 items-start">
+          <div
+            id="hero-left"
+            className="max-w-lg flex flex-col gap-4 items-start"
+          >
             <h1 className="text-4xl md:text-6xl font-semibold text-teal-800">
-              Custom better <span className="text-teal-600 font-bold">دعاء</span>{" "}
-              for your
+              Custom better{" "}
+              <span className="text-teal-600 font-bold">دعاء</span> for your
             </h1>
             <h2 className="text-teal-600 text-4xl">solat/life/events/</h2>
             <p className="text-gray-600">
@@ -51,12 +54,20 @@ export default function Index() {
                 Occasionally, we fail to pray in a comprehensive manner.
               </span>
             </p>
-            <Link
-              to="/all-doa"
-              className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"
-            >
-              Start now →
-            </Link>
+            <div className="flex gap-4">
+              <Link
+                to="#"
+                className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"
+              >
+                Start now →
+              </Link>
+              <Link
+                to="/all-doa"
+                className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"
+              >
+                See all Doa →
+              </Link>
+            </div>
           </div>
 
           {/* Right Illustration */}
@@ -72,76 +83,98 @@ export default function Index() {
         </div>
       </main>
 
-      <section id="objectives" className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-screen-lg items-center px-10 md:px-20 py-10 mx-auto">
+      <section
+        id="objectives"
+        className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 w-full max-w-screen-lg items-center px-10 md:px-20 py-10 mx-auto"
+      >
         <div className="col-span-2 md:col-span-1 bg-objective-left aspect-square w-full max-w-64 bg-cover justify-self-center flex items-center justify-center text-2xl text-center text-balance">
           Is it necessary to pray in Arabic?
         </div>
         <div className="col-span-2 flex flex-col items-center gap-4">
           <p>
-            When we get into our vehicle, we may pray for our safety and smooth journey. However,  when we read the dua for riding a vehicle that is already in the Quran, we will realize that the dua is more comprehensive.
+            When we get into our vehicle, we may pray for our safety and smooth
+            journey. However, when we read the dua for riding a vehicle that is
+            already in the Quran, we will realize that the dua is more
+            comprehensive.
           </p>
           <div className="border border-[#78CAD4] p-4 rounded-lg max-w-96 text-center flex flex-col gap-2">
             <p className="text-2xl">
-              سُبْحَانَ الَّذِى سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ
+              سُبْحَانَ الَّذِى سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ
+              مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ
             </p>
+            <p className="text-sm">(Al-Zukhruf:13-14)</p>
             <p className="text-sm">
-              (Al-Zukhruf:13-14)
-            </p>
-            <p className="text-sm">
-              &ldquo;Glory be to the One Who has made this subservient to us, and we were not capable of that, and surely to our Lord we shall return.&rdquo;
+              &ldquo;Glory be to the One Who has made this subservient to us,
+              and we were not capable of that, and surely to our Lord we shall
+              return.&rdquo;
             </p>
           </div>
           <p>
-            By reading this dua, we indirectly remind ourselves that we will return to Allah when the time comes. Moreover, what are the chances that we will pray in such detail when riding a vehicle?
+            By reading this dua, we indirectly remind ourselves that we will
+            return to Allah when the time comes. Moreover, what are the chances
+            that we will pray in such detail when riding a vehicle?
           </p>
         </div>
       </section>
 
-      <section id="features" className="flex flex-col justify-center px-10 md:px-20 py-12 text-center w-full max-w-screen-lg mx-auto text-pretty gap-4">
-        <h2 className="text-4xl">
-          Exciting features
-        </h2>
+      <section
+        id="features"
+        className="flex flex-col justify-center px-10 md:px-20 py-12 text-center w-full max-w-screen-lg mx-auto text-pretty gap-4"
+      >
+        <h2 className="text-4xl">Exciting features</h2>
         <p>
-          By reading this dua, we indirectly remind ourselves that we will return to Allah when the time comes. Moreover, what are the chances that we will pray in such detail when riding a vehicle?
+          By reading this dua, we indirectly remind ourselves that we will
+          return to Allah when the time comes. Moreover, what are the chances
+          that we will pray in such detail when riding a vehicle?
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-12 text-left mt-8">
           <div className="col-span-2 md:col-span-1 flex flex-col gap-8 py-4">
-            <h3 className="text-teal-600 underline underline-offset-8 decoration-2">Public feature,</h3>
+            <h3 className="text-teal-600 underline underline-offset-8 decoration-2">
+              Public feature,
+            </h3>
             <div className="flex flex-col gap-4">
-              {
-                features.public.map((feature, index) => (
-                  <div key={`public-${index}`} className="flex gap-2 items-start">
-                    {/* TODO: Icons will be replaced */}
-                    <div className="size-4 bg-black m-1"></div>
-                    <div className="flex-1">
-                      <p className="font-medium">{feature.title}</p>
-                      <p className="text-[#4B5563] font-light">{feature.description}</p>
-                    </div>
+              {features.public.map((feature, index) => (
+                <div key={`public-${index}`} className="flex gap-2 items-start">
+                  {/* TODO: Icons will be replaced */}
+                  <div className="size-4 bg-black m-1"></div>
+                  <div className="flex-1">
+                    <p className="font-medium">{feature.title}</p>
+                    <p className="text-[#4B5563] font-light">
+                      {feature.description}
+                    </p>
                   </div>
-                ))
-              }
+                </div>
+              ))}
             </div>
           </div>
           <div className="col-span-2 border border-black/10 p-4 rounded-md flex flex-col gap-8 items-center">
-            <h3 className="text-teal-600 underline underline-offset-8 decoration-2">Upon Sign Up,</h3>
+            <h3 className="text-teal-600 underline underline-offset-8 decoration-2">
+              Upon Sign Up,
+            </h3>
 
             <div className="flex flex-wrap gap-4">
-              {
-                features.sign_up.map((feature, index) => (
-                  <div key={`public-${index}`} className="flex gap-2 items-start flex-1 min-w-[200px]">
-                    {/* TODO: Icons will be replaced */}
-                    <div className="size-4 bg-black m-1"></div>
-                    <div className="flex-1">
-                      <p className="font-medium">{feature.title}</p>
-                      <p className="text-[#4B5563] font-light">{feature.description}</p>
-                    </div>
+              {features.sign_up.map((feature, index) => (
+                <div
+                  key={`public-${index}`}
+                  className="flex gap-2 items-start flex-1 min-w-[200px]"
+                >
+                  {/* TODO: Icons will be replaced */}
+                  <div className="size-4 bg-black m-1"></div>
+                  <div className="flex-1">
+                    <p className="font-medium">{feature.title}</p>
+                    <p className="text-[#4B5563] font-light">
+                      {feature.description}
+                    </p>
                   </div>
-                ))
-              }
+                </div>
+              ))}
             </div>
-            <Link to="" className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 mt-auto">
-            Sign up now
-          </Link>
+            <Link
+              to=""
+              className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 mt-auto"
+            >
+              Sign up now
+            </Link>
           </div>
         </div>
       </section>
@@ -151,16 +184,14 @@ export default function Index() {
 
       <footer className="flex flex-col-reverse md:flex-row justify-between gap-4 w-full max-w-screen-lg px-10 md:px-20 py-6 mx-auto">
         <p className="w-fit">
-          &copy; getDoa.com {new Date().getFullYear()}. All rights reserved.
+          &copy; GetDoa.com {new Date().getFullYear()}. All rights reserved.
         </p>
         <div className="flex items-center">
-          {
-            cta.map((item) => (
-              <a href={item.link} key={item.id} className="p-2">
-                <Icon name={item.id} className="size-4" />
-              </a>
-            ))
-          }
+          {cta.map((item) => (
+            <a href={item.link} key={item.id} className="p-2">
+              <Icon name={item.id} className="size-4" />
+            </a>
+          ))}
         </div>
       </footer>
     </div>
