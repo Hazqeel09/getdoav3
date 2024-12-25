@@ -38,6 +38,12 @@ export type Doa = {
   meaning_my: string;
   meaning_en: string;
   category_names: string[];
+  description_my: string;
+  description_en: string;
+  context_my: string;
+  context_en: string;
+  /** Slug can be anything, but should be unique for each doa, and url-safe */
+  slug: string;
 };
 
 // Mobile card component for each row
@@ -178,7 +184,7 @@ export function DataTable({ data }: DataTableProps) {
       {/* Mobile View */}
       <div className="block md:hidden">
         {table.getRowModel().rows.map((row) => (
-          <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents" key={row.id}>
+          <Link to={`/doa/${row.original.slug}`} className="contents" key={row.id}>
             <MobileDoaCard data={row.original} language={language} />
           </Link>
         ))}
@@ -213,7 +219,7 @@ export function DataTable({ data }: DataTableProps) {
                       key={row.id}
                       className="hover:bg-gray-50 transition-colors cursor-pointer"
                     >
-                      <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents">
+                      <Link to={`/doa/${row.original.slug}`} className="contents">
                         {row.getVisibleCells().map((cell) => (
                           <TableCell key={cell.id} className="py-4">
                             {flexRender(

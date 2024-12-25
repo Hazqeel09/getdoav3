@@ -74,7 +74,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   const filePath = path.join(process.cwd(), "app", "data", "doa.json");
   const fileContents = await fs.readFile(filePath, "utf-8");
   const doaList: Doa[] = JSON.parse(fileContents);
-  const selectedDoa = doaList.find((d) => d.name_my === doa);
+  const selectedDoa = doaList.find((d) => d.slug === doa);
 
   if (!selectedDoa) {
     throw new Response("Not Found", { status: 404 });
