@@ -17,6 +17,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
+import { Button } from "../components/ui/button";
+import { Share } from "lucide-react";
 import { Doa } from "../components/data-table";
 
 // Add meta function for SEO
@@ -84,6 +86,29 @@ export const loader: LoaderFunction = async ({ params }) => {
 export default function DoaDetail() {
   const doa = useLoaderData<Doa>();
   const [language, setLanguage] = useState<"en" | "my">("en");
+  const [shareStatus, setShareStatus] = useState<string>("");
+
+  const handleShare = async () => {
+    const shareData = {
+      title: `${doa.name_en} (${doa.name_my}) - Islamic Prayer`,
+      text: `Learn the complete ${doa.name_en} prayer with translations`,
+      url: window.location.href,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        setShareStatus("Shared successfully!");
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        setShareStatus("Link copied to clipboard!");
+        setTimeout(() => setShareStatus(""), 2000);
+      }
+    } catch (err) {
+      setShareStatus("Failed to share");
+      setTimeout(() => setShareStatus(""), 2000);
+    }
+  };
 
   return (
     <div className="bg-blue-50 min-h-screen p-4">
@@ -143,6 +168,22 @@ export default function DoaDetail() {
                 <SelectItem value="my">Bahasa Melayu</SelectItem>
               </SelectContent>
             </Select>
+
+            <div className="relative">
+              <Button
+                onClick={handleShare}
+                variant="outline"
+                className="flex items-center gap-2"
+              >
+                <Share className="h-4 w-4" />
+                Share
+              </Button>
+              {shareStatus && (
+                <div className="absolute top-full mt-2 right-0 bg-black text-white text-sm py-1 px-2 rounded">
+                  {shareStatus}
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="flex flex-col items-start gap-4">
