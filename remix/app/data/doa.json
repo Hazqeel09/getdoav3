@@ -1,7 +1,7 @@
 [
   {
-    "name_my": "[PAGI] Ditetapkan Islam",
-    "name_en": "[MORNING] Firmly Islam",
+    "name_my": "[PAGI] Doa Ditetapkan Islam",
+    "name_en": "[MORNING] Firmly Islam Doa",
     "content": "أصْبَحْنَا عَلَى فِطْرَةِ الإِسْلاَمِ وَعَلَى كَلِمَةِ الإِخْلاَصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ",
     "reference_my": "Riwayat Ahmad (15360)",
     "reference_en": "Narrated by Ahmad (15360)",
@@ -10,8 +10,8 @@
     "category_names": ["Bacaan Pagi", "Morning Supplication"]
   },
   {
-    "name_my": "[PETANG] Ditetapkan Islam",
-    "name_en": "[EVENING] Firmly Islam",
+    "name_my": "[PETANG] Doa Ditetapkan Islam",
+    "name_en": "[EVENING] Firmly Islam Doa",
     "content": "أمْسَيْنَا عَلَى فِطْرَةِ الإِسْلاَمِ وَعَلَى كَلِمَةِ الإِخْلاَصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ",
     "reference_my": "Riwayat Ahmad (15360)",
     "reference_en": "Narrated by Ahmad (15360)",
@@ -46,8 +46,8 @@
     ]
   },
   {
-    "name_my": "Mohon Keampunan",
-    "name_en": "Seeking Forgiveness",
+    "name_my": "Doa Mohon Keampunan",
+    "name_en": "Seeking Forgiveness Doa",
     "content": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِرًا وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
     "reference_my": "Riwayat al-Bukhari (7387) dan Muslim (2705)",
     "reference_en": "Narrated by Bukhari (7387) and Muslim (2705)",
@@ -56,8 +56,8 @@
     "category_names": ["Keampunan", "Forgiveness", "Taubat", "Repentance"]
   },
   {
-    "name_my": "[JEMAAH] Mohon Keampunan",
-    "name_en": "[JAMA'AH] Seeking Forgiveness",
+    "name_my": "[JEMAAH] Doa Mohon Keampunan",
+    "name_en": "[JAMA'AH] Seeking Forgiveness Doa",
     "content": "اللَّهُمَّ إِنَّا ظَلَمْنَا أَنْفُسَنَا ظُلْمًا كَثِيرًا وَلاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ فَاغْفِرْ لَنَا مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنَا إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
     "reference_my": "Riwayat al-Bukhari (7387) dan Muslim (2705)",
     "reference_en": "Narrated by Bukhari (7387) and Muslim (2705)",
@@ -72,8 +72,8 @@
     ]
   },
   {
-    "name_my": "Mohon Taqwa",
-    "name_en": "Seeking Piety",
+    "name_my": "Doa Mohon Taqwa",
+    "name_en": "Seeking Piety Doa",
     "content": "اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلَاهَا",
     "reference_my": "Riwayat Muslim (2722)",
     "reference_en": "Narrated by Muslim (2722)",
@@ -82,8 +82,8 @@
     "category_names": ["Piety", "Taqwa"]
   },
   {
-    "name_my": "[JEMAAH] Mohon Taqwa",
-    "name_en": "[JAMA'AH]Seeking Piety",
+    "name_my": "[JEMAAH] Doa Mohon Taqwa",
+    "name_en": "[JAMA'AH]Seeking Piety Doa",
     "content": "اللَّهُمَّ آتِ نُفُوْسَنَا تَقْوَاهَا وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا أَنْتَ وَلِيُّهَا وَمَوْلَاهَا",
     "reference_my": "Riwayat Muslim (2722)",
     "reference_en": "Narrated by Muslim (2722)",
@@ -92,8 +92,8 @@
     "category_names": ["Piety", "Taqwa", "Jamaah"]
   },
   {
-    "name_my": "Pengiktirafan",
-    "name_en": "Recognition",
+    "name_my": "Doa Pengiktirafan",
+    "name_en": "Recognition Doa",
     "content": "لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
     "reference_my": "Surah Al-Anbiya' (21:87)",
     "reference_en": "Surah Al-Anbiya' (21:87)",
@@ -102,8 +102,8 @@
     "category_names": ["Pengiktirafan", "Recognition"]
   },
   {
-    "name_my": "Kelapangan Hati dan Jiwa",
-    "name_en": "Tranquility of Heart and Soul",
+    "name_my": "Doa Kelapangan Hati dan Jiwa",
+    "name_en": "Tranquility of Heart and Soul Doa",
     "content": "اللَّهُمَّ إِنِّي عَبْدُكَ ، وَابْنُ عَبْدِكَ ، وَابْنُ أَمَتِكَ ، نَاصِيَتِي بِيَدِكَ ، مَاضٍ فِيَّ حُكْمُكَ ، عَدْلٌ فِيَّ قَضَاؤُكَ ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي ، وَنُورَ صَدْرِي ، وَجِلَاءَ حُزْنِي ، وَذَهَابَ هَمِّي",
     "reference_my": "Riwayat Ahmad (3712)",
     "reference_en": "Narrated by Ahmad (3712)",
@@ -112,8 +112,8 @@
     "category_names": ["Tenang", "Hati", "Jiwa", "Calm", "Heart", "Soul"]
   },
   {
-    "name_my": "[JEMAAH] Kelapangan Hati dan Jiwa",
-    "name_en": "[JAMA'AH] Tranquility of Heart and Soul",
+    "name_my": "[JEMAAH] Doa Kelapangan Hati dan Jiwa",
+    "name_en": "[JAMA'AH] Tranquility of Heart and Soul Doa",
     "content": "اللَّهُمَّ إِنَّا عَبِيْدُكَ ، وَبَنُوْ عَبِيْدِكَ ، وَبَنُوْ أَمَايِـكَ ، نَوَاصِيْنَا بِيَدِكَ ، مَاضٍ فِيْنَا حُكْمُكَ ، عَدْلٌ فِيْنَ قَضَاؤُكَ ، نَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قُلُوْبِنَا ، وَنُورَ صُدُوْرِنَا ، وَجِلَاءَ أَحْزَانِنَا ، وَذَهَابَ هُمُوْمِنَا",
     "reference_my": "Riwayat Ahmad (3712)",
     "reference_en": "Narrated by Ahmad (3712)",
@@ -130,8 +130,8 @@
     ]
   },
   {
-    "name_my": "Keluar dari Rumah",
-    "name_en": "Leaving the House",
+    "name_my": "Doa Keluar dari Rumah",
+    "name_en": "Leaving the House Doa",
     "content": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
     "reference_my": "Riwayat Abu Daud (5096)",
     "reference_en": "Narrated by Abu Daud (5096)",
@@ -140,8 +140,8 @@
     "category_names": ["Selamat", "Safety", "Protection", "Perlindungan"]
   },
   {
-    "name_my": "[JEMAAH] Keluar dari Rumah",
-    "name_en": "[JAMA'AH] Leaving the House",
+    "name_my": "[JEMAAH] Doa Keluar dari Rumah",
+    "name_en": "[JAMA'AH] Leaving the House Doa",
     "content": "بِسْمِ اللَّهِ تَوَكَّلْنَا عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
     "reference_my": "Riwayat Abu Daud (5096)",
     "reference_en": "Narrated by Abu Daud (5096)",
@@ -156,8 +156,8 @@
     ]
   },
   {
-    "name_my": "Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
-    "name_en": "Guidance, Piety, Chastity and Wealth",
+    "name_my": "Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
+    "name_en": "Guidance, Piety, Chastity and Wealth Doa",
     "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
     "reference_my": "Riwayat Muslim (2721)",
     "reference_en": "Narrated by Muslim (2721)",
@@ -175,8 +175,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
-    "name_en": "[JAMA'AH] Guidance, Piety, Chastity and Wealth",
+    "name_my": "[JEMAAH] Doa Petunjuk, Ketaqwaan, Iffah dan Kekayaan",
+    "name_en": "[JAMA'AH] Guidance, Piety, Chastity and Wealth Doa",
     "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
     "reference_my": "Riwayat Muslim (2721)",
     "reference_en": "Narrated by Muslim (2721)",
@@ -195,8 +195,8 @@
     ]
   },
   {
-    "name_my": "Ilmu, Rezeki dan Amalan yang Diterima",
-    "name_en": "Knowledge, Sustenance and Accepted Deeds",
+    "name_my": "Doa Ilmu, Rezeki dan Amalan yang Diterima",
+    "name_en": "Knowledge, Sustenance and Accepted Deeds Doa",
     "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
     "reference_my": "Riwayat Ibn Majah (925)",
     "reference_en": "Narrated by Ibn Majah (925)",
@@ -212,8 +212,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Ilmu, Rezeki dan Amalan yang Diterima",
-    "name_en": "[JAMA'AH] Knowledge, Sustenance and Accepted Deeds",
+    "name_my": "[JEMAAH] Doa Ilmu, Rezeki dan Amalan yang Diterima",
+    "name_en": "[JAMA'AH] Knowledge, Sustenance and Accepted Deeds Doa",
     "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
     "reference_my": "Riwayat Ibn Majah (925)",
     "reference_en": "Narrated by Ibn Majah (925)",
@@ -230,8 +230,8 @@
     ]
   },
   {
-    "name_my": "Pertolongan Untuk Zikir",
-    "name_en": "Help for Remembrance",
+    "name_my": "Doa Pertolongan Untuk Zikir",
+    "name_en": "Help for Remembrance Doa",
     "content": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
     "reference_my": "Riwayat Abu Daud (1522)",
     "reference_en": "Narrated by Abu Daud (1522)",
@@ -247,8 +247,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Pertolongan Untuk Zikir",
-    "name_en": "[JAMA'AH] Help for Remembrance",
+    "name_my": "[JEMAAH] Doa Pertolongan Untuk Zikir",
+    "name_en": "[JAMA'AH] Help for Remembrance Doa",
     "content": "اللَّهُمَّ أَعِنَّا عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
     "reference_my": "Riwayat Abu Daud (1522)",
     "reference_en": "Narrated by Abu Daud (1522)",
@@ -265,8 +265,8 @@
     ]
   },
   {
-    "name_my": "Keampunan",
-    "name_en": "Forgiveness",
+    "name_my": "Doa Keampunan",
+    "name_en": "Forgiveness Doa",
     "content": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
     "reference_my": "Riwayat Tirmidzi (3513)",
     "reference_en": "Narrated by Tirmidzi (3513)",
@@ -275,8 +275,8 @@
     "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar"]
   },
   {
-    "name_my": "[JEMAAH] Keampunan",
-    "name_en": "[JAMA'AH] Forgiveness",
+    "name_my": "[JEMAAH] Doa Keampunan",
+    "name_en": "[JAMA'AH] Forgiveness Doa",
     "content": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنَّا",
     "reference_my": "Riwayat Tirmidzi (3513)",
     "reference_en": "Narrated by Tirmidzi (3513)",
@@ -285,8 +285,8 @@
     "category_names": ["Keampunan", "Forgiveness", "Lailatul Qadar", "Jamaah"]
   },
   {
-    "name_my": "Ditetapkan Hati",
-    "name_en": "Firmness of Heart",
+    "name_my": "Doa Ditetapkan Hati",
+    "name_en": "Firmness of Heart Doa",
     "content": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِيْنِكَ",
     "reference_my": "Riwayat Tirmidzi (3522)",
     "reference_en": "Narrated by Tirmidzi (3522)",
@@ -295,8 +295,8 @@
     "category_names": ["Hati", "Heart", "Firmness"]
   },
   {
-    "name_my": "[JEMAAH] Ditetapkan Hati",
-    "name_en": "[JAMA'AH] Firmness of Heart",
+    "name_my": "[JEMAAH] Doa Ditetapkan Hati",
+    "name_en": "[JAMA'AH] Firmness of Heart Doa",
     "content": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قُلُوْبَنَا عَلَى دِيْنِكَ",
     "reference_my": "Riwayat Tirmidzi (3522)",
     "reference_en": "Narrated by Tirmidzi (3522)",
@@ -305,8 +305,8 @@
     "category_names": ["Hati", "Heart", "Firmness", "Jamaah"]
   },
   {
-    "name_my": "Minta Kebaikan dan Menolak Kejahatan",
-    "name_en": "Seeking Goodness and Rejecting Evil",
+    "name_my": "Doa Minta Kebaikan dan Menolak Kejahatan",
+    "name_en": "Seeking Goodness and Rejecting Evil Doa",
     "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنَ الْخَيْرِ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، وَأَعُوذُ بِكَ مِنَ الشَّرِّ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ خَيْرِ مَا سَأَلَكَ عَبْدُكَ وَنَبِيُّكَ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا عَاذَ بِهِ عَبْدُكَ وَنَبِيُّكَ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَعُوذُ بِكَ مِنَ النَّارِ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَسْأَلُكَ أَنْ تَجْعَلَ كُلَّ قَضَاءٍ قَضَيْتَهُ لِي خَيْرًا",
     "reference_my": "Riwayat Ibn Majah (3846), Ahmad (25180), al-Tabarani (2/252) dan Ibn Hibban (458)",
     "reference_en": "Narrated by Ibn Majah (3846), Ahmad (25180), al-Tabarani (2/252) and Ibn Hibban (458)",
@@ -320,8 +320,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Minta Kebaikan dan Menolak Kejahatan",
-    "name_en": "[JAMA'AH] Seeking Goodness and Rejecting Evil",
+    "name_my": "[JEMAAH] Doa Minta Kebaikan dan Menolak Kejahatan",
+    "name_en": "[JAMA'AH] Seeking Goodness and Rejecting Evil Doa",
     "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ مِنَ الْخَيْرِ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْنَا مِنْهُ وَمَا لَمْ نَعْلَمْ، وَنَعُوذُ بِكَ مِنَ الشَّرِّ كُلِّهِ عَاجِلِهِ وَآجِلِهِ، مَا عَلِمْنَا مِنْهُ وَمَا لَمْ نَعْلَمْ، اللَّهُمَّ إِنَّا نَسْأَلُكَ مِنْ خَيْرِ مَا سَأَلَكَ عَبْدُكَ وَنَبِيُّكَ، وَنَعُوذُ بِكَ مِنْ شَرِّ مَا عَاذَ بِهِ عَبْدُكَ وَنَبِيُّكَ، اللَّهُمَّ إِنَّا نَسْأَلُكَ الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَنَعُوذُ بِكَ مِنَ النَّارِ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَنَسْأَلُكَ أَنْ تَجْعَلَ كُلَّ قَضَاءٍ قَضَيْتَهُ لَنَا خَيْرًا",
     "reference_my": "Riwayat Ibn Majah (3846), Ahmad (25180), al-Tabarani (2/252) dan Ibn Hibban (458)",
     "reference_en": "Narrated by Ibn Majah (3846), Ahmad (25180), al-Tabarani (2/252) and Ibn Hibban (458)",
@@ -336,8 +336,8 @@
     ]
   },
   {
-    "name_my": "Ditambahkan Kebaikan",
-    "name_en": "Increase in Goodness",
+    "name_my": "Doa Ditambahkan Kebaikan",
+    "name_en": "Increase in Goodness Doa",
     "content": "اللَّهُمَّ زِدْنَا وَلَا تَنْقُصْنَا، وَأَكْرِمْنَا وَلَا تُهِنَّا، وَأَعْطِنَا وَلَا تَحْرِمْنَا، وَآثِرْنَا وَلَا تُؤْثِرْ عَلَيْنَا، وَارْضِنَا وَارْضَ عَنَّا",
     "reference_my": "Riwayat al-Tirmizi (3173), al-Nasa'ie dalam al-Sunan al-Kubra (1443) dan Ahmad (223)",
     "reference_en": "Narrated by al-Tirmizi (3173), al-Nasa'ie in al-Sunan al-Kubra (1443) and Ahmad (223)",
@@ -346,8 +346,8 @@
     "category_names": ["Kebaikan", "Goodness"]
   },
   {
-    "name_my": "Diilhamkan Kecerdasan",
-    "name_en": "Inspiration of Intelligence",
+    "name_my": "Doa Diilhamkan Kecerdasan",
+    "name_en": "Inspiration of Intelligence Doa",
     "content": "اللَّهُمَّ أَلْهِمْنِي رُشْدِي، وَأَعِذْنِي مِنْ شَرِّ نَفْسِي",
     "reference_my": "Riwayat al-Tirmizi (3483), al-Tabarani dalam al-Du'a (1393), al-Bazzar (3580) dan al-Baihaqi dalam al-Asma' wa al-Sifat (894)",
     "reference_en": "Narrated by al-Tirmizi (3483), al-Tabarani in al-Du'a (1393), al-Bazzar (3580) and al-Baihaqi in al-Asma' wa al-Sifat (894)",
@@ -356,8 +356,8 @@
     "category_names": ["Kecerdasan", "Intelligence", "Ilham", "Inspiration"]
   },
   {
-    "name_my": "[JEAMAAH] Diilhamkan Kecerdasan",
-    "name_en": "[JAMA'AH] Inspiration of Intelligence",
+    "name_my": "[JEAMAAH] Doa Diilhamkan Kecerdasan",
+    "name_en": "[JAMA'AH] Inspiration of Intelligence Doa",
     "content": "اللَّهُمَّ أَلْهِمْنَا رُشْدَنَا، وَأَعِذْنَا مِنْ شَرِّ أَنْفُسِنَا",
     "reference_my": "Riwayat al-Tirmizi (3483), al-Tabarani dalam al-Du'a (1393), al-Bazzar (3580) dan al-Baihaqi dalam al-Asma' wa Al-Sifat (894)",
     "reference_en": "Narrated by al-Tirmizi (3483), al-Tabarani in al-Du'a (1393), al-Bazzar (3580) and al-Baihaqi in al-Asma' wa Al-Sifat (894)",
@@ -372,8 +372,8 @@
     ]
   },
   {
-    "name_my": "Penghujung Umur Yang Baik",
-    "name_en": "Good End of Life",
+    "name_my": "Doa Penghujung Umur Yang Baik",
+    "name_en": "Good End of Life Doa",
     "content": "اللَّهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ، وَخَيْرَ عَمَلِي خَوَاتِمَهُ، وَاجْعَلْ خَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ",
     "reference_my": "Riwayat Ibn al-Sunni dalam 'Amal al-Yaum wa al-Lailah (121) dan al-Tabarani dalam al-Ausat (9411)",
     "reference_en": "Narrated by Ibn al-Sunni in 'Amal al-Yaum wa al-Lailah (121) and al-Tabarani in al-Ausat (9411)",
@@ -382,8 +382,8 @@
     "category_names": ["Mati", "Death", "Penghujung Umur", "End of Life"]
   },
   {
-    "name_my": "[JEMAAH] Penghujung Umur Yang Baik",
-    "name_en": "[JAMA'AH] Good End of Life",
+    "name_my": "[JEMAAH] Doa Penghujung Umur Yang Baik",
+    "name_en": "[JAMA'AH] Good End of Life Doa",
     "content": "اللَّهُمَّ اجْعَلْ خَيْرَ أَعْمَارِنَا أَوَاخِرَهَا، وَخَيْرَ أَعْمَالِنَا خَوَاتِمَهَا، وَاجْعَلْ خَيْرَ أَيَّامِنَا يَوْمَ نَلْقَاكَ",
     "reference_my": "Riwayat Ibn al-Sunni dalam 'Amal al-Yaum wa al-Lailah (121) dan al-Tabarani dalam al-Ausat (9411)",
     "reference_en": "Narrated by Ibn al-Sunni in 'Amal al-Yaum wa al-Lailah (121) and al-Tabarani in al-Ausat (9411)",
@@ -398,8 +398,8 @@
     ]
   },
   {
-    "name_my": "Elok Dalam Kesudahan Urusan",
-    "name_en": "Goodness in the End of Affairs",
+    "name_my": "Doa Elok Dalam Kesudahan Urusan",
+    "name_en": "Goodness in the End of Affairs Doa",
     "content": "اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الْأُمُورِ كُلِّهَا، وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الْآخِرَةِ",
     "reference_my": "Riwayat Ahmad (17628), al-Tabarani dalam al-Du'a (1436), al-Baihaqi dalam al-Da'awat al-Kabir (269) dan al-Hakim dalam al-Mustadrak (6508)",
     "reference_en": "Narrated by Ahmad (17628), al-Tabarani in al-Du'a (1436), al-Baihaqi in al-Da'awat al-Kabir (269) and al-Hakim in al-Mustadrak (6508)",
@@ -413,8 +413,8 @@
     ]
   },
   {
-    "name_my": "Mohon Keselamatan",
-    "name_en": "Seeking Safety",
+    "name_my": "Doa Mohon Keselamatan",
+    "name_en": "Seeking Safety Doa",
     "content": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ، وَهُوَ السَّمِيعُ الْعَلِيمُ",
     "reference_my": "Riwayat Abu Daud (5088), al-Tirmizi (3388), Ibn Majah (3869), al-Nasa'ie dalam al-Sunan al-Kubra (10178) dan Ahmad (446)",
     "reference_en": "Narrated by Abu Daud (5088), al-Tirmizi (3388), Ibn Majah (3869), al-Nasa'ie in al-Sunan al-Kubra (10178) and Ahmad (446)",
@@ -423,8 +423,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "Diselamatkan dari Azab",
-    "name_en": "Saved from Punishment",
+    "name_my": "Doa Diselamatkan dari Azab",
+    "name_en": "Saved from Punishment Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
     "reference_my": "Riwayat al-Bukhari (1377) dan Muslim (1352)",
     "reference_en": "Narrated by al-Bukhari (1377) and Muslim (1352)",
@@ -433,8 +433,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Diselamatkan dari Azab",
-    "name_en": "[JAMA'AH] Saved from Punishment",
+    "name_my": "[JEMAAH] Doa Diselamatkan dari Azab",
+    "name_en": "[JAMA'AH] Saved from Punishment Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ النَّارِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
     "reference_my": "Riwayat al-Bukhari (1377) dan Muslim (1352)",
     "reference_en": "Narrated by al-Bukhari (1377) and Muslim (1352)",
@@ -449,8 +449,8 @@
     ]
   },
   {
-    "name_my": "Berlindung dari Kejahatan",
-    "name_en": "Seeking Refuge from Evil",
+    "name_my": "Doa Berlindung dari Kejahatan",
+    "name_en": "Seeking Refuge from Evil Doa",
     "content": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ شَرِّ مَا خَلَقَ",
     "reference_my": "Riwayat Muslim (2709), Abu Daud (3899), al-Tirmizi (3604), al-Nasa'ie dalam al-Sunan al-Kubra (10421), Ibn Majah (3518) dan Ahmad (7898)",
     "reference_en": "Narrated by Muslim (2709), Abu Daud (3899), al-Tirmizi (3604), al-Nasa'ie in al-Sunan al-Kubra (10421), Ibn Majah (3518) and Ahmad (7898)",
@@ -459,8 +459,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Berlindung dari Kejahatan",
-    "name_en": "[JAMA'AH] Seeking Refuge from Evil",
+    "name_my": "[JEMAAH] Doa Berlindung dari Kejahatan",
+    "name_en": "[JAMA'AH] Seeking Refuge from Evil Doa",
     "content": "نَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
     "reference_my": "Riwayat Muslim (2709), Abu Daud (3899), al-Tirmizi (3604), al-Nasa'ie dalam al-Sunan al-Kubra (10421), Ibn Majah (3518) dan Ahmad (7898)",
     "reference_en": "Narrated by Muslim (2709), Abu Daud (3899), al-Tirmizi (3604), al-Nasa'ie in al-Sunan al-Kubra (10421), Ibn Majah (3518) and Ahmad (7898)",
@@ -475,8 +475,8 @@
     ]
   },
   {
-    "name_my": "Berlindung dari Empat Perkara",
-    "name_en": "Protection from Four Things",
+    "name_my": "Doa Berlindung dari Empat Perkara",
+    "name_en": "Protection from Four Things Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
     "reference_my": "Riwayat Muslim (7081), Abu Daud (1458), al-Tirmizi (3482), al-Nasa'ie (5536), Ibn Majah (3837) Ahmad (19402) dan Ibn Hibban (1015)",
     "reference_en": "Narrated by Muslim (7081), Abu Daud (1458), al-Tirmizi (3482), al-Nasa'ie (5536), Ibn Majah (3837) Ahmad (19402) and Ibn Hibban (1015)",
@@ -485,8 +485,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Berlindung dari Empat Perkara",
-    "name_en": "[JAMA'AH] Protection from Four Things",
+    "name_my": "[JEMAAH] Doa Berlindung dari Empat Perkara",
+    "name_en": "[JAMA'AH] Protection from Four Things Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا",
     "reference_my": "Riwayat Muslim (7081), Abu Daud (1458), al-Tirmizi (3482), al-Nasa'ie (5536), Ibn Majah (3837) Ahmad (19402) dan Ibn Hibban (1015)",
     "reference_en": "Narrated by Muslim (7081), Abu Daud (1458), al-Tirmizi (3482), al-Nasa'ie (5536), Ibn Majah (3837) Ahmad (19402) and Ibn Hibban (1015)",
@@ -501,8 +501,8 @@
     ]
   },
   {
-    "name_my": "Berlindung dari Penyakit Kronik",
-    "name_en": "Protection from Chronic Diseases",
+    "name_my": "Doa Berlindung dari Penyakit Kronik",
+    "name_en": "Protection from Chronic Diseases Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الْأَسْقَامِ",
     "reference_my": "Riwayat Abu Daud (1554), Ahmad (13027), al-Nasa'ie (5493) dan Abu Ya'la (2897)",
     "reference_en": "Narrated by Abu Daud (1554), Ahmad (13027), al-Nasa'ie (5493) and Abu Ya'la (2897)",
@@ -511,8 +511,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Berlindung dari Penyakit Kronik",
-    "name_en": "[JAMA'AH] Protection from Chronic Diseases",
+    "name_my": "[JEMAAH] Doa Berlindung dari Penyakit Kronik",
+    "name_en": "[JAMA'AH] Protection from Chronic Diseases Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنَ الْبَرَصِ، وَالْجُنُونِ، وَالْجُذَامِ، وَمِنْ سَيِّئِ الْأَسْقَامِ",
     "reference_my": "Riwayat Abu Daud (1554), Ahmad (13027), al-Nasa'ie (5493) dan Abu Ya'la (2897)",
     "reference_en": "Narrated by Abu Daud (1554), Ahmad (13027), al-Nasa'ie (5493) and Abu Ya'la (2897)",
@@ -527,8 +527,8 @@
     ]
   },
   {
-    "name_my": "Diselamatkan dari Kemungkaran",
-    "name_en": "Saved from Evil",
+    "name_my": "Doa Diselamatkan dari Kemungkaran",
+    "name_en": "Saved from Evil Doa",
     "content": "اللَّهُمَّ جَنِّبْنِي مُنْكَرَاتِ الْأَخْلَاقِ، وَالْأَهْوَاءِ، وَالْأَسْوَاءِ، وَالْأَدْوَاءِ",
     "reference_my": "Riwayat al-Tirmizi (3591), Ibn Hibban (960), al-Tabarani (19/19) dan al-Bazzar (9/155)",
     "reference_en": "Narrated by al-Tirmizi (3591), Ibn Hibban (960), al-Tabarani (19/19) and al-Bazzar (9/155)",
@@ -544,8 +544,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Diselamatkan dari Kemungkaran",
-    "name_en": "[JAMA'AH] Saved from Evil",
+    "name_my": "[JEMAAH] Doa Diselamatkan dari Kemungkaran",
+    "name_en": "[JAMA'AH] Saved from Evil Doa",
     "content": "اللَّهُمَّ جَنِّبْنَا مُنْكَرَاتِ الْأَخْلَاقِ، وَالْأَهْوَاءِ، وَالْأَسْوَاءِ، وَالْأَدْوَاءِ",
     "reference_my": "Riwayat al-Tirmizi (3591), Ibn Hibban (960), al-Tabarani (19/19) dan al-Bazzar (9/155)",
     "reference_en": "Narrated by al-Tirmizi (3591), Ibn Hibban (960), al-Tabarani (19/19) and al-Bazzar (9/155)",
@@ -562,8 +562,8 @@
     ]
   },
   {
-    "name_my": "Menolak Bala",
-    "name_en": "Rejecting Calamity",
+    "name_my": "Doa Menolak Bala",
+    "name_en": "Rejecting Calamity Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرَكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ",
     "reference_my": "Riwayat al-Bukhari (6347) dan Muslim (2707)",
     "reference_en": "Narrated by al-Bukhari (6347) and Muslim (2707)",
@@ -572,8 +572,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Menolak Bala",
-    "name_en": "[JAMA'AH] Rejecting Calamity",
+    "name_my": "[JEMAAH] Doa Menolak Bala",
+    "name_en": "[JAMA'AH] Rejecting Calamity Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ جَهْدِ الْبَلَاءِ، وَدَرَكِ الشَّقَاءِ، وَسُوءِ الْقَضَاءِ، وَشَمَاتَةِ الْأَعْدَاءِ",
     "reference_my": "Riwayat al-Bukhari (6347) dan Muslim (2707)",
     "reference_en": "Narrated by al-Bukhari (6347) and Muslim (2707)",
@@ -588,8 +588,8 @@
     ]
   },
   {
-    "name_my": "Agar Tidak Dihilangkan Nikmat",
-    "name_en": "To Not Remove Blessings",
+    "name_my": "Doa Agar Tidak Dihilangkan Nikmat",
+    "name_en": "To Not Remove Blessings Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ",
     "reference_my": "Riwayat Muslim (2739) dan Abu Daud (1545)",
     "reference_en": "Narrated by Muslim (2739) and Abu Daud (1545)",
@@ -598,8 +598,8 @@
     "category_names": ["Keselamatan", "Perlindungan", "Safety", "Protection"]
   },
   {
-    "name_my": "[JEMAAH] Agar Tidak Dihilangkan Nikmat",
-    "name_en": "[JAMA'AH] To Not Remove Blessings",
+    "name_my": "[JEMAAH] Doa Agar Tidak Dihilangkan Nikmat",
+    "name_en": "[JAMA'AH] To Not Remove Blessings Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ، وَتَحَوُّلِ عَافِيَتِكَ، وَفُجَاءَةِ نِقْمَتِكَ، وَجَمِيعِ سَخَطِكَ",
     "reference_my": "Riwayat Muslim (2739) dan Abu Daud (1545)",
     "reference_en": "Narrated by Muslim (2739) and Abu Daud (1545)",
@@ -614,8 +614,8 @@
     ]
   },
   {
-    "name_my": "Mohon Kurniaan dan Rahmat-Nya",
-    "name_en": "Seeking His Blessings and Mercy",
+    "name_my": "Doa Mohon Kurniaan dan Rahmat-Nya",
+    "name_en": "Seeking His Blessings and Mercy Doa",
     "content": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ",
     "reference_my": "Riwayat al-Tabarani dalam al-Mu'jam al-Kabir (10379) dan Abu Nu'aim dalam Hilyah al-Auliya' (7/280). Hadith ini dihukumkan sebagai sahih oleh pengarang kitab al-Silsilah al-Sahihah.",
     "reference_en": "Narrated by al-Tabarani in al-Mu'jam al-Kabir (10379) and Abu Nu'aim in Hilyah al-Auliya' (7/280). This hadith is classified as authentic by the author of al-Silsilah al-Sahihah.",
@@ -624,8 +624,8 @@
     "category_names": ["Kurniaan", "Blessings", "Rahmat", "Mercy"]
   },
   {
-    "name_my": "[JEMAAH] Mohon Kurniaan dan Rahmat-Nya",
-    "name_en": "[JAMA'AH] Seeking His Blessings and Mercy",
+    "name_my": "[JEMAAH] Doa Mohon Kurniaan dan Rahmat-Nya",
+    "name_en": "[JAMA'AH] Seeking His Blessings and Mercy Doa",
     "content": "اللَّهُمَّ إِنَّا نَسْأَلُكَ مِنْ فَضْلِكَ وَرَحْمَتِكَ، فَإِنَّهُ لَا يَمْلِكُهَا إِلَّا أَنْتَ",
     "reference_my": "Riwayat al-Tabarani dalam al-Mu'jam al-Kabir (10379) dan Abu Nu'aim dalam Hilyah al-Auliya' (7/280). Hadith ini dihukumkan sebagai sahih oleh pengarang kitab al-Silsilah al-Sahihah.",
     "reference_en": "Narrated by al-Tabarani in al-Mu'jam al-Kabir (10379) and Abu Nu'aim in Hilyah al-Auliya' (7/280). This hadith is classified as authentic by the author of al-Silsilah al-Sahihah.",
@@ -634,8 +634,8 @@
     "category_names": ["Kurniaan", "Blessings", "Rahmat", "Mercy", "Jamaah"]
   },
   {
-    "name_my": "Berlindung dari Dukacita",
-    "name_en": "Seeking Refuge from Grief",
+    "name_my": "Doa Berlindung dari Dukacita",
+    "name_en": "Seeking Refuge from Grief Doa",
     "content": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ",
     "reference_my": "Riwayat al-Bukhari (6369), Abu Daud (1555), al-Tirmizi (3484), al-Nasa'ie (5449) dan al-Baihaqi dalam al-Da'awat al-Kabir (305)",
     "reference_en": "Narrated by al-Bukhari (6369), Abu Daud (1555), al-Tirmizi (3484), al-Nasa'ie (5449) and al-Baihaqi in al-Da'awat al-Kabir (305)",
@@ -651,8 +651,8 @@
     ]
   },
   {
-    "name_my": "[JEMAAH] Berlindung dari Dukacita",
-    "name_en": "[JAMA'AH] Seeking Refuge from Grief",
+    "name_my": "[JEMAAH] Doa Berlindung dari Dukacita",
+    "name_en": "[JAMA'AH] Seeking Refuge from Grief Doa",
     "content": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَنَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَنَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَنَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ",
     "reference_my": "Riwayat al-Bukhari (6369), Abu Daud (1555), al-Tirmizi (3484), al-Nasa'ie (5449) dan al-Baihaqi dalam al-Da'awat al-Kabir (305)",
     "reference_en": "Narrated by al-Bukhari (6369), Abu Daud (1555), al-Tirmizi (3484), al-Nasa'ie (5449) and al-Baihaqi in al-Da'awat al-Kabir (305)",
@@ -669,8 +669,8 @@
     ]
   },
   {
-    "name_my": "Kesabaran dan Keteguhan",
-    "name_en": "Patience and Steadfastness",
+    "name_my": "Doa Kesabaran dan Keteguhan",
+    "name_en": "Patience and Steadfastness Doa",
     "content": "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
     "reference_my": "Al-Baqarah (2:250)",
     "reference_en": "Al-Baqarah (2:250)",
@@ -679,8 +679,8 @@
     "category_names": ["Sabar", "Teguh", "Patience", "Steadfastness"]
   },
   {
-    "name_my": "Mohon Bersyukur",
-    "name_en": "Seeking Gratitude",
+    "name_my": "Doa Mohon Bersyukur",
+    "name_en": "Seeking Gratitude Doa",
     "content": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
     "reference_my": "Al-Naml (27:19)",
     "reference_en": "Al-Naml (27:19)",
@@ -689,8 +689,8 @@
     "category_names": ["Syukur", "Gratitude"]
   },
   {
-    "name_my": "Mohon Hidayah",
-    "name_en": "Seeking Guidance",
+    "name_my": "Doa Mohon Hidayah",
+    "name_en": "Seeking Guidance Doa",
     "content": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَّدُنكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ",
     "reference_my": "Ali Imran (3:8)",
     "reference_en": "Ali Imran (3:8)",
@@ -699,8 +699,8 @@
     "category_names": ["Hidayah", "Guidance"]
   },
   {
-    "name_my": "Mohon Rahmat",
-    "name_en": "Seeking Mercy",
+    "name_my": "Doa Mohon Rahmat",
+    "name_en": "Seeking Mercy Doa",
     "content": "رَبَّنَا آتِنَا مِنْ لَّدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
     "reference_my": "Al-Kahfi (18:10)",
     "reference_en": "Al-Kahfi (18:10)",
@@ -709,8 +709,8 @@
     "category_names": ["Rahmat", "Mercy"]
   },
   {
-    "name_my": "Keampunan dan Doa Saudara",
-    "name_en": "Forgiveness and Brother's Prayer",
+    "name_my": "Doa Keampunan dan Doa Saudara",
+    "name_en": "Forgiveness and Brother's Prayer Doa",
     "content": "رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِلَّذِينَ آمَنُوا، رَبَّنَا إِنَّكَ رَءُوفٌ رَحِيمٌ",
     "reference_my": "Al-Hashr (59:10)",
     "reference_en": "Al-Hashr (59:10)",
@@ -719,8 +719,8 @@
     "category_names": ["Ampun", "Forgiveness", "Doa", "Prayer"]
   },
   {
-    "name_my": "Menyerah Kepada-Nya",
-    "name_en": "Surrendering to Him",
+    "name_my": "Doa Menyerah Kepada-Nya",
+    "name_en": "Surrendering to Him Doa",
     "content": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
     "reference_my": "Al-Qasas (28:24)",
     "reference_en": "Al-Qasas (28:24)",
@@ -730,7 +730,7 @@
   },
   {
     "name_my": "Doa untuk Pengantin",
-    "name_en": "Prayer for the Newlyweds",
+    "name_en": "Prayer for the Newlyweds Doa",
     "content": "بَارَكَ اللَّهُ لَكَ، وَبَارَكَ عَلَيْكَ، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
     "reference_my": "Riwayat Abu Daud (2130), al-Tirmizi (1091), Ahmad (8957), al-Nasa'i dalam al-Sunan al-Kubra (10089), al-Baihaqi dalam al-Sunan al- Kubra (14214); al-Da'awat al-Kabir (495), dan al-Hakim dalam al-Mustadrak (2745).",
     "reference_en": "Narrated by Abu Daud (2130), al-Tirmizi (1091), Ahmad (8957), al-Nasa'i in al-Sunan al-Kubra (10089), al-Baihaqi in al-Sunan al- Kubra (14214); al-Da'awat al-Kabir (495), and al-Hakim in al-Mustadrak (2745).",
@@ -739,8 +739,8 @@
     "category_names": ["Pengantin", "Newlyweds"]
   },
   {
-    "name_my": "Mendapat Keluarga yang Baik",
-    "name_en": "Having a Good Family",
+    "name_my": "Doa Mendapat Keluarga yang Baik",
+    "name_en": "Having a Good Family Doa",
     "content": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
     "reference_my": "Al-Furqan (25:74)",
     "reference_en": "Al-Furqan (25:74)",
@@ -758,8 +758,8 @@
     ]
   },
   {
-    "name_my": "Memohon Zuriat Soleh/Solehah",
-    "name_en": "Seeking Righteous Offspring",
+    "name_my": "Doa Memohon Zuriat Soleh/Solehah",
+    "name_en": "Seeking Righteous Offspring Doa",
     "content": "رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ",
     "reference_my": "Al-Saffat (37:100)",
     "reference_en": "Al-Saffat (37:100)",
@@ -768,8 +768,8 @@
     "category_names": ["Zuriat", "Soleh", "Solehah", "Offspring"]
   },
   {
-    "name_my": "Diberkati Harta dan Keturunan",
-    "name_en": "Blessing in Wealth and Offspring",
+    "name_my": "Doa Diberkati Harta dan Keturunan",
+    "name_en": "Blessing in Wealth and Offspring Doa",
     "content": "اللَّهُمَّ أَكْثِرْ مَالِي وَوَلَدِي، وَبَارِكْ لِي فِيمَا أَعْطَيْتَنِي، وَأَطِلْ حَيَاتِي عَلَى طَاعَتِكَ، وَأَحْسِنْ عَمَلِي، وَاغْفِرْ لِي",
     "reference_my": "Riwayat al-Bukhari (6344) dan Muslim (2481) daripada Anas dengan lafaz \"اللَّهُمَّ أَكْثِرْ مَالَهُ وَوَلَدَهُ، وَبَارِكْ لَهُ فِيمَا أَعْطَيْتَهُ\"، manakala lafaz \"وَأَطِلْ حَيَاتَهُ وَاغْفِرْ لَهُ\" diriwayatkan oleh al-Bukhari dalam *al-Adab al-Mufrad* (653), Ibn Sa'ad dalam *al-Tabaqat al-Kubra* (8451), dan Abu Ya'la (4236).",
     "reference_en": "Narrated by al-Bukhari (6344) and Muslim (2481) from Anas with the words \"اللَّهُمَّ أَكْثِرْ مَالَهُ وَوَلَدَهُ، وَبَارِكْ لَهُ فِيمَا أَعْطَيْتَهُ\", while the words \"وَأَطِلْ حَيَاتَهُ واغْفِرْ لَهُ\" are narrated by al-Bukhari in *al-Adab al-Mufrad* (653), Ibn Sa'ad in *al-Tabaqat al-Kubra* (8451), and Abu Ya'la (4236).",
@@ -785,8 +785,8 @@
     ]
   },
   {
-    "name_my": "Kebaikan Dunia dan Akhirat",
-    "name_en": "Goodness in This World and the Hereafter",
+    "name_my": "Doa Kebaikan Dunia dan Akhirat",
+    "name_en": "Goodness in This World and the Hereafter Doa",
     "content": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً، وَفِي الْآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ",
     "reference_my": "Al-Baqarah (2:201)",
     "reference_en": "Al-Baqarah (2:201)",
