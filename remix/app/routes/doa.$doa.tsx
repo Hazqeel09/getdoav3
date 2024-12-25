@@ -93,13 +93,6 @@ export default function DoaDetail() {
       title: `${doa.name_en} (${doa.name_my}) - Islamic Prayer`,
       text: `Learn the complete ${doa.name_en} prayer with translations`,
       url: window.location.href,
-      files: [
-        new File(
-          [await fetch('/logo.svg').then(res => res.blob())],
-          'logo.png',
-          { type: 'image/png' }
-        )
-      ]
     };
 
     try {
