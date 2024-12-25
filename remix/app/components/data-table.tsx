@@ -178,11 +178,7 @@ export function DataTable({ data }: DataTableProps) {
       {/* Mobile View */}
       <div className="block md:hidden">
         {table.getRowModel().rows.map((row) => (
-          <Link
-            to={`/all-doa/${encodeURIComponent(row.original.name_my)}`}
-            className="contents"
-            key={row.id}
-          >
+          <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents" key={row.id}>
             <MobileDoaCard data={row.original} language={language} />
           </Link>
         ))}
@@ -217,12 +213,7 @@ export function DataTable({ data }: DataTableProps) {
                       key={row.id}
                       className="hover:bg-gray-50 transition-colors cursor-pointer"
                     >
-                      <Link
-                        to={`/all-doa/${encodeURIComponent(
-                          row.original.name_my
-                        )}`}
-                        className="contents"
-                      >
+                      <Link to={`/doa/${encodeURIComponent(row.original.name_my)}`} className="contents">
                         {row.getVisibleCells().map((cell) => (
                           <TableCell key={cell.id} className="py-4">
                             {flexRender(
