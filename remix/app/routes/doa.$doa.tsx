@@ -18,7 +18,7 @@ import {
   SelectValue,
 } from "../components/ui/select";
 import { Button } from "../components/ui/button";
-import { Share } from "lucide-react";
+import { Send } from 'lucide-react';
 import { Doa } from "../components/data-table";
 
 // Add meta function for SEO
@@ -170,14 +170,14 @@ export default function DoaDetail() {
             </Select>
 
             <div className="relative">
-              <Button
-                onClick={handleShare}
-                variant="outline"
-                className="flex items-center gap-2"
-              >
-                <Share className="h-4 w-4" />
-                Share
-              </Button>
+            <Button
+              onClick={handleShare}
+              variant="outline"
+              className="flex items-center gap-2 border-primary-outline text-primary-outline"
+            >
+              Share
+              <Send className="h-4 w-4" />
+            </Button>
               {shareStatus && (
                 <div className="absolute top-full mt-2 right-0 bg-black text-white text-sm py-1 px-2 rounded">
                   {shareStatus}
