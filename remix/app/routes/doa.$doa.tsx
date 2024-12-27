@@ -18,8 +18,9 @@ import {
   SelectValue,
 } from "../components/ui/select";
 import { Button } from "../components/ui/button";
-import { Send } from 'lucide-react';
+import { Send } from "lucide-react";
 import { Doa } from "../components/data-table";
+import QRCodeCard from "../components/dynamicDoa/qrCode";
 
 // Add meta function for SEO
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
@@ -71,6 +72,17 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
   ];
 };
 
+type SedekahJeQR = {
+  id: number;
+  name: string;
+  category: string;
+  state: string;
+  city: string;
+  qrImage: string;
+  qrContent: string;
+  supportedPayment: string[];
+};
+
 export const loader: LoaderFunction = async ({ params }) => {
   const { doa } = params;
   const filePath = path.join(process.cwd(), "app", "data", "doa.json");
@@ -82,11 +94,20 @@ export const loader: LoaderFunction = async ({ params }) => {
     throw new Response("Not Found", { status: 404 });
   }
 
-  return json(selectedDoa);
+  const response = await fetch("https://sedekah.je/api/random");
+  if (!response.ok) {
+    throw new Response("Failed to fetch doa data", { status: response.status });
+  }
+  const sedekahJeQR: SedekahJeQR = await response.json();
+
+  return json({ selectedDoa, sedekahJeQR });
 };
 
 export default function DoaDetail() {
-  const doa = useLoaderData<Doa>();
+  const { selectedDoa: doa, sedekahJeQR: sedekahJe } = useLoaderData<{
+    selectedDoa: Doa;
+    sedekahJeQR: SedekahJeQR;
+  }>();
   const [language, setLanguage] = useState<"en" | "my">("en");
   const [shareStatus, setShareStatus] = useState<string>("");
 
@@ -172,14 +193,14 @@ export default function DoaDetail() {
             </Select>
 
             <div className="relative">
-            <Button
-              onClick={handleShare}
-              variant="outline"
-              className="flex items-center gap-2 border-primary-outline text-primary-outline"
-            >
-              Share
-              <Send className="h-4 w-4" />
-            </Button>
+              <Button
+                onClick={handleShare}
+                variant="outline"
+                className="flex items-center gap-2 border-primary-outline text-primary-outline"
+              >
+                Share
+                <Send className="h-4 w-4" />
+              </Button>
               {shareStatus && (
                 <div className="absolute top-full mt-2 right-0 bg-black text-white text-sm py-1 px-2 rounded">
                   {shareStatus}
@@ -249,6 +270,12 @@ export default function DoaDetail() {
                 &larr; Back to All Doa List
               </Link>
             </nav>
+
+            <QRCodeCard
+              name={sedekahJe.name}
+              qrContent={sedekahJe.qrContent}
+              supportedPayment={sedekahJe.supportedPayment}
+            />
           </div>
         </div>
       </main>
