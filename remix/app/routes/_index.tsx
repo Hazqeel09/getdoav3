@@ -9,7 +9,8 @@ export const meta: MetaFunction = () => {
     { title: "GetDoa" },
     {
       name: "description",
-      content: "Create your custom arrangements of Doa / prayers",
+      content:
+        "Browse Doa / Prayers and Create your custom arrangements of Doa / prayers",
     },
     {
       name: "keywords",

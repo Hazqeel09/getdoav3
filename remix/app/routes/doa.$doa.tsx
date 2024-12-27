@@ -35,7 +35,7 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
 
   const doa = data as Doa;
   return [
-    { title: `${doa.name_en} (${doa.name_my}) - Islamic Prayer | GetDoa` },
+    { title: `${doa.name_my} (${doa.name_en})` },
     {
       name: "description",
       content: `Learn the complete ${doa.name_en} prayer in Arabic with English and Malay translations. Find its meaning, reference, and when to recite this Islamic prayer.`,
@@ -44,12 +44,14 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
       name: "keywords",
       content: `${doa.name_en}, ${
         doa.name_my
-      }, islamic prayer, dua, ${doa.category_names.join(", ")}, muslim prayers`,
+      }, islamic prayer, dua, ${doa.category_names?.join(
+        ", "
+      )}, muslim prayers`,
     },
     // Open Graph tags for social sharing
     {
       property: "og:title",
-      content: `${doa.name_en} (${doa.name_my}) - Islamic Prayer`,
+      content: `${doa.name_my} (${doa.name_en})`,
     },
     {
       property: "og:description",
@@ -90,7 +92,7 @@ export default function DoaDetail() {
 
   const handleShare = async () => {
     const shareData = {
-      title: `${doa.name_en} (${doa.name_my}) - Islamic Prayer`,
+      title: `${doa.name_my} (${doa.name_en}) - GetDoa`,
       text: `Learn the complete ${doa.name_en} prayer with translations`,
       url: window.location.href,
     };
