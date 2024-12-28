@@ -22,7 +22,37 @@ import { Send } from "lucide-react";
 import { Doa } from "../components/data-table";
 import QRCodeCard from "../components/dynamicDoa/qrCode";
 
-// Add meta function for SEO
+type SedekahJeQR = {
+  id: number;
+  name: string;
+  category: string;
+  state: string;
+  city: string;
+  qrImage: string;
+  qrContent: string;
+  supportedPayment: string[];
+};
+
+export const loader: LoaderFunction = async ({ params }) => {
+  const { doa } = params;
+  const filePath = path.join(process.cwd(), "app", "data", "doa.json");
+  const fileContents = await fs.readFile(filePath, "utf-8");
+  const doaList: Doa[] = JSON.parse(fileContents);
+  const selectedDoa = doaList.find((d) => d.slug === doa);
+
+  if (!selectedDoa) {
+    throw new Response("Not Found", { status: 404 });
+  }
+
+  const response = await fetch("https://sedekah.je/api/random");
+  if (!response.ok) {
+    throw new Response("Failed to fetch doa data", { status: response.status });
+  }
+  const sedekahJeQR: SedekahJeQR = await response.json();
+
+  return json({ selectedDoa, sedekahJeQR });
+};
+
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   if (!data) {
     return [
@@ -34,9 +64,9 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
     ];
   }
 
-  const doa = data as Doa;
+  const { selectedDoa: doa } = data;
   return [
-    { title: `${doa.name_my} (${doa.name_en})` },
+    { title: `GetDoa` },
     {
       name: "description",
       content: `Learn the complete ${doa.name_en} prayer in Arabic with English and Malay translations. Find its meaning, reference, and when to recite this Islamic prayer.`,
@@ -70,37 +100,6 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
     { name: "robots", content: "index, follow" },
     { name: "language", content: "English, Malay, Arabic" },
   ];
-};
-
-type SedekahJeQR = {
-  id: number;
-  name: string;
-  category: string;
-  state: string;
-  city: string;
-  qrImage: string;
-  qrContent: string;
-  supportedPayment: string[];
-};
-
-export const loader: LoaderFunction = async ({ params }) => {
-  const { doa } = params;
-  const filePath = path.join(process.cwd(), "app", "data", "doa.json");
-  const fileContents = await fs.readFile(filePath, "utf-8");
-  const doaList: Doa[] = JSON.parse(fileContents);
-  const selectedDoa = doaList.find((d) => d.slug === doa);
-
-  if (!selectedDoa) {
-    throw new Response("Not Found", { status: 404 });
-  }
-
-  const response = await fetch("https://sedekah.je/api/random");
-  if (!response.ok) {
-    throw new Response("Failed to fetch doa data", { status: response.status });
-  }
-  const sedekahJeQR: SedekahJeQR = await response.json();
-
-  return json({ selectedDoa, sedekahJeQR });
 };
 
 export default function DoaDetail() {
