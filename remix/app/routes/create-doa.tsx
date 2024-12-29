@@ -28,7 +28,7 @@ const CreateDoaPage = () => {
     []
   );
 
-  const { category, setCategory } = useCreateDoa();
+  const { title, description, category, setCategory } = useCreateDoa();
   const [selectedDoas, setSelectedDoas] = useState<typeof doaList>([]);
   const [search, setSearch] = useState("");
 
@@ -52,13 +52,13 @@ const CreateDoaPage = () => {
       </header>
 
       <div className="container mx-auto px-4 py-6">
-        <h2 className="text-lg mb-6">General Doa after Prayer</h2>
+        <h2 className="text-lg mb-6">{description}</h2>
 
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Left Card */}
           <Card className="h-[600px] flex flex-col">
             <CardHeader>
-              <CardTitle className="text-xl">Doa after Prayer</CardTitle>
+              <CardTitle className="text-xl">{title}</CardTitle>
               <div className="text-center mt-2 text-xl text-gray-800 font-arabic">
                 بسم الله الرحمن الرحيم
               </div>
