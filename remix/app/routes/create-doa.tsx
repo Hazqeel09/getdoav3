@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { createId } from "@paralleldrive/cuid2";
 import { CircleUserRoundIcon, Github } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import {
@@ -8,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "~/components/ui/card";
-import { Input } from "~/components/ui/input";
 import {
   Select,
   SelectContent,
@@ -16,21 +16,38 @@ import {
   SelectTrigger,
   SelectValue,
 } from "~/components/ui/select";
-import { Textarea } from "~/components/ui/textarea";
 import { useCreateDoa } from "~/hooks/use-createDoa";
+import DOA from "~/data/doa.json";
+import { useMemo, useState } from "react";
+import { Label } from "~/components/ui/label";
+import { Input } from "~/components/ui/input";
 
 const CreateDoaPage = () => {
-  const { title, setTitle, category, setCategory } = useCreateDoa();
+  const doaList = useMemo(
+    () => DOA.map((doa) => ({ ...doa, id: createId() })),
+    []
+  );
+
+  const { category, setCategory } = useCreateDoa();
+  const [selectedDoas, setSelectedDoas] = useState<typeof doaList>([]);
+  const [search, setSearch] = useState("");
+
+  const filteredDoaList = doaList.filter(
+    (doa) =>
+      doa.name_en.toLowerCase().includes(search.toLowerCase()) ||
+      doa.content.toLowerCase().includes(search.toLowerCase()) ||
+      doa.meaning_en.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-blue-100/40 flex justify-between p-4 px-6 md:p-10 md:px-20 sticky top-0 backdrop-blur-2xl z-10">
+      <header className="bg-blue-100/40 flex justify-between p-4 px-6 md:p-2 md:px-20 sticky top-0 backdrop-blur-2xl z-10">
         <Link to="/">
           <img src="/logo.svg" alt="GetDoa Logo" className="h-auto w-full" />
         </Link>
-        <div className="space-x-4 py-2">
-          <CircleUserRoundIcon size={60} color="#006D77" />
+        <div className="flex items-center justify-center">
+          <CircleUserRoundIcon size={30} color="#006D77" />
         </div>
       </header>
 
@@ -39,15 +56,46 @@ const CreateDoaPage = () => {
 
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Left Card */}
-          <Card>
+          <Card className="h-[600px] flex flex-col">
             <CardHeader>
               <CardTitle className="text-xl">Doa after Prayer</CardTitle>
               <div className="text-center mt-2 text-xl text-gray-800 font-arabic">
                 بسم الله الرحمن الرحيم
               </div>
             </CardHeader>
-            <CardContent className="min-h-[200px] border rounded-lg m-4 flex items-center justify-center text-gray-400">
-              Your choosen doa will appear here
+            <CardContent className="flex-1 border rounded-lg m-4 flex items-center justify-center">
+              {selectedDoas.length === 0 ? (
+                <p className="text-lg text-gray-400">Your choosen doa will appear here</p>
+              ) : (
+                <ul className="space-y-4 overflow-y-auto h-[350px] pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400">
+                  {selectedDoas.map((doa, i) => (
+                    <li
+                      key={i}
+                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3"
+                    >
+                      <div className="w-full flex flex-row items-center justify-between">
+                        <h3 className="text-lg">{doa.name_en}</h3>
+                        <Button
+                          variant="ghost"
+                          className="text-[#57AAB4] hover:text-[#57AAff]"
+                          onClick={() =>
+                            setSelectedDoas(
+                              selectedDoas.filter((d) => d.id !== doa.id)
+                            )
+                          }
+                        >
+                          Remove
+                        </Button>
+                      </div>
+                      <p className="text-sm text-gray-600">{doa.content}</p>
+                      <p className="text-sm text-gray-600">{doa.meaning_en}</p>
+                      <p className="text-sm text-gray-600">
+                        {doa.reference_en}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </CardContent>
             <CardFooter className="flex justify-between">
               <Button variant="outline">CANCEL</Button>
@@ -57,36 +105,68 @@ const CreateDoaPage = () => {
             </CardFooter>
           </Card>
 
-          {/* Right Form */}
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <label className="text-sm">Doa Category:</label>
-              <Select onValueChange={setCategory}>
-                <SelectTrigger>
-                  <SelectValue placeholder="e.g.Doa after prayer" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="morning">Morning Prayer</SelectItem>
-                  <SelectItem value="evening">Evening Prayer</SelectItem>
-                  <SelectItem value="night">Night Prayer</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
+          {/* Right Card */}
+          <Card className="h-[600px] flex flex-col">
+            <CardHeader>
+              <CardTitle className="text-xl">Select Doa</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-6 flex-1 overflow-hidden">
+              <div className="space-y-2">
+                <label className="text-sm">Doa Category:</label>
+                <Select onValueChange={setCategory}>
+                  <SelectTrigger>
+                    <SelectValue
+                      placeholder="Select category"
+                      defaultValue="morning"
+                    />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="morning">Morning Prayer</SelectItem>
+                    <SelectItem value="evening">Evening Prayer</SelectItem>
+                    <SelectItem value="night">Night Prayer</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-            <div className="space-y-2">
-              <label className="text-sm">Doa Title:</label>
-              <Input
-                placeholder="e.g. Doa after prayer"
-                value={title}
-                onChange={(e) => setTitle(e.target.value)}
-              />
-            </div>
+              <div className="flex flex-col w-full">
+                <Label className="text-sm">Search Doa:</Label>
+                <Input
+                  placeholder="Search by title, content or meaning..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+              </div>
 
-            <Textarea
-              placeholder="Search doa by category and choose doa that you want to use"
-              className="min-h-[200px]"
-            />
-          </div>
+              <div className="space-y-4 overflow-y-auto h-[350px] pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400">
+                {filteredDoaList.map((doa, i) => {
+                  return (
+                    <div
+                      key={i}
+                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3"
+                    >
+                      <div className="w-full flex flex-row items-center justify-between">
+                        <h3 className="text-lg">{doa.name_en}</h3>
+                        <Button
+                          variant="ghost"
+                          className="text-[#57AAB4] hover:text-[#57AAff]"
+                          onClick={() =>
+                            setSelectedDoas([...selectedDoas, doa])
+                          }
+                        >
+                          Add Doa
+                        </Button>
+                      </div>
+                      <p className="text-sm text-gray-600">{doa.content}</p>
+                      <p className="text-sm text-gray-600">{doa.meaning_en}</p>
+                      <p className="text-sm text-gray-600">
+                        {doa.reference_en}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Footer */}
