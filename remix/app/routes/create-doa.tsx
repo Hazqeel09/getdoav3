@@ -21,6 +21,7 @@ import DOA from "~/data/doa.json";
 import { useMemo, useState } from "react";
 import { Label } from "~/components/ui/label";
 import { Input } from "~/components/ui/input";
+import { Reorder } from "motion/react";
 
 const CreateDoaPage = () => {
   const doaList = useMemo(
@@ -65,36 +66,44 @@ const CreateDoaPage = () => {
             </CardHeader>
             <CardContent className="flex-1 border rounded-lg m-4 flex items-center justify-center">
               {selectedDoas.length === 0 ? (
-                <p className="text-lg text-gray-400">Your choosen doa will appear here</p>
+                <p className="text-lg text-gray-400">
+                  Your choosen doa will appear here
+                </p>
               ) : (
-                <ul className="space-y-4 overflow-y-auto h-[350px] pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400">
-                  {selectedDoas.map((doa, i) => (
-                    <li
-                      key={i}
-                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3"
+                <Reorder.Group
+                  axis="y"
+                  values={selectedDoas}
+                  onReorder={setSelectedDoas}
+                  className="space-y-4 overflow-y-auto h-[350px] pr-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-400"
+                >
+                  {selectedDoas.map((item) => (
+                    <Reorder.Item
+                      key={item.id}
+                      value={item}
+                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3 cursor-grab"
                     >
                       <div className="w-full flex flex-row items-center justify-between">
-                        <h3 className="text-lg">{doa.name_en}</h3>
+                        <h3 className="text-lg">{item.name_en}</h3>
                         <Button
                           variant="ghost"
                           className="text-[#57AAB4] hover:text-[#57AAff]"
                           onClick={() =>
                             setSelectedDoas(
-                              selectedDoas.filter((d) => d.id !== doa.id)
+                              selectedDoas.filter((d) => d.id !== item.id)
                             )
                           }
                         >
                           Remove
                         </Button>
                       </div>
-                      <p className="text-sm text-gray-600">{doa.content}</p>
-                      <p className="text-sm text-gray-600">{doa.meaning_en}</p>
+                      <p className="text-sm text-gray-600">{item.content}</p>
+                      <p className="text-sm text-gray-600">{item.meaning_en}</p>
                       <p className="text-sm text-gray-600">
-                        {doa.reference_en}
+                        {item.reference_en}
                       </p>
-                    </li>
+                    </Reorder.Item>
                   ))}
-                </ul>
+                </Reorder.Group>
               )}
             </CardContent>
             <CardFooter className="flex justify-between">
