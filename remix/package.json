@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "remix vite:dev",
+    "dev": "remix vite:dev --port 5713",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
     "migration:json": "node ./script/json-migration.js"
   },
   "dependencies": {
+    "@prisma/client": "^6.1.0",
     "@radix-ui/react-select": "^2.1.4",
     "@radix-ui/react-slot": "^1.1.1",
     "@remix-run/node": "2.14.0",
@@ -20,6 +21,7 @@
     "@tanstack/react-table": "^8.20.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "google-auth-library": "^9.15.0",
     "isbot": "^4.4.0",
     "lucide-react": "^0.468.0",
     "qrcode.react": "^4.2.0",
@@ -27,7 +29,8 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
     "@remix-run/dev": "2.14.0",
@@ -44,6 +47,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.38",
+    "prisma": "^6.1.0",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.1.6",
     "vite": "^6.0.4",
