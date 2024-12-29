@@ -10,8 +10,8 @@ import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 
 import "./tailwind.css";
 import { isValidSession } from "./libs/session.server";
-import { Prisma } from "@prisma/client";
 import { CurrentUserContext } from "./contexts/current-user";
+import { User } from "./types/users";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,7 +33,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const loaderData = useLoaderData<Prisma.UserSelect | null>()
+  const loaderData = useLoaderData<User | null>()
 
   return (
     <html lang="en">

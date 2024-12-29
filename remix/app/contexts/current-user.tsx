@@ -1,4 +1,4 @@
-import { Prisma } from "@prisma/client";
 import { createContext } from "react";
+import { User } from "~/types/users";
 
-export const CurrentUserContext = createContext<Prisma.UserSelect | null>(null);
+export const CurrentUserContext = createContext<User | null>(null);

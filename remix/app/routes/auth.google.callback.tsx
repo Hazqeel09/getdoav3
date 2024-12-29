@@ -41,7 +41,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
         expires_at: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7)
       },
       include: {
-        user: true
+        user: {select: {id: true, email: true, username: true}}
       }
     })
     const headers = new Headers();
