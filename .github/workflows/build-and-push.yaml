@@ -29,3 +29,5 @@ jobs:
           push: true
           platforms: linux/arm64
           tags: ${{ secrets.DOCKER_USERNAME }}/getdoa-remix:latest
+          build-args: |
+            DATABASE_URL: file:/sqlite/dev.db
