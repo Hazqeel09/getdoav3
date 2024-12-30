@@ -113,7 +113,7 @@ jobs:
                 "fi",
 
                 "echo \"[INFO] Setup SQLite ...\"",
-                "sudo docker exec -it getdoa-remix sh -c \"npx prisma migrate deploy\"",
+                "sudo docker exec getdoa-remix sh -c \"npx prisma migrate deploy\"",
 
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
                 "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\"",
