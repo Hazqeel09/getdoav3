@@ -16,6 +16,6 @@ services:
     volumes:
       - sqlite_data:/sqlite
 
-  volumes:
-    sqlite_data:
-      driver: local
+volumes:
+  sqlite_data:
+    driver: local
