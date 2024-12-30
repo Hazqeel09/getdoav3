@@ -4,6 +4,8 @@ import { features } from "../data/features";
 import cta from "../data/cta.json";
 import Icon from "../components/icon";
 import { StartNow } from "~/components/home/start-now";
+import { CurrentUserContext } from "~/contexts/current-user";
+import { useContext } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,6 +24,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  const currentUser = useContext(CurrentUserContext);
+
   return (
     <div className="min-h-screen">
       <header className="bg-blue-100/40 flex justify-between p-4 px-6 md:p-10 md:px-20 sticky top-0 backdrop-blur-2xl z-10">
@@ -29,12 +33,32 @@ export default function Index() {
           <img src="/logo.svg" alt="GetDoa Logo" className="h-auto w-full" />
         </Link>
         <div className="space-x-4 py-2">
-          <a href="/" className="text-gray-700 hover:text-gray-900">
-            Log in
-          </a>
-          <button className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800">
-            Sign up
-          </button>
+          {currentUser ? (
+            <div className="flex items-center gap-x-4">
+              <p>{currentUser.email.split("@")[0]}</p>
+              <Link
+                to="/logout"
+                className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800"
+              >
+                Logout
+              </Link>
+            </div>
+          ) : (
+            <>
+              <Link
+                to="/register"
+                className="text-gray-700 hover:text-gray-900"
+              >
+                Log in
+              </Link>
+              <Link
+                to="/register"
+                className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800"
+              >
+                Sign up
+              </Link>
+            </>
+          )}
         </div>
       </header>
       <main id="hero" className="bg-blue-50 flex justify-center py-10">

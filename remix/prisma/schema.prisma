@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String  @id @default(uuid())
+  username   String  @unique
+  email      String  @unique
+  google_sub String? @unique
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  banned_at  DateTime?
+
+  sessions     Session[]
+  doas         Doa[]
+  compilations Compilation[]
+  bookmarks    Bookmark[]
+
+  @@map("users")
+}
+
+model Session {
+  id         String   @id @default(uuid())
+  user_id    String
+  expires_at DateTime
+
+  user User @relation(references: [id], fields: [user_id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model Doa {
+  id               Int      @id @default(autoincrement())
+  title_my         String?
+  title_en         String?
+  text_ar          String?
+  text_my          String?
+  text_en          String?
+  fadhilat_amal_my String?
+  fadhilat_amal_en String?
+  slug             String?  @unique @default(uuid())
+  is_verified      Boolean?
+  is_public        Boolean?
+  user_id          String?
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+
+  user         User?               @relation(fields: [user_id], references: [id])
+  categories   CategoriesOnDoa[]
+  sources      SourcesOnDoa[]
+  compilations DoasOnCompilation[]
+  bookmarks    Bookmark[]
+
+  @@map("doas")
+}
+
+model CategoriesOnDoa {
+  id          Int @id @default(autoincrement())
+  doa_id      Int
+  category_id Int
+
+  doa      Doa      @relation(fields: [doa_id], references: [id])
+  category Category @relation(fields: [category_id], references: [id])
+
+  @@map("doa_categories")
+}
+
+model Category {
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  description String?
+
+  doas CategoriesOnDoa[]
+
+  @@map("categories")
+}
+
+model SourcesOnDoa {
+  id        Int     @id @default(autoincrement())
+  doa_id    Int
+  source_id Int
+  reference String?
+
+  doa    Doa    @relation(fields: [doa_id], references: [id])
+  source Source @relation(fields: [source_id], references: [id])
+
+  @@map("doa_sources")
+}
+
+model Source {
+  id   Int     @id @default(autoincrement())
+  name String  @unique
+  type String?
+
+  doas SourcesOnDoa[]
+
+  @@map("sources")
+}
+
+model Compilation {
+  id          Int      @id @default(autoincrement())
+  title       String?
+  description String?
+  slug        String?  @unique @default(uuid())
+  views       Int?
+  is_public   Boolean?
+  user_id     String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  user      User                @relation(fields: [user_id], references: [id])
+  doas      DoasOnCompilation[]
+  bookmarks Bookmark[]
+
+  @@map("compilations")
+}
+
+model DoasOnCompilation {
+  id             Int @id @default(autoincrement())
+  compilation_id Int
+  doa_id         Int
+  order_number   Int
+
+  compilation Compilation @relation(fields: [compilation_id], references: [id])
+  doa         Doa         @relation(fields: [doa_id], references: [id])
+
+  @@map("compilation_doas")
+}
+
+model Bookmark {
+  id             Int    @id @default(autoincrement())
+  user_id        String
+  compilation_id Int?
+  doa_id         Int?
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  user        User         @relation(fields: [user_id], references: [id])
+  compilation Compilation? @relation(fields: [compilation_id], references: [id])
+  doa         Doa?         @relation(fields: [doa_id], references: [id])
+
+  @@map("bookmarks")
+}

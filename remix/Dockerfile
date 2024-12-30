@@ -22,6 +22,10 @@ RUN apt-get update -qq && \
 # Build stage to reduce final image size
 FROM base as build
 
+# Set up environment variables for Prisma
+ARG DATABASE_URL
+ENV DATABASE_URL=${DATABASE_URL}
+
 # Install build dependencies
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential node-gyp pkg-config python-is-python3
@@ -34,6 +38,9 @@ RUN pnpm install --frozen-lockfile --prod=false
 
 # Copy application code
 COPY . .
+
+# Generate Prisma Client
+RUN npx prisma generate
 
 # Build the Remix application
 RUN pnpm run build
