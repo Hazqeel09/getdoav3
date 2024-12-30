@@ -34,7 +34,7 @@ export default function Index() {
         <div className="space-x-4 py-2">
           {currentUser ? (
             <div className="flex items-center gap-x-4">
-              <p>{currentUser.email}</p>
+              <p>{currentUser.email.split("@")[0]}</p>
               <Link
                 to="/logout"
                 className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800"
