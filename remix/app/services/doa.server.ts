@@ -76,7 +76,6 @@ export const doaService = {
     slug,
     is_verified,
     is_public,
-    user_id,
     // TODO: Implement categories and sources
     // categories,
     // sources,
@@ -94,7 +93,6 @@ export const doaService = {
           slug,
           is_verified,
           is_public,
-          user_id,
         },
         include: {
           categories: { include: { category: true } },
@@ -112,10 +110,6 @@ export const doaService = {
     try {
       await prisma.doa.delete({
         where: { id },
-        include: {
-          categories: { include: { category: true } },
-          sources: { include: { source: true } }
-        },
       });
       return { id };
     } catch (error) {

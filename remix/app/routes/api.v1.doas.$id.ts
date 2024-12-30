@@ -1,13 +1,22 @@
 import { parseWithZod } from "@conform-to/zod";
-import { ActionFunctionArgs } from "@remix-run/node";
+import { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { ERROR_RESPONSES, errorResponseType } from "~/constants/errors";
-import { deleteDoaParamsSchema, updateDoaRequestSchema } from "~/schemas/doas";
+import { deleteDoaParamsSchema, retrieveDoaParamsSchema, updateDoaRequestSchema } from "~/schemas/doas";
 import { authService } from "~/services/auth.server";
 import { doaService } from "~/services/doa.server";
 import { DeleteDoaResponse, UpdateDoaResponse } from "~/types/doas";
 
-export async function loader() {
-  return Response.json({ message: "Unimplemented" }, { status: 501 });
+export async function loader({ params }: LoaderFunctionArgs) {
+  if (!params?.id) {
+    return ERROR_RESPONSES.INVALID_ARGUMENT;
+  }
+
+  const { data, success } = retrieveDoaParamsSchema.safeParse({ id: parseInt(params.id) });
+  if (!success) {
+    return ERROR_RESPONSES.INVALID_ARGUMENT;
+  }
+
+  return await doaService.get({ id: data.id });
 }
 
 export async function action({ request, params }: ActionFunctionArgs): Promise<UpdateDoaResponse | DeleteDoaResponse | errorResponseType> {
