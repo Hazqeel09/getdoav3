@@ -27,8 +27,7 @@ export const compilationService = {
     user_id,
     slug,
     is_public,
-    // TODO: Implement doas
-    // doas,
+    doas = [],
   }: CreateCompilationRequest): Promise<CreateCompilationResponse | errorResponseType> => {
     try {
       const compilation = await prisma.compilation.create({
@@ -38,10 +37,15 @@ export const compilationService = {
           user_id,
           slug,
           is_public,
+          doas: {
+            createMany: {
+              data: doas
+            }
+          }
         },
         include: {
           doas: { include: { doa: true } },
-        }
+        },
       })
       return compilation;
     } catch (error) {
@@ -55,8 +59,7 @@ export const compilationService = {
     description,
     slug,
     is_public,
-    // TODO: Implement doas
-    // doas,
+    doas = [],
   }: UpdateCompilationRequest): Promise<UpdateCompilationResponse | errorResponseType> => {
     try {
       const compilation = await prisma.compilation.update({
@@ -65,6 +68,12 @@ export const compilationService = {
           description,
           slug,
           is_public,
+          doas: {
+            connectOrCreate: doas.map(i => ({
+              where: { id: i.id },
+              create: { doa_id: i.doa_id, order_number: i.order_number }
+            }))
+          }
         },
         include: {
           doas: { include: { doa: true } },
