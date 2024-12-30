@@ -71,6 +71,9 @@ module.exports = {
         "plugin:import/recommended",
         "plugin:import/typescript",
       ],
+      rules: {
+        "import/no-unresolved": "off"
+      },
     },
 
     // Node

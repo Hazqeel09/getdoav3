@@ -4,11 +4,23 @@
 
 ## Pre
 
-install things needed before running
+1. install things needed before running
 
 ```shellscript
 pnpm i
 ```
+
+2. setup the sqlite
+
+```shellscript
+npx prisma generate
+```
+
+```shellscript
+npx prisma migrate deploy
+```
+
+3. Create .env based on .env.example. Ping @Hazqeel09 to get the necessary secrets if you are working on stuffs that need user to be logged in.
 
 ## Development
 

@@ -4,10 +4,14 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 
 import "./tailwind.css";
+import { isValidSession } from "./libs/session.server";
+import { CurrentUserContext } from "./contexts/current-user";
+import { User } from "./types/users";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -22,7 +26,15 @@ export const links: LinksFunction = () => [
   },
 ];
 
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const validSession = await isValidSession(request)
+
+  return Response.json(validSession?.user || null)
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
+  const loaderData = useLoaderData<User | null>()
+
   return (
     <html lang="en">
       <head>
@@ -32,7 +44,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="overscroll-none">
-        {children}
+        <CurrentUserContext.Provider value={loaderData || null}>
+          {children}
+        </CurrentUserContext.Provider>
         <ScrollRestoration />
         <Scripts />
         <script

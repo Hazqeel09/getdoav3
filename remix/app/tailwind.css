@@ -18,6 +18,12 @@ body {
   }
 }
 
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
