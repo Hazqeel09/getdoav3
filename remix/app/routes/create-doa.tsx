@@ -18,15 +18,15 @@ import {
 } from "~/components/ui/select";
 import { useCreateDoa } from "~/hooks/use-createDoa";
 import DOA from "~/data/doa.json";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { Label } from "~/components/ui/label";
 import { Input } from "~/components/ui/input";
 import { Reorder } from "motion/react";
+import { SaveDoaModal } from "~/components/create-doa/saveDoa-modal";
 
 const CreateDoaPage = () => {
-  const doaList = useMemo(
-    () => DOA.map((doa) => ({ ...doa, id: createId() })),
-    []
+  const [doaList, setDoaList] = useState(
+    DOA.map((doa) => ({ ...doa, id: createId() }))
   );
 
   const { title, description, category, setCategory } = useCreateDoa();
@@ -80,18 +80,19 @@ const CreateDoaPage = () => {
                     <Reorder.Item
                       key={item.id}
                       value={item}
-                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3 cursor-grab"
+                      className="border p-4 rounded-lg flex flex-col items-center justify-between gap-3 cursor-grab bg-white"
                     >
                       <div className="w-full flex flex-row items-center justify-between">
                         <h3 className="text-lg">{item.name_en}</h3>
                         <Button
                           variant="ghost"
                           className="text-[#57AAB4] hover:text-[#57AAff]"
-                          onClick={() =>
+                          onClick={() => {
                             setSelectedDoas(
                               selectedDoas.filter((d) => d.id !== item.id)
-                            )
-                          }
+                            );
+                            setDoaList([...doaList, item]);
+                          }}
                         >
                           Remove
                         </Button>
@@ -107,10 +108,10 @@ const CreateDoaPage = () => {
               )}
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline">CANCEL</Button>
-              <Button variant="secondary" className="gap-2">
-                SAVE <span className="border rounded p-0.5 text-xs">⌘S</span>
-              </Button>
+              <Link to="/">
+                <Button variant="outline">CANCEL</Button>
+              </Link>
+              <SaveDoaModal doas={selectedDoas} />
             </CardFooter>
           </Card>
 
@@ -158,9 +159,10 @@ const CreateDoaPage = () => {
                         <Button
                           variant="ghost"
                           className="text-[#57AAB4] hover:text-[#57AAff]"
-                          onClick={() =>
-                            setSelectedDoas([...selectedDoas, doa])
-                          }
+                          onClick={() => {
+                            setSelectedDoas([...selectedDoas, doa]);
+                            setDoaList(doaList.filter((d) => d.id !== doa.id));
+                          }}
                         >
                           Add Doa
                         </Button>
@@ -180,7 +182,7 @@ const CreateDoaPage = () => {
 
         {/* Footer */}
         <footer className="flex justify-between items-center mt-20 text-sm text-gray-600">
-          <p>© detDoa.com 2023. All rights reserved</p>
+          <p>© GetDoa.com 2023. All rights reserved</p>
           <div className="flex gap-4">
             <Link to="https://x.com" className="hover:text-gray-900">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current">
@@ -188,7 +190,7 @@ const CreateDoaPage = () => {
               </svg>
             </Link>
             <Link to="#" className="hover:text-gray-900">
-              <Github className="w-5 h-5" />
+              <Github className="size-5" />
             </Link>
           </div>
         </footer>
