@@ -42,9 +42,6 @@ COPY . .
 # Generate Prisma Client
 RUN npx prisma generate
 
-# Apply database migrations
-RUN npx prisma migrate deploy
-
 # Build the Remix application
 RUN pnpm run build
 
