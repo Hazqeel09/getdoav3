@@ -44,7 +44,10 @@ export default function Index() {
             </div>
           ) : (
             <>
-              <Link to="/login" className="text-gray-700 hover:text-gray-900">
+              <Link
+                to="/register"
+                className="text-gray-700 hover:text-gray-900"
+              >
                 Log in
               </Link>
               <Link
