@@ -29,6 +29,14 @@ export default function DoaTable() {
         </Link>
       </header>
       <h1 className="text-2xl font-bold mb-4 text-center">Doa List</h1>
+      <div className="flex justify-center mb-6">
+        <Link
+          to="/"
+          className="flex items-start bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
+        >
+          Back to GetDoa
+        </Link>
+      </div>
       <DataTable data={data} />
     </div>
   );

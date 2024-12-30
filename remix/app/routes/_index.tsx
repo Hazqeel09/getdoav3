@@ -35,19 +35,26 @@ export default function Index() {
           {currentUser ? (
             <div className="flex items-center gap-x-4">
               <p>{currentUser.email}</p>
-              <Link to="/logout" className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800">
+              <Link
+                to="/logout"
+                className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800"
+              >
                 Logout
               </Link>
             </div>
           ) : (
             <>
-              <a href="/" className="text-gray-700 hover:text-gray-900">
+              <Link to="/login" className="text-gray-700 hover:text-gray-900">
                 Log in
-              </a>
-              <Link to="/register" className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800">
+              </Link>
+              <Link
+                to="/register"
+                className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800"
+              >
                 Sign up
               </Link>
-            </>)}
+            </>
+          )}
         </div>
       </header>
       <main id="hero" className="bg-blue-50 flex justify-center py-10">
