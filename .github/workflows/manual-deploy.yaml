@@ -108,14 +108,12 @@ jobs:
                 "echo \"[INFO] Stopping old containers in $CURRENT_DIR ...\"",
                 "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
                 "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down",
-                "  echo \"[INFO] Waiting for old container cleanup...\"",
-                "  sleep 13",
                 "else",
                 "  echo \"[INFO] No existing deployment found to stop\"",
                 "fi",
 
                 "echo \"[INFO] Setup SQLite ...\"",
-                "sudo docker exec $CURRENT_DIR-remix-1 sh -c \"npx prisma migrate deploy\"",
+                "sudo docker exec $NEXT_DIR-remix-1 sh -c \"npx prisma migrate deploy\"",
 
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
                 "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\"",
