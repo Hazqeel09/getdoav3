@@ -14,7 +14,7 @@ const compilationWithDoas = Prisma.validator<Prisma.CompilationFindFirstArgs>()(
   },
 })
 type CompilationWithRelations = Prisma.CompilationGetPayload<typeof compilationWithDoas>
-type CompilationResponse = CompilationWithRelations
+export type CompilationResponse = CompilationWithRelations
 
 export type ListCompilationsParams = z.infer<typeof listCompilationsParamsSchema>;
 export type ListCompilationsResponse = {

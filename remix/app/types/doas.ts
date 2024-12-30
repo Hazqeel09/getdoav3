@@ -16,7 +16,7 @@ const doaWithRelations = Prisma.validator<Prisma.DoaFindFirstArgs>()({
   },
 })
 type DoaWithRelations = Prisma.DoaGetPayload<typeof doaWithRelations>
-type DoaResponse = DoaWithRelations
+export type DoaResponse = DoaWithRelations
 
 export type ListDoasParams = z.infer<typeof listDoasParamsSchema>;
 export type ListDoasResponse = {
