@@ -44,7 +44,7 @@ model Doa {
   text_en          String?
   fadhilat_amal_my String?
   fadhilat_amal_en String?
-  slug             String?  @default(uuid())
+  slug             String?  @unique @default(uuid())
   is_verified      Boolean?
   is_public        Boolean?
   user_id          String?
@@ -109,7 +109,7 @@ model Compilation {
   id          Int      @id @default(autoincrement())
   title       String?
   description String?
-  slug        String   @unique
+  slug        String?  @unique @default(uuid())
   views       Int?
   is_public   Boolean?
   user_id     String
