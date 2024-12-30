@@ -113,13 +113,13 @@ jobs:
                 "fi",
 
                 "echo \"[INFO] Setup SQLite ...\"",
-                "sudo docker exec getdoa-remix sh -c \"npx prisma migrate deploy\"",
+                "sudo docker exec $CURRENT_DIR-remix-1 sh -c \"npx prisma migrate deploy\"",
 
                 "echo \"$NEXT_DIR\" | sudo tee $WORKDIR/current > /dev/null",
                 "echo \"[INFO] Deployment complete. Active directory: $NEXT_DIR\"",
                 
                 "echo \"[INFO] Pruning unused Docker objects...\"",
-                "sudo docker system prune -a"
+                "sudo docker system prune -a -f | tee /home/ubuntu/docker-prune-log.txt"
             ]}' \
             --query "Command.CommandId" \
             --output text)

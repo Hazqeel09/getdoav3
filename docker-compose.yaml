@@ -2,7 +2,6 @@ version: "3.8"
 
 services:
   remix:
-    container_name: getdoa-remix
     image: ${DOCKER_USERNAME}/getdoa-remix:latest
     platform: linux/arm64
     ports:
