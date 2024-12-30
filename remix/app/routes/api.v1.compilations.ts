@@ -27,6 +27,7 @@ export async function action({ request }: ActionFunctionArgs): Promise<CreateCom
   }
 
   const formData = await request.formData();
+  formData.append("user_id", user.id)
   const submission = parseWithZod(formData, { schema: createCompilationRequestSchema });
   if (submission.status !== 'success') {
     return ERROR_RESPONSES.INVALID_ARGUMENT;
