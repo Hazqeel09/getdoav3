@@ -9,6 +9,7 @@ export const createCompilationRequestSchema = z.object({
   description: z.string().optional(),
   slug: z.string().optional(),
   is_public: z.boolean().optional(),
+  doas: z.array(z.object({doa_id: z.number(), order_number: z.number()})).optional()
 });
 export const updateCompilationRequestSchema = z.object({
   id: z.number(),
@@ -16,5 +17,6 @@ export const updateCompilationRequestSchema = z.object({
   description: z.string().optional(),
   slug: z.string().optional(),
   is_public: z.boolean().optional(),
+  doas: z.array(z.object({id: z.number().optional(), doa_id: z.number(), order_number: z.number()})).optional()
 });
 export const deleteCompilationRequestSchema = z.object({ id: z.number() });

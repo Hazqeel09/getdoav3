@@ -1,13 +1,22 @@
 import { parseWithZod } from "@conform-to/zod";
-import { ActionFunctionArgs } from "@remix-run/node";
+import { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
 import { ERROR_RESPONSES, errorResponseType } from "~/constants/errors";
-import { deleteCompilationRequestSchema, updateCompilationRequestSchema } from "~/schemas/compilations";
+import { deleteCompilationRequestSchema, retrieveCompilationRequestSchema, updateCompilationRequestSchema } from "~/schemas/compilations";
 import { authService } from "~/services/auth.server";
 import { compilationService } from "~/services/compilation.server";
 import { DeleteCompilationResponse, UpdateCompilationResponse } from "~/types/compilations";
 
-export async function loader() {
-  return Response.json({ message: "Unimplemented" }, { status: 501 });
+export async function loader({params}: LoaderFunctionArgs) {
+  if (!params?.id) {
+    return ERROR_RESPONSES.INVALID_ARGUMENT;
+  }
+
+  const { data, success } = retrieveCompilationRequestSchema.safeParse({ id: parseInt(params.id) });
+  if (!success) {
+    return ERROR_RESPONSES.INVALID_ARGUMENT;
+  }
+
+  return await compilationService.get({ id: data.id });
 }
 
 export async function action({ request, params }: ActionFunctionArgs): Promise<UpdateCompilationResponse | DeleteCompilationResponse | errorResponseType> {
