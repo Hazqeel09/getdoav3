@@ -1,7 +1,8 @@
+import { User } from "~/types/users";
 import prisma from "../libs/prisma.server";
 
 export const authService = {
-  isAuthenticated: async (request: Request) => {
+  getUser: async (request: Request): Promise<User | null> => {
     const authHeader = request.headers.get('Authorization')
     const token = extractBearerToken(authHeader)
 
@@ -12,18 +13,12 @@ export const authService = {
     try {
       const session = await prisma.session.findFirstOrThrow({
         where: {
-          id: token
+          id: token,
+          expires_at: { gte: new Date() },
         },
+        include: { user: {select: { id: true, email: true, username: true }} },
       })
-      if (session.expires_at < new Date()) {
-        await prisma.session.delete({
-          where: { id: token }
-        })
-        return null
-      }
-      return await prisma.user.findFirstOrThrow({
-        where: { id: session.user_id }
-      })
+      return session.user
     } catch {
       return null
     }
