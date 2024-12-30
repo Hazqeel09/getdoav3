@@ -108,6 +108,8 @@ jobs:
                 "echo \"[INFO] Stopping old containers in $CURRENT_DIR ...\"",
                 "if [ -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml ]; then",
                 "  sudo docker-compose -f $WORKDIR/$CURRENT_DIR/docker-compose.yaml down",
+                "  echo \"[INFO] Waiting for old container cleanup...\"",
+                "  sleep 13",
                 "else",
                 "  echo \"[INFO] No existing deployment found to stop\"",
                 "fi",
