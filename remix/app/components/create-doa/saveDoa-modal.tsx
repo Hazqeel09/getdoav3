@@ -68,7 +68,7 @@ export const SaveDoaModal = ({
                 <p className="text-center mt-2 text-xl text-gray-800 font-normal">
                   {title}
                 </p>
-                <p className="text-center mt-2 text-xl text-gray-800 font-arabic">
+                <p className="text-center mt-2 text-xl text-gray-800 font-simpo">
                   بسم الله الرحمن الرحيم
                 </p>
               </CardTitle>
