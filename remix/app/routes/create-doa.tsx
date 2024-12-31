@@ -60,7 +60,7 @@ const CreateDoaPage = () => {
           <Card className="h-[600px] flex flex-col">
             <CardHeader>
               <CardTitle className="text-xl">{title}</CardTitle>
-              <div className="text-center mt-2 text-xl text-gray-800 font-arabic">
+              <div className="text-center mt-2 text-xl text-gray-800 font-simpo">
                 بسم الله الرحمن الرحيم
               </div>
             </CardHeader>
