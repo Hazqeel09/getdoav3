@@ -8,6 +8,7 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
+    "start:local": "dotenv -e .env remix-serve ./build/server/index.js",
     "typecheck": "tsc",
     "migration:json": "node ./script/json-migration.js"
   },
