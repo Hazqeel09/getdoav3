@@ -10,7 +10,8 @@
     "start": "remix-serve ./build/server/index.js",
     "start:local": "dotenv -e .env remix-serve ./build/server/index.js",
     "typecheck": "tsc",
-    "migration:json": "node ./script/json-migration.js"
+    "migration:json": "node ./script/json-migration.js",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
