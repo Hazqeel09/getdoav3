@@ -16,6 +16,6 @@ export const ERROR_RESPONSES = {
     }),
 };
 
-export type ErrorResponseType = ReturnType<
+export type errorResponseType = ReturnType<
   (typeof ERROR_RESPONSES)[keyof typeof ERROR_RESPONSES]
 >;

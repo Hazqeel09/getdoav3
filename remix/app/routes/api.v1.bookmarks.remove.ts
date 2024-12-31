@@ -10,25 +10,31 @@ export async function loader() {
   return Response.json({ message: "Unimplemented" }, { status: 501 });
 }
 
-export async function action({ request }: ActionFunctionArgs): Promise<UpdateDoaResponse | DeleteDoaResponse | errorResponseType> {
-  if (request.method !== 'POST') {
+export async function action({
+  request,
+}: ActionFunctionArgs): Promise<
+  UpdateDoaResponse | DeleteDoaResponse | errorResponseType
+> {
+  if (request.method !== "POST") {
     return Response.json({ message: "Unimplemented" }, { status: 501 });
   }
 
   const user = await authService.getUser(request);
   if (!user) {
-    return ERROR_RESPONSES.UNAUTHORIZED;
+    return ERROR_RESPONSES.UNAUTHORIZED();
   }
 
   const formData = await request.formData();
-  formData.append("user_id", user.id)
-  const submission = parseWithZod(formData, { schema: removeBookmarkRequestSchema });
-  if (submission.status !== 'success') {
-    return ERROR_RESPONSES.INVALID_ARGUMENT;
+  formData.append("user_id", user.id);
+  const submission = parseWithZod(formData, {
+    schema: removeBookmarkRequestSchema,
+  });
+  if (submission.status !== "success") {
+    return ERROR_RESPONSES.INVALID_ARGUMENT();
   }
 
   return await bookmarkService.remove({
     id: submission.value.id,
-    user_id: user.id
+    user_id: user.id,
   });
 }
