@@ -1,3 +1,4 @@
+import styles from "./tailwind.css?url";
 import {
   Links,
   Meta,
@@ -7,13 +8,12 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
-
-import "./tailwind.css";
 import { isValidSession } from "./libs/session.server";
 import { CurrentUserContext } from "./contexts/current-user";
 import { User } from "./types/users";
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",

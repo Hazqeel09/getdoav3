@@ -3,6 +3,7 @@ import { Link } from "@remix-run/react";
 import { features } from "../data/features";
 import cta from "../data/cta.json";
 import Icon from "../components/icon";
+import { StartNow } from "~/components/home/start-now";
 import { CurrentUserContext } from "~/contexts/current-user";
 import { useContext } from "react";
 
@@ -79,12 +80,7 @@ export default function Index() {
               </span>
             </p>
             <div className="flex gap-4">
-              <Link
-                to="#"
-                className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"
-              >
-                Start now →
-              </Link>
+              <StartNow />
               <Link
                 to="/all-doa"
                 className="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 transition duration-200"

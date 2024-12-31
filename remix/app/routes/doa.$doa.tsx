@@ -1,7 +1,6 @@
-import { json, LoaderFunction, MetaFunction } from "@remix-run/node";
+import { LoaderFunction, MetaFunction } from "@remix-run/node";
 import { useLoaderData, Link } from "@remix-run/react";
-import fs from "fs/promises";
-import path from "path";
+import doaList from "~/data/doa.json";
 import { useState } from "react";
 import {
   Card,
@@ -35,9 +34,6 @@ type SedekahJeQR = {
 
 export const loader: LoaderFunction = async ({ params }) => {
   const { doa } = params;
-  const filePath = path.join(process.cwd(), "app", "data", "doa.json");
-  const fileContents = await fs.readFile(filePath, "utf-8");
-  const doaList: Doa[] = JSON.parse(fileContents);
   const selectedDoa = doaList.find((d) => d.slug === doa);
 
   if (!selectedDoa) {
@@ -50,7 +46,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   }
   const sedekahJeQR: SedekahJeQR = await response.json();
 
-  return json({ selectedDoa, sedekahJeQR });
+  return Response.json({ selectedDoa, sedekahJeQR });
 };
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
@@ -281,3 +277,4 @@ export default function DoaDetail() {
     </div>
   );
 }
+
