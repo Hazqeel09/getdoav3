@@ -190,7 +190,7 @@ export default function Index() {
               ))}
             </div>
             <Link
-              to=""
+              to="/register"
               className="bg-teal-700 text-white px-4 py-2 rounded hover:bg-teal-800 mt-auto"
             >
               Sign up now
